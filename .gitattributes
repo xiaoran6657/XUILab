@@ -1,0 +1,79 @@
+# Normalize project text in the repository; working trees stay reproducible
+# across Windows and other environments.
+* text=auto eol=lf
+
+# Source, shaders, configuration and documentation
+*.cs text eol=lf
+*.shader text eol=lf
+*.hlsl text eol=lf
+*.compute text eol=lf
+*.cginc text eol=lf
+*.asmdef text eol=lf
+*.asmref text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ps1 text eol=lf
+*.sh text eol=lf
+*.uxml text eol=lf
+*.uss text eol=lf
+*.obj text eol=lf
+*.gltf text eol=lf
+
+# Unity YAML and metadata
+*.meta text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.mat text eol=lf
+*.anim text eol=lf
+*.controller text eol=lf
+*.overrideController text eol=lf
+*.mask text eol=lf
+*.playable text eol=lf
+*.renderTexture text eol=lf
+*.physicMaterial text eol=lf
+*.physicsMaterial2D text eol=lf
+
+# Common binary assets. Git LFS is intentionally not required until the
+# repository adopts and verifies an LFS policy.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.psd binary
+*.tga binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.exr binary
+*.hdr binary
+*.ico binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.aiff binary
+*.mp4 binary
+*.mov binary
+*.webm binary
+*.avi binary
+*.fbx binary
+*.blend binary
+*.glb binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.pdb binary
+*.zip binary
+*.7z binary
+*.unitypackage binary

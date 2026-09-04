@@ -1,0 +1,72 @@
+# Unity generated directories (project root: /XUILab)
+/XUILab/[Ll]ibrary/
+/XUILab/[Tt]emp/
+/XUILab/[Oo]bj/
+/XUILab/[Bb]uild/
+/XUILab/[Bb]uilds/
+/XUILab/[Ll]ogs/
+/XUILab/[Uu]ser[Ss]ettings/
+/XUILab/[Mm]emoryCaptures/
+/XUILab/[Rr]ecordings/
+
+# Unity generated project and solution files
+/XUILab/*.csproj
+/XUILab/*.sln
+/XUILab/*.suo
+/XUILab/*.user
+/XUILab/*.userprefs
+/XUILab/*.pidb
+/XUILab/*.booproj
+/XUILab/*.svd
+/XUILab/*.pdb
+/XUILab/*.mdb
+/XUILab/*.opendb
+/XUILab/*.VC.db
+/XUILab/*.unityproj
+/XUILab/ExportedObj/
+/*.sln
+/*.csproj
+
+# IDE and editor-local settings
+.vs/
+.vscode/
+.idea/
+*.sln.iml
+*.DotSettings.user
+*.code-workspace
+*~
+*.tmp
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Unity and crash diagnostics
+sysinfo.txt
+crashlytics-build.properties
+mono_crash.*
+debug.log
+Crash_*.txt
+
+# Builds and transient exports kept outside the Unity project
+/Build/
+/Builds/
+/Temp/
+/Logs/
+/Recordings/
+/MemoryCaptures/
+
+# Heavy diagnostic/media folders inside a run. Commit compact configs,
+# samples, summaries and reports deliberately; keep these captures local.
+/Artifacts/**/build/
+/Artifacts/**/captures/
+/Artifacts/**/media/
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+*.local
+*.secret
