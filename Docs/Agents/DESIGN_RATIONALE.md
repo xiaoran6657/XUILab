@@ -4,7 +4,7 @@
 
 ## 对参考工作流的适配
 
-主要参考 [原工作流入口](../References/Agents/README.md)、[执行模型](../References/Agents/EXECUTION_MODEL.md)、[PM 合同](../References/Agents/PM_CONTRACT.md)、[角色](../References/Agents/ROLES.md)及其任务、审查和验证模板。
+本项目采用的执行入口为 [工作流入口](README.md)、[执行流程](WORKFLOW.md)、[PM 合同](PM_CONTRACT.md)、[角色与模型](ROLES_AND_MODELS.md)及其任务、审查和验证模板；这些文档已经按 XUILab 的范围和风险重新整理，不依赖未随仓库保留的原项目工作流路径。
 
 | 参考设计 | XUILab 的决定 | 原因 |
 | --- | --- | --- |

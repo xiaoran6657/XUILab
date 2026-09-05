@@ -8,11 +8,11 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 
 - Unity 工程已经创建，路径为 [`XUILab/`](XUILab/)。
 - 固定使用 **Unity 2022.3.45f1c1**；当前工程依赖 URP 14.0.11、UGUI 1.0.0、TMP 3.0.9。
-- Unity MCP 已接入并完成过只读连通性检查。
-- 项目分析、MVP 路线图和 Agent 工作流已经建立。
-- M0–M4 的实现与性能验收尚未开始；当前不存在可发布的性能结论。
+- Unity MCP 已接入；M0-01 至 M0-03 已完成固定 Editor、Windows Development Player、Smoke 场景／程序集和最小 Runner 数据合同验收。
+- M0-04 的第三次审查与 r6 post-freeze P2 均已由 r7 关闭；三路独立复审 accept，M0 阶段出口为 `pass / complete`。
+- M1 与 M2 的 M0 前置已解锁，但尚未启动；当前仍不存在可发布的 UI 优化性能结论。
 
-最新进度以后以 [`Docs/PM/`](Docs/PM/) 中的状态记录为准。目录为空时，表示项目管理记录尚未初始化，不能据此推断某项任务已经完成。
+最新进度以 [`Docs/PM/PROJECT_STATUS.md`](Docs/PM/PROJECT_STATUS.md) 和各任务状态记录为准；历史 accepted candidate 可能被后续审查取代，不能只看较早 review 推断阶段仍通过。
 
 ## 计划交付
 
@@ -32,7 +32,7 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 3. 等待 Package Manager、资产导入和脚本编译结束。
 4. 开始实现前阅读[文档入口](Docs/README.md)和[项目路线图](Docs/MVP/ROADMAP.md)。Agent 参与时还应读取根目录 [`AGENTS.md`](AGENTS.md)。
 
-仓库中的 `XUILab.sln`、`.csproj`、`Library/` 等属于 IDE 或 Unity 生成内容；工程真源是 `Assets/`、`Packages/` 和 `ProjectSettings/`。当前阶段尚未提供可直接运行的 Benchmark Case 或正式 Windows 构建，因此本文不列出虚构的运行命令。
+仓库中的 `XUILab.sln`、`.csproj`、`Library/` 等属于 IDE 或 Unity 生成内容；工程真源是 `Assets/`、`Packages/` 和 `ProjectSettings/`。当前已有 idle／known-load Benchmark Case、Development Player build 入口和复跑脚本；请按[复跑手册](Docs/Agents/BENCHMARK_RUN_PLAYBOOK.md)显式提供候选／构建／源码身份，不复用 r3 的默认值或把 M0 校准数据当作 UI A/B 结论。
 
 ## 仓库结构
 

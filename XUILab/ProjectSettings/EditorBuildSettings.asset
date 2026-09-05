@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/XUILab/Scenes/BenchmarkSmoke.unity
+    guid: 8831524ca5a14514580d81deed9d5f3c
   m_configObjects: {}

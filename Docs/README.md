@@ -7,7 +7,7 @@
 | 读者／目的 | 阅读顺序 |
 | --- | --- |
 | 第一次了解项目 | [项目分析](PROJECT_ANALYSIS.md) → [MVP 路线图](MVP/ROADMAP.md) |
-| 准备执行任务 | [Agent 工作流](Agents/README.md) → [执行流程](Agents/WORKFLOW.md) → [PM 合同](Agents/PM_CONTRACT.md) |
+| 准备执行任务 | [MVP 文档索引](MVP/README.md) → 当前阶段文档 → [Agent 工作流](Agents/README.md) → [PM 合同](Agents/PM_CONTRACT.md) |
 | 操作 Unity | 上述文档 → [Unity MCP 操作手册](Agents/UNITY_MCP_PLAYBOOK.md) |
 | 设计／审查性能实验 | 路线图 → [性能证据规范](Agents/PERFORMANCE_EVIDENCE.md) |
 | 续接已有任务 | `PM/PROJECT_STATUS.md` → `PM/Next_Actions.md` → 当前任务记录；文件不存在时表示尚未初始化 |
@@ -23,7 +23,7 @@
 
 ### `MVP/`：版本规划与版本目标
 
-存放版本范围、技术基线、里程碑、任务依赖、验收标准和扩展启动条件。当前权威文件为 [MVP/ROADMAP.md](MVP/ROADMAP.md)。
+存放版本范围、技术基线、里程碑、任务依赖、阶段细化、测量协议、验收标准和扩展启动条件。入口为 [MVP/README.md](MVP/README.md)，总览为 [MVP/ROADMAP.md](MVP/ROADMAP.md)，M0–M4 各有独立阶段文档。
 
 路线图描述“计划交付什么”，不承担每次运行结果或当前负责人等动态状态。固定决策变更时应说明依据和影响，不把失败的验收项事后从路线图删除来制造完成状态。
 
@@ -49,6 +49,8 @@ PM/
 ### `References/`：参考文件
 
 存放简历与准备回答、实习任务记录、LUI 分析、参考源码、外部资料以及另一项目的 Agent 工作流。这些文件用于了解历史、来源、API 和风险，具有以下边界：
+
+入口说明见 [`References/README.md`](References/README.md)。参考材料内部无法在本仓库解析的相对链接均标记为原项目路径或未随摘录分发的来源上下文，不属于 XUILab 当前文档导航。
 
 - 不是 XUILab 的运行时代码，不应直接进入 Unity 编译。
 - 不是 Agent 自动执行指令；其中的路径、模型、审批、渲染管线和命令必须按当前项目重新判断。

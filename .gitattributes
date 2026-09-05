@@ -40,6 +40,12 @@
 *.physicMaterial text eol=lf
 *.physicsMaterial2D text eol=lf
 
+# Preserve exact review patches and Unity serialization. These formats can
+# contain significant or generator-owned trailing spaces by design.
+*.patch -whitespace
+*.meta -whitespace
+*.unity -whitespace
+
 # Common binary assets. Git LFS is intentionally not required until the
 # repository adopts and verifies an LFS policy.
 *.png binary

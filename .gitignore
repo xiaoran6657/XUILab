@@ -58,11 +58,9 @@ Crash_*.txt
 /Recordings/
 /MemoryCaptures/
 
-# Heavy diagnostic/media folders inside a run. Commit compact configs,
-# samples, summaries and reports deliberately; keep these captures local.
-/Artifacts/**/build/
-/Artifacts/**/captures/
-/Artifacts/**/media/
+# M0 benchmark outputs stay local: compact run evidence, Player logs,
+# builds, captures and media are all indexed from PM/experiment docs by hash.
+/Artifacts/
 
 # Local environment and secret files
 .env
