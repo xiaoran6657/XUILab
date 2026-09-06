@@ -1,0 +1,1 @@
+{"name":"XUILab.ListLab.Editor","references":["XUILab.ListLab.Runtime","XUILab.ListLab.Presentation","UnityEngine.UI"],"includePlatforms":["Editor"],"autoReferenced":true}

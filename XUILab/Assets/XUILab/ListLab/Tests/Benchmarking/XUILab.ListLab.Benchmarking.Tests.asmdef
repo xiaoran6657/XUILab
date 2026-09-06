@@ -1,0 +1,1 @@
+{"name":"XUILab.ListLab.Benchmarking.Tests","references":["XUILab.ListLab.Runtime","XUILab.ListLab.Benchmarking","XUILab.Benchmarking.Runtime","UnityEngine.UI"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

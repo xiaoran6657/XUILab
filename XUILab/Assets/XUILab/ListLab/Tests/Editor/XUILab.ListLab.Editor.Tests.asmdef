@@ -1,0 +1,1 @@
+{"name":"XUILab.ListLab.Editor.Tests","references":["XUILab.ListLab.Editor","XUILab.ListLab.Presentation"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

@@ -1,0 +1,1 @@
+{"name":"XUILab.ListLab.Tests.EditMode","references":["XUILab.ListLab.Runtime","UnityEngine.UI"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

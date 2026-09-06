@@ -166,9 +166,9 @@ namespace XUILab.Benchmarking
                 return "runId must be one safe path segment.";
             }
 
-            if (caseId != "idle" && caseId != "known-load")
+            if (caseId != "idle" && caseId != "known-load" && !IsListCaseId(caseId))
             {
-                return "caseId must be idle or known-load.";
+                return "caseId must be a supported benchmark profile.";
             }
 
             if (warmupFrames < 0 || measureFrames <= 0 || sampleCapacity < measureFrames)
@@ -223,6 +223,13 @@ namespace XUILab.Benchmarking
         private static bool IsUnknownIdentity(string value)
         {
             return string.IsNullOrWhiteSpace(value) || string.Equals(value, "unknown", StringComparison.OrdinalIgnoreCase);
+        }
+
+        public static bool IsListCaseId(string value)
+        {
+            return value != null && System.Text.RegularExpressions.Regex.IsMatch(value,
+                @"\Alist-(normal|virtual)-(100|300|1000|10000)-(scroll|lifecycle)\z",
+                System.Text.RegularExpressions.RegexOptions.CultureInvariant);
         }
 
         public static bool IsSafeRunId(string value)

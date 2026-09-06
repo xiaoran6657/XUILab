@@ -1,0 +1,6 @@
+{
+  "name": "XUILab.ListLab.Runtime",
+  "rootNamespace": "XUILab.ListLab",
+  "references": ["UnityEngine.UI"],
+  "autoReferenced": true
+}
