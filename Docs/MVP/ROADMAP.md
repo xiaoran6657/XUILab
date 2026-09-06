@@ -40,7 +40,7 @@ MVP 不使用 Unity 6 写回当前工程，不在同一工程中交替使用不�
 | 阶段 | 主题 | 前置条件 | 阶段成果 | 规划状态 | 详细文档 |
 | --- | --- | --- | --- | --- | --- |
 | M0 | 工程基线与最小测量闭环 | 版本和目标已确定；模板工程已存在 | 可复跑的最小 Case、Windows Development Player、原始数据、有效／失败报告 | pass / complete；r7 accepted（2026-09-06） | [M0](M0_FOUNDATION.md) |
-| M1 | List Lab 正确性与基准 | M0 出口通过 | 列表契约、普通／虚拟 A/B、数据与第一组演示材料 | ready / not_started | [M1](M1_LIST_LAB.md) |
+| M1 | List Lab 正确性与基准 | M0 出口通过 | 列表契约、普通／虚拟 A/B、数据与第一组演示材料 | pass / complete，见[阶段出口](../PM/M1_STAGE_EXIT.md) | [M1](M1_LIST_LAB.md) |
 | M2 | Gradient Lab 正确性与基准 | M0 出口通过；列表集成场景依赖 M1 | 渐变／过渡契约、质量与成本数据、第二组演示材料 | M0 prerequisite met；not_started | [M2](M2_GRADIENT_LAB.md) |
 | M3 | 两项深入优化实验 | 相应的 M1／M2 基线有效 | 真正单项刷新、自适应细分及有边界的取舍结论 | 待开始 | [M3](M3_OPTIMIZATION.md) |
 | M4 | 证据冻结与展示交付 | M1–M3 完成；测量协议锁定 | Release 展示包、最终证据、三个主题的作品集资料 | 待开始 | [M4](M4_SHOWCASE.md) |

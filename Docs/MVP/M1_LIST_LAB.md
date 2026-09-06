@@ -1,6 +1,6 @@
 # M1：List Lab 正确性与基准
 
-规划状态：待开始。实际状态由 `Docs/PM/` 维护。
+阶段出口：[M1_STAGE_EXIT](../PM/M1_STAGE_EXIT.md)。实际状态由 `Docs/PM/` 维护，任务验收与原始证据见对应记录。
 
 前置：[M0](M0_FOUNDATION.md)出口通过，Runner 和测量协议 v1 可复用。
 

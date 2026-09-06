@@ -43,6 +43,7 @@
 # Preserve exact review patches and Unity serialization. These formats can
 # contain significant or generator-owned trailing spaces by design.
 *.patch -whitespace
+*.sha256 -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.meta -whitespace
 *.unity -whitespace
 

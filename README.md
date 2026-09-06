@@ -10,9 +10,11 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 - 固定使用 **Unity 2022.3.45f1c1**；当前工程依赖 URP 14.0.11、UGUI 1.0.0、TMP 3.0.9。
 - Unity MCP 已接入；M0-01 至 M0-03 已完成固定 Editor、Windows Development Player、Smoke 场景／程序集和最小 Runner 数据合同验收。
 - M0-04 的第三次审查与 r6 post-freeze P2 均已由 r7 关闭；三路独立复审 accept，M0 阶段出口为 `pass / complete`。
-- M1 与 M2 的 M0 前置已解锁，但尚未启动；当前仍不存在可发布的 UI 优化性能结论。
+- M1 List Lab 已通过[阶段出口验收](Docs/PM/M1_STAGE_EXIT.md)，实现、Player矩阵、图表与30秒演示齐备，并已获授权[本地归档](Docs/PM/M1_LOCAL_CHECKPOINT.md)；M2未启动。历史采样数据仅用于工程探索。
 
 最新进度以 [`Docs/PM/PROJECT_STATUS.md`](Docs/PM/PROJECT_STATUS.md) 和各任务状态记录为准；历史 accepted candidate 可能被后续审查取代，不能只看较早 review 推断阶段仍通过。
+
+List Lab：[Player实验报告](Docs/Experiments/LIST_BENCHMARK_RESULTS.md) · [实现与学习案例](Docs/Experiments/LIST_LAB_CASE_STUDY.md) · [30秒演示](Artifacts/list-media/list-demo-r4.mp4)。展示场景为 `XUILab/Assets/XUILab/Scenes/ListLab.unity`；Editor最近观测时间及状态见[交接记录](Docs/PM/PROJECT_STATUS.md)，操作前重新查询。
 
 ## 计划交付
 
