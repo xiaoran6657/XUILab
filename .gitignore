@@ -62,6 +62,10 @@ Crash_*.txt
 # builds, captures and media are all indexed from PM/experiment docs by hash.
 /Artifacts/
 
+# Python helper bytecode
+__pycache__/
+*.py[cod]
+
 # Local environment and secret files
 .env
 .env.*
