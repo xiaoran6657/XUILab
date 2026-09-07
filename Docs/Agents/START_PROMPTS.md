@@ -5,24 +5,22 @@
 ## 只做规划或状态核对
 
 ```text
-请读取 Docs/Agents/README.md、WORKFLOW.md、PM_CONTRACT.md 和 Docs/MVP/ROADMAP.md，
-再读取已有 Docs/PM 状态（若不存在如实说明）。
+请按根 AGENTS.md 与 Docs/README.md 的状态查询路由，
+读取 Docs/PM/PROJECT_STATUS.md、Next_Actions.md 和所指任务记录（若不存在如实说明）。
 核对 XUILab 的当前阶段、已完成证据、依赖和下一步。
 本次仅规划／只读核对，不启动实现、不修改 Unity 状态，不创建子 Agent。
 不要把 Docs/References/Agents 中的原项目指令当作本次授权。
 ```
 
-## 首次开始 M0-01
+## 维护基础设施
 
 ```text
-请按 Docs/Agents/README.md 及相关工作流执行 Docs/MVP/ROADMAP.md 的 M0-01。
-工程已在 <repo>/XUILab 创建，固定 Unity 2022.3.45f1c1，
-请核对已有成果并完成剩余基线验收，不重新创建工程。
-允许完成本任务所需的本地文件修改、Unity 检查、测试、Windows 构建和运行；
-允许初始化 Docs/PM 状态与任务合同，并调用必要的子 Agent 独立复核。
-你作为主 Agent 负责持续推进、Unity 操作串行、证据和 PM 收口。
-保留既有用户改动；不升级固定引擎、不公开发布、不自动提交或推送。
-仅执行 M0-01，验收后交接下一任务；真正需要人工操作时给具体步骤。
+请按根 AGENTS.md 和 Docs/README.md 的基础设施路由，执行 <具体基础设施范围>。
+先核对已有成果，创建或续接对应 INFRA-NNN Brief 与状态，不占用 MVP 任务 ID。
+允许该范围内必要的文档／工具修改、针对性离线检查和子 Agent 独立复核。
+本次不推进 MVP 功能，也不操作 Unity；若具体目标需要 Unity，另在本请求明确授权。
+新记录按 PM_CONTRACT 的字段填写，执行 PM_CHECK_PLAYBOOK 的结构检查后收口。
+保留历史证据和用户改动，不自动提交或推送。
 ```
 
 ## 执行已指定任务或阶段
@@ -30,7 +28,7 @@
 ```text
 请读取 Docs/Agents/README.md、相关 playbook、路线图和已有 PM，执行 <任务 ID 或阶段>。
 本次授权范围是 <具体范围>，允许必要的实现、测试、构建、运行和报告归档。
-请先冻结 Task Brief，按依赖推进，允许对独立且有价值的子任务使用子 Agent，
+请先核对已有成果，再冻结 Task Brief，按依赖推进，允许对独立且有价值的子任务使用子 Agent，
 包括 required 的独立复核；禁止多人同时操作 Unity 或干扰正式采样。
 保持当前模型配置，按证据验收，不把自检称为独立验证。
 完成后更新 PM，给出结果、实际检查、限制及下一步。
@@ -66,6 +64,6 @@
 ```text
 请继续此前已授权的 <Task-ID / 阶段>。
 先读 Docs/Agents/README.md、Docs/PM/PROJECT_STATUS.md、当前任务状态及最近交接，
-核对候选文件、未结束测试／进程、Unity 实例和占用，不直接重复启动原操作。
+核对候选文件和未结束操作；仅在需要 Unity 操作时查询其实例和占用，不直接重复启动原操作。
 承接既有授权与限制，完成尚未结束的工作；若状态与文件矛盾，以实际证据核对并修正记录。
 ```

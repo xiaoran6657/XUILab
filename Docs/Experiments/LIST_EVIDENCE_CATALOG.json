@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "xuilab.evidence.catalog/v1",
+  "evidenceId": "list-r3-core",
+  "candidateId": "list-r3-8756E9288BE4",
+  "buildId": "list-dev-20260906T071112Z",
+  "sourceRevision": "9f032952199644624a58df41988e3679304ba7ac",
+  "recordedRoot": "<repo>/Artifacts/list-player-r3",
+  "artifactRoot": "Artifacts/list-player-r3",
+  "buildRoot": "Artifacts/list-dev-20260906T071112Z/build",
+  "player": "Artifacts/list-dev-20260906T071112Z/build/XUILab-List.exe",
+  "plans": {
+    "pilot": "list-r3-pilot-manifest.json",
+    "matrix": "list-r3-matrix-manifest.json",
+    "stress": "list-r3-stress-manifest.json"
+  },
+  "snapshots": [
+    {
+      "path": "Docs/PM/Tasks/M1-04/ARTIFACT_SNAPSHOT-r3.sha256",
+      "sha256": "638521DBFD9C56404921D8FBBEAF005EC395D06A4CF5521A01308D003E34024B",
+      "prefixes": [
+        "Artifacts/list-player-r3"
+      ]
+    },
+    {
+      "path": "Docs/PM/Tasks/M1-04/BUILD_SNAPSHOT-r3.sha256",
+      "sha256": "9B5556F1E77B260A5A8C6272250E617925706EA800B073515EC2846AFE1A1CFC",
+      "prefixes": [
+        "Artifacts/list-dev-20260906T071112Z/build"
+      ]
+    },
+    {
+      "path": "Docs/PM/Tasks/M1-04/CONTRACT_SNAPSHOT-r3.sha256",
+      "sha256": "E07C2846EFA1AA692170A65177EE5C59B9981E5342C05C536EF83849A16CDB68",
+      "prefixes": [
+        "Docs/Experiments/LIST_CONTRACT.md",
+        "Docs/Experiments/LIST_BENCHMARK_PROTOCOL.md",
+        "Docs/MVP/MEASUREMENT_PROTOCOL.md"
+      ]
+    }
+  ],
+  "scope": "Local core handoff: raw List runs, receipts, failures, logs, full Player and original protocols. Excludes media, charts, Editor diagnostics, source checkout and M0. Not a public release or full historical archive."
+}

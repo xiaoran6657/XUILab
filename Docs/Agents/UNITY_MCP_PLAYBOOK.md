@@ -27,6 +27,10 @@ env = { SystemRoot = 'C:\Windows' }
 
 本次发现并成功使用的资源包括 `mcpforunity://instances`、`mcpforunity://project/info` 和 `mcpforunity://editor/state`。这些只作为资源名称示例，仍应在实际会话中先发现。当前实例和状态见[环境快照](ENVIRONMENT_BASELINE.md)。
 
+## 持久操作记录
+
+Agent 发起单个 MCP build/test 前，按[操作追踪手册](UNITY_OPERATION_JOURNAL.md)冻结输入并持久 claim，再保存 job 回执、真实终态和恢复观测。中断后先 inspect；有 claim 但无回执时核对原 job，禁止直接重发。自定义菜单和手工构建尚不受此工具防重约束。
+
 ## 按操作类型执行
 
 | 操作 | 执行要点 | 完成证据 |
@@ -61,3 +65,9 @@ Package Manager错误需要保留文本并检查实际包查询终态，不能�
 断线先重新发现工具和实例，再核对原 job。工具确实不可用时记录失败阶段，可继续源码检查或离线报告；若需要用户在 Unity 打开 MCP 窗口或重连，只提出具体操作及成功信号。不要猜测端口、切换到其他工程、启动第二个服务或杀掉归属不明的进程。
 
 CLI 替代仅在适用授权和工程独占条件下使用；不要让第二个 Editor 同时打开正在操作的同一工程。Windows 后台辅助进程需隐藏窗口，且记录进程归属与停止方式。
+
+## 已观测的缓存与测试恢复
+
+INFRA-004 在 MCP 包 `acf5e3dd3b` 中实际遇到空闲快照持续 `stale_status`：`EditorStateCache.OnUpdate` 在状态不变时不更新时间戳。处理前先核对当前包源码与实际工程；仅在同一原因确认后，可通过 MCP execute_code 调用现有 `ForceUpdate` 重新采集，再读取标准 editor/state 验证 ready。不得改时间戳字段、把旧快照改为ready、借此绕过真实编译/导入/测试阻塞，或未经核对推广到其他包版本。[实际恢复证据](../PM/Tasks/INFRA-004/RECOVERY-r1.md)
+
+本轮 EditMode/PlayMode 终态后还出现过内存 runInBackground 已恢复false、磁盘仍为1的情况。输入哈希门禁应保持失败；核对仅该已知设置漂移后，用 Editor API 恢复原值并保存，再核验完整冻结输入。已有成功终态可以在恢复后重新交给 journal 验证，不得重新发起同一测试掩盖漂移；其他未保存用户资产不在自动保存范围内。

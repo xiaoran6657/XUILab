@@ -25,6 +25,9 @@
 - 所有写操作是否已停止，候选是否冻结：
 - Unity 前后状态、未结束 job／进程和占用：
 - build-id／run-id／实验与媒体索引：
+- operation-id／journal 相对目录或归档位置及 SHA-256：<不涉及填 not_applicable>
+- journal inspect 最后动作、原 job 与终态／恢复缺口：<缺失填 unavailable，禁止重发不确定操作>
+- 静态验收 ID → 本次 Brief ID → 实际证据：<引用验收映射，不复制状态>
 - 观察 → 假设 → 结果 → 学到什么：<实验适用>
 - 下一位应执行的具体动作：
 

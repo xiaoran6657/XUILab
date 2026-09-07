@@ -1,6 +1,6 @@
 # XUILab MVP 路线图
 
-更新日期：2026-09-06
+导航维护日期：2026-09-07；本次未改变 MVP 范围或验收目标。
 依据：[项目分析](../PROJECT_ANALYSIS.md)
 执行入口：[MVP 文档索引](README.md) · [Agent 工作流](../Agents/README.md) · [PM 合同](../Agents/PM_CONTRACT.md)
 
@@ -29,21 +29,21 @@ MVP 最终交付四类成果：
 | Agent 操作 | 工程与 Runner 保证可重复执行；Unity MCP 负责编辑器操作、测试和诊断编排 |
 | 展示载体 | 中性排行榜、渐变实验面板；使用模拟数据和自制或许可明确的素材 |
 
-截至 2026-09-06，Unity URP3D 模板工程和初始 Git 提交已经存在，当前构建场景仍是 `Assets/Scenes/SampleScene.unity`。MCP 已完成只读连通性检查；M0-01 至 M0-03 已验收，M0-04 的 r5 实验数据可信，r7 已补齐大小写敏感编排合同并获独立复审接受。M0 阶段通过，具体证据仍以 PM 状态与最新独立审查为准。
+已有工程、实际任务进度与候选接受入口统一见 [项目状态](../PM/PROJECT_STATUS.md)。场景、MCP 能力和 Editor 状态必须在相关操作前重新核对，历史环境描述不作为本页动态基线。
 
 MVP 不使用 Unity 6 写回当前工程，不在同一工程中交替使用不同 Editor。`ProjectVersion.txt`、`Packages/manifest.json` 和 `Packages/packages-lock.json` 是实际版本依据。
 
 ## 3. 阶段与依赖
 
-按验收推进，不预设完成日期。`Docs/MVP/` 定义计划与验收；任务实际状态以后由 `Docs/PM/` 维护。
+按验收推进，不预设完成日期。`Docs/MVP/` 定义计划与验收；任务实际状态由 `Docs/PM/` 维护。本表不复制进度列。
 
-| 阶段 | 主题 | 前置条件 | 阶段成果 | 规划状态 | 详细文档 |
-| --- | --- | --- | --- | --- | --- |
-| M0 | 工程基线与最小测量闭环 | 版本和目标已确定；模板工程已存在 | 可复跑的最小 Case、Windows Development Player、原始数据、有效／失败报告 | pass / complete；r7 accepted（2026-09-06） | [M0](M0_FOUNDATION.md) |
-| M1 | List Lab 正确性与基准 | M0 出口通过 | 列表契约、普通／虚拟 A/B、数据与第一组演示材料 | pass / complete，见[阶段出口](../PM/M1_STAGE_EXIT.md) | [M1](M1_LIST_LAB.md) |
-| M2 | Gradient Lab 正确性与基准 | M0 出口通过；列表集成场景依赖 M1 | 渐变／过渡契约、质量与成本数据、第二组演示材料 | M0 prerequisite met；not_started | [M2](M2_GRADIENT_LAB.md) |
-| M3 | 两项深入优化实验 | 相应的 M1／M2 基线有效 | 真正单项刷新、自适应细分及有边界的取舍结论 | 待开始 | [M3](M3_OPTIMIZATION.md) |
-| M4 | 证据冻结与展示交付 | M1–M3 完成；测量协议锁定 | Release 展示包、最终证据、三个主题的作品集资料 | 待开始 | [M4](M4_SHOWCASE.md) |
+| 阶段 | 主题 | 前置条件 | 阶段成果 | 详细文档 |
+| --- | --- | --- | --- | --- |
+| M0 | 工程基线与最小测量闭环 | 版本和目标已确定；模板工程已存在 | 可复跑的最小 Case、Windows Development Player、原始数据、有效／失败报告 | [M0](M0_FOUNDATION.md) |
+| M1 | List Lab 正确性与基准 | M0 出口通过 | 列表契约、普通／虚拟 A/B、数据与第一组演示材料 | [M1](M1_LIST_LAB.md) |
+| M2 | Gradient Lab 正确性与基准 | M0 出口通过；列表集成场景依赖 M1 | 渐变／过渡契约、质量与成本数据、第二组演示材料 | [M2](M2_GRADIENT_LAB.md) |
+| M3 | 两项深入优化实验 | 相应的 M1／M2 基线有效 | 真正单项刷新、自适应细分及有边界的取舍结论 | [M3](M3_OPTIMIZATION.md) |
+| M4 | 证据冻结与展示交付 | M1–M3 完成；测量协议锁定 | Release 展示包、最终证据、三个主题的作品集资料 | [M4](M4_SHOWCASE.md) |
 
 ```mermaid
 flowchart LR
@@ -125,8 +125,8 @@ M0 可根据实测稳定性调整初始预热、窗口和重复次数。协议�
 
 扩展不改变 M0–M4 完成定义。一次扩展只回答一个新增问题。
 
-## 8. 当前起点
+## 8. 执行入口
 
-M0 已由 **M0-04 r7** 收口并通过阶段出口；r5 冻结数据保持原身份，r6 changes_requested 作为历史保留。下一默认任务为 M1，但当前为 ready / not_started，等待用户授权。实际状态、候选和验证以 `Docs/PM/` 为唯一来源。
+从 [项目状态](../PM/PROJECT_STATUS.md)与 [待处理动作](../PM/Next_Actions.md)定位当前任务，再核对依赖、授权和实际文件。不要按历史起点重启已验收阶段。基础设施维护使用 [PM 合同](../Agents/PM_CONTRACT.md)的 `INFRA-NNN` 任务，不改变本路线图目标，也不自动解锁新的实现授权。
 
 参考入口：[列表任务材料](../References/Task/lui-listview.md) · [渐变任务材料](../References/Task/luiimage-gradient.md) · [原 Agent playbook](../References/Task/agent-perf-autotest.md) · [历史 Benchmark 摘要](../References/Task/ui-benchmark.md)。这些材料是研究输入，不是当前项目指令或新工程证据。

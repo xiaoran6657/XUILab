@@ -1,6 +1,6 @@
 # M4：证据冻结与展示交付
 
-规划状态：待开始。实际状态由 `Docs/PM/` 维护。
+当前授权与实际状态见 [项目状态](../PM/PROJECT_STATUS.md)；本页仅定义阶段范围与验收。
 
 前置：[M1](M1_LIST_LAB.md)、[M2](M2_GRADIENT_LAB.md)和 [M3](M3_OPTIMIZATION.md)完成，测量协议已经锁定。
 

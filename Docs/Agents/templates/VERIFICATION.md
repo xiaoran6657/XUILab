@@ -1,5 +1,7 @@
 # Verification — <Task-ID> — <rN>
 
+- candidate: <候选 ID>
+- brief_revision: r1
 - Validator／实际操作者／Implementer：
 - 请求配置／实际可观察配置：
 - Brief 修订／candidate-id／build-id／run-id：
@@ -16,6 +18,8 @@
 - Unity 前后状态、场景、Console 已有与新增错误：
 - 视觉观察及对应状态／图片：
 - 异步任务是否真正结束：
+- operation-id／原始 receipt、terminal、restore／journal 归档身份：
+- 静态验收 ID → 本次 Brief ID → 本候选证据：
 - 未执行项与原因：
 
 ## 性能任务附加检查

@@ -1,0 +1,789 @@
+{
+  "schemaVersion": "xuilab.acceptance-map/v1",
+  "tasks": [
+    {
+      "taskId": "M0-01",
+      "stage": "M0",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "dependsOn": [],
+      "acceptanceIds": [
+        "M0-01-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "identity",
+        "build",
+        "player",
+        "restoration"
+      ]
+    },
+    {
+      "taskId": "M0-02",
+      "stage": "M0",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "dependsOn": [
+        "M0-01"
+      ],
+      "acceptanceIds": [
+        "M0-02-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "editor",
+        "visual",
+        "restoration"
+      ]
+    },
+    {
+      "taskId": "M0-03",
+      "stage": "M0",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "dependsOn": [
+        "M0-02"
+      ],
+      "acceptanceIds": [
+        "M0-03-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "raw_data",
+        "measurement"
+      ]
+    },
+    {
+      "taskId": "M0-04",
+      "stage": "M0",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "dependsOn": [
+        "M0-03"
+      ],
+      "acceptanceIds": [
+        "M0-04-DELIVERY",
+        "M0-EXIT-01",
+        "M0-EXIT-02",
+        "M0-EXIT-03",
+        "M0-EXIT-04",
+        "M0-EXIT-05",
+        "M0-EXIT-06"
+      ],
+      "evidenceKinds": [
+        "failure",
+        "measurement",
+        "protocol"
+      ]
+    },
+    {
+      "taskId": "M1-01",
+      "stage": "M1",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "dependsOn": [
+        "M0-04"
+      ],
+      "acceptanceIds": [
+        "M1-01-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "source_license",
+        "contract"
+      ]
+    },
+    {
+      "taskId": "M1-02",
+      "stage": "M1",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "dependsOn": [
+        "M1-01"
+      ],
+      "acceptanceIds": [
+        "M1-02-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "lifecycle"
+      ]
+    },
+    {
+      "taskId": "M1-03",
+      "stage": "M1",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "dependsOn": [
+        "M1-02"
+      ],
+      "acceptanceIds": [
+        "M1-03-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "visual"
+      ]
+    },
+    {
+      "taskId": "M1-04",
+      "stage": "M1",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "dependsOn": [
+        "M1-03"
+      ],
+      "acceptanceIds": [
+        "M1-04-DELIVERY",
+        "M1-EXIT-01",
+        "M1-EXIT-02",
+        "M1-EXIT-03",
+        "M1-EXIT-04",
+        "M1-EXIT-05",
+        "M1-EXIT-06"
+      ],
+      "evidenceKinds": [
+        "player",
+        "raw_data",
+        "measurement",
+        "analysis",
+        "media"
+      ]
+    },
+    {
+      "taskId": "M2-01",
+      "stage": "M2",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "dependsOn": [
+        "M0-04"
+      ],
+      "acceptanceIds": [
+        "M2-01-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "contract",
+        "reference"
+      ]
+    },
+    {
+      "taskId": "M2-02",
+      "stage": "M2",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "dependsOn": [
+        "M2-01"
+      ],
+      "acceptanceIds": [
+        "M2-02-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "lifecycle"
+      ]
+    },
+    {
+      "taskId": "M2-03",
+      "stage": "M2",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "dependsOn": [
+        "M2-02"
+      ],
+      "acceptanceIds": [
+        "M2-03-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "visual",
+        "reference",
+        "integration"
+      ],
+      "conditionalDependsOn": [
+        {
+          "condition": "list-integration",
+          "taskId": "M1-04"
+        }
+      ]
+    },
+    {
+      "taskId": "M2-04",
+      "stage": "M2",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "dependsOn": [
+        "M2-03"
+      ],
+      "acceptanceIds": [
+        "M2-04-DELIVERY",
+        "M2-EXIT-01",
+        "M2-EXIT-02",
+        "M2-EXIT-03",
+        "M2-EXIT-04",
+        "M2-EXIT-05",
+        "M2-EXIT-06"
+      ],
+      "evidenceKinds": [
+        "player",
+        "raw_data",
+        "measurement",
+        "analysis",
+        "media"
+      ]
+    },
+    {
+      "taskId": "M3-L1",
+      "stage": "M3",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "dependsOn": [
+        "M1-04"
+      ],
+      "acceptanceIds": [
+        "M3-L1-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "diagnostic",
+        "hypothesis"
+      ]
+    },
+    {
+      "taskId": "M3-L2",
+      "stage": "M3",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "dependsOn": [
+        "M3-L1"
+      ],
+      "acceptanceIds": [
+        "M3-L2-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "raw_data",
+        "analysis"
+      ]
+    },
+    {
+      "taskId": "M3-G1",
+      "stage": "M3",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "dependsOn": [
+        "M2-04"
+      ],
+      "acceptanceIds": [
+        "M3-G1-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "reference",
+        "raw_data",
+        "analysis"
+      ]
+    },
+    {
+      "taskId": "M3-G2",
+      "stage": "M3",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "dependsOn": [
+        "M3-G1"
+      ],
+      "acceptanceIds": [
+        "M3-G2-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "correctness",
+        "raw_data",
+        "analysis"
+      ]
+    },
+    {
+      "taskId": "M3-05",
+      "stage": "M3",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "dependsOn": [
+        "M3-L2",
+        "M3-G2"
+      ],
+      "acceptanceIds": [
+        "M3-05-DELIVERY",
+        "M3-EXIT-01",
+        "M3-EXIT-02",
+        "M3-EXIT-03",
+        "M3-EXIT-04",
+        "M3-EXIT-05"
+      ],
+      "evidenceKinds": [
+        "decision",
+        "regression",
+        "learning"
+      ]
+    },
+    {
+      "taskId": "M4-01",
+      "stage": "M4",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "dependsOn": [
+        "M1-04",
+        "M2-04",
+        "M3-05"
+      ],
+      "acceptanceIds": [
+        "M4-01-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "identity",
+        "build",
+        "raw_data",
+        "review"
+      ]
+    },
+    {
+      "taskId": "M4-02",
+      "stage": "M4",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "dependsOn": [
+        "M4-01"
+      ],
+      "acceptanceIds": [
+        "M4-02-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "build",
+        "player",
+        "visual"
+      ]
+    },
+    {
+      "taskId": "M4-03",
+      "stage": "M4",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "dependsOn": [
+        "M4-02"
+      ],
+      "acceptanceIds": [
+        "M4-03-DELIVERY"
+      ],
+      "evidenceKinds": [
+        "analysis",
+        "media"
+      ]
+    },
+    {
+      "taskId": "M4-04",
+      "stage": "M4",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "dependsOn": [
+        "M4-03"
+      ],
+      "acceptanceIds": [
+        "M4-04-DELIVERY",
+        "M4-EXIT-01",
+        "M4-EXIT-02",
+        "M4-EXIT-03",
+        "M4-EXIT-04",
+        "M4-EXIT-05",
+        "M4-EXIT-06",
+        "M4-EXIT-07"
+      ],
+      "evidenceKinds": [
+        "case_study",
+        "index",
+        "license",
+        "learning"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "M0-01-DELIVERY",
+      "taskId": "M0-01",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M0-01 | 验收现有工程与工具链基线 | 版本、依赖、Git、Windows 构建能力记录 | [M0](M0_FOUNDATION.md) |",
+      "description": "版本、依赖、Git、Windows 构建能力记录"
+    },
+    {
+      "id": "M0-02-DELIVERY",
+      "taskId": "M0-02",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M0-02 | 建立最小场景与程序集边界 | Smoke 场景、Runtime／Editor／Tests、MCP 能力记录 | [M0](M0_FOUNDATION.md) |",
+      "description": "Smoke 场景、Runtime／Editor／Tests、MCP 能力记录"
+    },
+    {
+      "id": "M0-03-DELIVERY",
+      "taskId": "M0-03",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M0-03 | 建立确定性 Runner 与数据合同 | Case、采样、原始数据、结构化摘要与报告 | [M0](M0_FOUNDATION.md) |",
+      "description": "Case、采样、原始数据、结构化摘要与报告"
+    },
+    {
+      "id": "M0-04-DELIVERY",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M0-04 | 验证失败处理并校准协议 | 正常／失败／无效样例和初版 playbook | [M0](M0_FOUNDATION.md) |",
+      "description": "正常／失败／无效样例和初版 playbook"
+    },
+    {
+      "id": "M1-01-DELIVERY",
+      "taskId": "M1-01",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M1-01 | 锁定来源与列表合同 | 第三方来源、接口、池和生命周期契约 | [M1](M1_LIST_LAB.md) |",
+      "description": "第三方来源、接口、池和生命周期契约"
+    },
+    {
+      "id": "M1-02-DELIVERY",
+      "taskId": "M1-02",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M1-02 | 建立普通与虚拟列表 | 两种可比实现及池正确性回归 | [M1](M1_LIST_LAB.md) |",
+      "description": "两种可比实现及池正确性回归"
+    },
+    {
+      "id": "M1-03-DELIVERY",
+      "taskId": "M1-03",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M1-03 | 完成恢复、Wrapper、多模板与渐隐 | 展示场景、行为和视觉证据 | [M1](M1_LIST_LAB.md) |",
+      "description": "展示场景、行为和视觉证据"
+    },
+    {
+      "id": "M1-04-DELIVERY",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M1-04 | 执行列表 A/B | 原始数据、图表、报告与视频草稿 | [M1](M1_LIST_LAB.md) |",
+      "description": "原始数据、图表、报告与视频草稿"
+    },
+    {
+      "id": "M2-01-DELIVERY",
+      "taskId": "M2-01",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M2-01 | 冻结渐变与过渡合同 | 数学语义、边界、支持／降级矩阵 | [M2](M2_GRADIENT_LAB.md) |",
+      "description": "数学语义、边界、支持／降级矩阵"
+    },
+    {
+      "id": "M2-02-DELIVERY",
+      "taskId": "M2-02",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M2-02 | 实现固定细分组件 | GradientEffect、过渡控制和正确性测试 | [M2](M2_GRADIENT_LAB.md) |",
+      "description": "GradientEffect、过渡控制和正确性测试"
+    },
+    {
+      "id": "M2-03-DELIVERY",
+      "taskId": "M2-03",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M2-03 | 建立质量与集成场景 | 参考图、网格／裁剪场景和视觉证据 | [M2](M2_GRADIENT_LAB.md) |",
+      "description": "参考图、网格／裁剪场景和视觉证据"
+    },
+    {
+      "id": "M2-04-DELIVERY",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M2-04 | 执行渐变成本矩阵 | 静态／动态数据、图表、报告与视频草稿 | [M2](M2_GRADIENT_LAB.md) |",
+      "description": "静态／动态数据、图表、报告与视频草稿"
+    },
+    {
+      "id": "M3-L1-DELIVERY",
+      "taskId": "M3-L1",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M3-L1 | 定位窗口刷新的实际成本 | 基线 trace、假设与指标 | [M3](M3_OPTIMIZATION.md) |",
+      "description": "基线 trace、假设与指标"
+    },
+    {
+      "id": "M3-L2-DELIVERY",
+      "taskId": "M3-L2",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M3-L2 | 实现真正单项刷新 | index→cell 映射、正确性和对照数据 | [M3](M3_OPTIMIZATION.md) |",
+      "description": "index→cell 映射、正确性和对照数据"
+    },
+    {
+      "id": "M3-G1-DELIVERY",
+      "taskId": "M3-G1",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M3-G1 | 建立固定段数质量／成本曲线 | 8／16／32／64 段扫描 | [M3](M3_OPTIMIZATION.md) |",
+      "description": "8／16／32／64 段扫描"
+    },
+    {
+      "id": "M3-G2-DELIVERY",
+      "taskId": "M3-G2",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M3-G2 | 实现有上限的自适应细分 | 误差控制、回退策略和对照数据 | [M3](M3_OPTIMIZATION.md) |",
+      "description": "误差控制、回退策略和对照数据"
+    },
+    {
+      "id": "M3-05-DELIVERY",
+      "taskId": "M3-05",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M3-05 | 汇总优化决策 | 默认策略、适用边界和学习复盘 | [M3](M3_OPTIMIZATION.md) |",
+      "description": "默认策略、适用边界和学习复盘"
+    },
+    {
+      "id": "M4-01-DELIVERY",
+      "taskId": "M4-01",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M4-01 | 冻结候选并复跑代表矩阵 | 最终证据索引与一致性审查 | [M4](M4_SHOWCASE.md) |",
+      "description": "最终证据索引与一致性审查"
+    },
+    {
+      "id": "M4-02-DELIVERY",
+      "taskId": "M4-02",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M4-02 | 生成 Release 展示构建 | 展示包、运行说明与构建身份 | [M4](M4_SHOWCASE.md) |",
+      "description": "展示包、运行说明与构建身份"
+    },
+    {
+      "id": "M4-03-DELIVERY",
+      "taskId": "M4-03",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M4-03 | 生成图表与媒体 | 封面、说明图、短视频 | [M4](M4_SHOWCASE.md) |",
+      "description": "封面、说明图、短视频"
+    },
+    {
+      "id": "M4-04-DELIVERY",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/ROADMAP.md",
+      "sourceText": "| M4-04 | 整理案例与验收 | 三份案例说明、复跑 playbook、MVP 记录 | [M4](M4_SHOWCASE.md) |",
+      "description": "三份案例说明、复跑 playbook、MVP 记录"
+    },
+    {
+      "id": "M0-EXIT-01",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "sourceText": "- M0-01 至 M0-04 的 required 项均有实际证据；未运行项目没有被标记通过。",
+      "description": "M0-01 至 M0-04 的 required 项均有实际证据；未运行项目没有被标记通过。"
+    },
+    {
+      "id": "M0-EXIT-02",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "sourceText": "- 同一配置可复跑并产生结构一致的 run 目录，报告能反向定位环境、候选和原始数据。",
+      "description": "同一配置可复跑并产生结构一致的 run 目录，报告能反向定位环境、候选和原始数据。"
+    },
+    {
+      "id": "M0-EXIT-03",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "sourceText": "- 正常、fail、invalid 三类路径至少各有一个可解释样例，失败不会变成 success。",
+      "description": "正常、fail、invalid 三类路径至少各有一个可解释样例，失败不会变成 success。"
+    },
+    {
+      "id": "M0-EXIT-04",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "sourceText": "- Editor 和 Development Player 数据明确分开；此阶段不发布优化收益。",
+      "description": "Editor 和 Development Player 数据明确分开；此阶段不发布优化收益。"
+    },
+    {
+      "id": "M0-EXIT-05",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "sourceText": "- 协议 v1 和复跑步骤足够让下一 Agent 无需重写 Runner 即可增加 List Case。",
+      "description": "协议 v1 和复跑步骤足够让下一 Agent 无需重写 Runner 即可增加 List Case。"
+    },
+    {
+      "id": "M0-EXIT-06",
+      "taskId": "M0-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M0_FOUNDATION.md",
+      "sourceText": "学习检查：能够解释帧间隔、CPU 工作时间、UI marker、分配字节、GC 回收和存活内存的区别，并指出采样代码如何干扰被测对象。",
+      "description": "学习检查：能够解释帧间隔、CPU 工作时间、UI marker、分配字节、GC 回收和存活内存的区别，并指出采样代码如何干扰被测对象。"
+    },
+    {
+      "id": "M1-EXIT-01",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "sourceText": "- 所有池与复用 required Case 通过；重复归还缺口有可复现测试和修复证据。",
+      "description": "所有池与复用 required Case 通过；重复归还缺口有可复现测试和修复证据。"
+    },
+    {
+      "id": "M1-EXIT-02",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "sourceText": "- 普通／虚拟列表在共同规模下使用相同输入和动作，并产出有效 Windows Player A/B。",
+      "description": "普通／虚拟列表在共同规模下使用相同输入和动作，并产出有效 Windows Player A/B。"
+    },
+    {
+      "id": "M1-EXIT-03",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "sourceText": "- 虚拟实例数量对 N 保持有界，实际预算由视口、预取和模板合同解释，不写死为 8。",
+      "description": "虚拟实例数量对 N 保持有界，实际预算由视口、预取和模板合同解释，不写死为 8。"
+    },
+    {
+      "id": "M1-EXIT-04",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "sourceText": "- 冷开、滚动、恢复、清空和重开的功能与性能结论可追溯到 run-id。",
+      "description": "冷开、滚动、恢复、清空和重开的功能与性能结论可追溯到 run-id。"
+    },
+    {
+      "id": "M1-EXIT-05",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "sourceText": "- 第一组说明图和短视频草稿存在；其中实时叠层不被当作正式数据。",
+      "description": "第一组说明图和短视频草稿存在；其中实时叠层不被当作正式数据。"
+    },
+    {
+      "id": "M1-EXIT-06",
+      "taskId": "M1-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M1_LIST_LAB.md",
+      "sourceText": "学习检查：解释虚拟化减少了哪些 GameObject／布局／渲染准备成本、哪些数据或索引工作仍为 O(N)，并能说明一次布局与动画冲突、一次池归还错误的根因和保护机制。",
+      "description": "学习检查：解释虚拟化减少了哪些 GameObject／布局／渲染准备成本、哪些数据或索引工作仍为 O(N)，并能说明一次布局与动画冲突、一次池归还错误的根因和保护机制。"
+    },
+    {
+      "id": "M2-EXIT-01",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "sourceText": "- 数学、拓扑、通道、Image Type 降级和 transition 生命周期 required Case 通过。",
+      "description": "数学、拓扑、通道、Image Type 降级和 transition 生命周期 required Case 通过。"
+    },
+    {
+      "id": "M2-EXIT-02",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "sourceText": "- 静态与动态至少各有一组有效 Windows Player 对照；质量和性能数据对应同一冻结语义。",
+      "description": "静态与动态至少各有一组有效 Windows Player 对照；质量和性能数据对应同一冻结语义。"
+    },
+    {
+      "id": "M2-EXIT-03",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "sourceText": "- 报告能够解释顶点增加、Canvas rebuild、材质／纹理／裁剪和 batches 的关系。",
+      "description": "报告能够解释顶点增加、Canvas rebuild、材质／纹理／裁剪和 batches 的关系。"
+    },
+    {
+      "id": "M2-EXIT-04",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "sourceText": "- 相同值重复赋值不会由组件主动持续 dirty；动态场景的工作量和可见数明确。",
+      "description": "相同值重复赋值不会由组件主动持续 dirty；动态场景的工作量和可见数明确。"
+    },
+    {
+      "id": "M2-EXIT-05",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "sourceText": "- 第二组说明图和视频草稿存在，标明参数、fallback 和正式 run-id。",
+      "description": "第二组说明图和视频草稿存在，标明参数、fallback 和正式 run-id。"
+    },
+    {
+      "id": "M2-EXIT-06",
+      "taskId": "M2-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M2_GRADIENT_LAB.md",
+      "sourceText": "学习检查：解释四顶点为何不能表达一般非线性曲线、细分成本发生在哪里，以及更密网格为何不必然消除颜色量化色带。",
+      "description": "学习检查：解释四顶点为何不能表达一般非线性曲线、细分成本发生在哪里，以及更密网格为何不必然消除颜色量化色带。"
+    },
+    {
+      "id": "M3-EXIT-01",
+      "taskId": "M3-05",
+      "requirement": "required",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "sourceText": "- M3-L2 和 M3-G2 的 required 正确性回归通过，数据绑定到冻结候选和协议。",
+      "description": "M3-L2 和 M3-G2 的 required 正确性回归通过，数据绑定到冻结候选和协议。"
+    },
+    {
+      "id": "M3-EXIT-02",
+      "taskId": "M3-05",
+      "requirement": "required",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "sourceText": "- 两项实验均有有效对照或诚实的 invalid／inconclusive 原因及恢复计划；没有选择性删除运行。",
+      "description": "两项实验均有有效对照或诚实的 invalid／inconclusive 原因及恢复计划；没有选择性删除运行。"
+    },
+    {
+      "id": "M3-EXIT-03",
+      "taskId": "M3-05",
+      "requirement": "required",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "sourceText": "- M3-05 选择了最终默认策略，M1／M2 代表回归已复跑。",
+      "description": "M3-05 选择了最终默认策略，M1／M2 代表回归已复跑。"
+    },
+    {
+      "id": "M3-EXIT-04",
+      "taskId": "M3-05",
+      "requirement": "required",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "sourceText": "- 负结果和失败方案保留在实验记录中，作品集文案不只展示漂亮数字。",
+      "description": "负结果和失败方案保留在实验记录中，作品集文案不只展示漂亮数字。"
+    },
+    {
+      "id": "M3-EXIT-05",
+      "taskId": "M3-05",
+      "requirement": "required",
+      "source": "Docs/MVP/M3_OPTIMIZATION.md",
+      "sourceText": "- 变高缓存、手工定位和 Shader 对照仍属于扩展，未替代两个必需实验。",
+      "description": "变高缓存、手工定位和 Shader 对照仍属于扩展，未替代两个必需实验。"
+    },
+    {
+      "id": "M4-EXIT-01",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- 固定 Unity 版本、依赖和最终提交可重建，Windows Release 包在目标环境运行。",
+      "description": "固定 Unity 版本、依赖和最终提交可重建，Windows Release 包在目标环境运行。"
+    },
+    {
+      "id": "M4-EXIT-02",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- List／Gradient required 回归和两项优化决策通过，未验证项明确。",
+      "description": "List／Gradient required 回归和两项优化决策通过，未验证项明确。"
+    },
+    {
+      "id": "M4-EXIT-03",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- 每条公开性能结论可定位到有效 run、原始数据、统计、构建和环境。",
+      "description": "每条公开性能结论可定位到有效 run、原始数据、统计、构建和环境。"
+    },
+    {
+      "id": "M4-EXIT-04",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- Runner 能展示正常、fail、invalid，错误状态没有被报告为 success。",
+      "description": "Runner 能展示正常、fail、invalid，错误状态没有被报告为 success。"
+    },
+    {
+      "id": "M4-EXIT-05",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- 三个主题的图片、视频、说明和数据索引齐备，链接及哈希有效。",
+      "description": "三个主题的图片、视频、说明和数据索引齐备，链接及哈希有效。"
+    },
+    {
+      "id": "M4-EXIT-06",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- 来源、许可、个人贡献和结果边界完成审查。",
+      "description": "来源、许可、个人贡献和结果边界完成审查。"
+    },
+    {
+      "id": "M4-EXIT-07",
+      "taskId": "M4-04",
+      "requirement": "required",
+      "source": "Docs/MVP/M4_SHOWCASE.md",
+      "sourceText": "- 用户完成两项核心实验的解释复盘；技术完成与复盘状态分别记录。",
+      "description": "用户完成两项核心实验的解释复盘；技术完成与复盘状态分别记录。"
+    }
+  ]
+}

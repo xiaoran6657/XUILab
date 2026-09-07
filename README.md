@@ -8,11 +8,11 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 
 - Unity 工程已经创建，路径为 [`XUILab/`](XUILab/)。
 - 固定使用 **Unity 2022.3.45f1c1**；当前工程依赖 URP 14.0.11、UGUI 1.0.0、TMP 3.0.9。
-- Unity MCP 已接入；M0-01 至 M0-03 已完成固定 Editor、Windows Development Player、Smoke 场景／程序集和最小 Runner 数据合同验收。
-- M0-04 的第三次审查与 r6 post-freeze P2 均已由 r7 关闭；三路独立复审 accept，M0 阶段出口为 `pass / complete`。
-- M1 List Lab 已通过[阶段出口验收](Docs/PM/M1_STAGE_EXIT.md)，实现、Player矩阵、图表与30秒演示齐备，并已获授权[本地归档](Docs/PM/M1_LOCAL_CHECKPOINT.md)；M2未启动。历史采样数据仅用于工程探索。
+- 当前任务、阶段出口、授权范围和最近交接统一见 [项目状态](Docs/PM/PROJECT_STATUS.md)；待处理动作见 [Next Actions](Docs/PM/Next_Actions.md)。本入口不复制动态验收状态。
 
 最新进度以 [`Docs/PM/PROJECT_STATUS.md`](Docs/PM/PROJECT_STATUS.md) 和各任务状态记录为准；历史 accepted candidate 可能被后续审查取代，不能只看较早 review 推断阶段仍通过。
+
+离线验证、证据搬迁、出图和计划恢复从 [统一证据入口](Docs/Experiments/EVIDENCE.md) 开始；依赖和可复制命令见 [复现工具手册](Docs/Agents/REPRODUCIBILITY_PLAYBOOK.md)。
 
 List Lab：[Player实验报告](Docs/Experiments/LIST_BENCHMARK_RESULTS.md) · [实现与学习案例](Docs/Experiments/LIST_LAB_CASE_STUDY.md) · [30秒演示](Artifacts/list-media/list-demo-r4.mp4)。展示场景为 `XUILab/Assets/XUILab/Scenes/ListLab.unity`；Editor最近观测时间及状态见[交接记录](Docs/PM/PROJECT_STATUS.md)，操作前重新查询。
 
@@ -25,7 +25,7 @@ List Lab：[Player实验报告](Docs/Experiments/LIST_BENCHMARK_RESULTS.md) · [
 | Agent 性能测试 | 配置驱动的 Windows Player 测量、有效性判断、失败取证、原始数据与报告 |
 | Showcase | 可运行构建、说明图、短视频、技术说明和可追溯数据索引 |
 
-详细范围、任务依赖和验收标准见 [MVP 路线图](Docs/MVP/ROADMAP.md)。结果允许是改善、退化、没有清晰差异或无法下结论；项目不会为展示效果预设优化百分比。
+详细范围、任务依赖和验收标准见 [MVP 路线图](Docs/MVP/ROADMAP.md)。基础设施使用独立的 `INFRA-NNN` 任务，按 [PM 合同](Docs/Agents/PM_CONTRACT.md)管理，不计入 MVP 功能进度。结果允许是改善、退化、没有清晰差异或无法下结论；项目不会为展示效果预设优化百分比。
 
 ## 打开工程
 

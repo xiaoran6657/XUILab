@@ -1027,6 +1027,7 @@ def _validate_run(
     root: Path,
     spec: Mapping[str, Any],
     manifest: Mapping[str, Any],
+    recorded_root: Optional[str] = None,
 ) -> Dict[str, Any]:
     run_dir = root / spec["runId"]
     context = spec["runId"]
@@ -1057,7 +1058,10 @@ def _validate_run(
     _read_text_file(run_dir / "events.log", context + "/events.log")
     _read_text_file(run_dir / "report.md", context + "/report.md")
 
-    config = _validate_config(_read_json(config_path), spec, manifest, root, context + "/config")
+    # An explicit relocation mapping changes only path comparison, never bytes,
+    # identities, hashes, statistical checks or the rest of the config contract.
+    config = _validate_config(_read_json(config_path), spec, manifest,
+                              root if recorded_root is None else recorded_root, context + "/config")
     environment, environment_fingerprint, capability_by_name = _validate_environment(
         _read_json(environment_path), spec, context + "/environment"
     )
@@ -1145,7 +1149,8 @@ def _aggregate_records(records: Sequence[Mapping[str, Any]]) -> Dict[str, Any]:
     return result
 
 
-def verify(root: Path, manifest: Mapping[str, Any], plan: Optional[str] = None) -> Dict[str, Any]:
+def verify(root: Path, manifest: Mapping[str, Any], plan: Optional[str] = None,
+           recorded_root: Optional[str] = None) -> Dict[str, Any]:
     """Verify all manifest runs and return the report object.
 
     ``manifest`` may be an already parsed object, which keeps the function
@@ -1164,7 +1169,7 @@ def verify(root: Path, manifest: Mapping[str, Any], plan: Optional[str] = None) 
     results: List[Dict[str, Any]] = []
     env_by_target: Dict[int, str] = {}
     for spec in manifest_value["runs"]:
-        result = _validate_run(root, spec, manifest_value)
+        result = _validate_run(root, spec, manifest_value, recorded_root=recorded_root)
         fingerprint = result["environmentFingerprint"]
         target = spec["targetFrameRate"]
         if target in env_by_target and env_by_target[target] != fingerprint:
@@ -1257,6 +1262,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Verify List Lab benchmark evidence.")
     parser.add_argument("--root", default="Artifacts", help="artifact root containing run directories")
     parser.add_argument("--manifest", required=True, help="strict JSON manifest")
+    parser.add_argument("--recorded-root", help="explicit original outputDirectory when checking a relocated copy")
     parser.add_argument("--out", required=True, help="JSON report path")
     parser.add_argument(
         "--plan",
@@ -1268,7 +1274,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     try:
         root = Path(args.root)
         manifest = _load_manifest(Path(args.manifest))
-        report = verify(root, manifest, plan=args.plan)
+        report = verify(root, manifest, plan=args.plan, recorded_root=args.recorded_root)
         _write_json(Path(args.out), report)
         print("PASS runs={} aggregates={} out={}".format(report["runCount"], len(report["aggregates"]), args.out))
         return 0

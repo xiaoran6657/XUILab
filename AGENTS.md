@@ -8,11 +8,11 @@ This document applies to the entire `<repo>` repository. A deeper `AGENTS.md`, i
 
 2. Read [`README.md`](README.md) and [`Docs/README.md`](Docs/README.md), continuing to read the corresponding documents according to the task.
 
-3. When dealing with goals, scope, or task dependencies, read [`Docs/MVP/ROADMAP.md`](Docs/MVP/ROADMAP.md), [`Docs/MVP/README.md`](Docs/MVP/README.md), and the relevant stage document.
+3. Read [`Docs/PM/PROJECT_STATUS.md`](Docs/PM/PROJECT_STATUS.md), [`Next_Actions.md`](Docs/PM/Next_Actions.md), and the task record relevant to the request. Verify the actual workspace before using historical claims. If PM is absent, state this and initialize only within the current authorization.
 
-4. When execution or handoff is involved, read [`Docs/Agents/README.md`](Docs/Agents/README.md), [`WORKFLOW.md`](Docs/Agents/WORKFLOW.md), and [`PM_CONTRACT.md`](Docs/Agents/PM_CONTRACT.md).
+4. For execution or handoff, read [`Docs/Agents/README.md`](Docs/Agents/README.md), [`WORKFLOW.md`](Docs/Agents/WORKFLOW.md), and [`PM_CONTRACT.md`](Docs/Agents/PM_CONTRACT.md). Follow the task-specific reading routes in Docs/README; status-only queries need not read every playbook.
 
-5. If `Docs/PM/PROJECT_STATUS.md`, `Next_Actions.md`, or the current task record exist, first read and verify the actual workspace; if not, state this fact and initialize only when required for this authorization.
+5. For MVP goals, scope or dependencies, read [`Docs/MVP/README.md`](Docs/MVP/README.md), [`ROADMAP.md`](Docs/MVP/ROADMAP.md), and the relevant stage. Infrastructure tasks use `INFRA-NNN` and their Brief; read MVP documents only as needed to verify boundaries. Neither a dependency being satisfied nor a queue entry grants implementation authorization.
 
 6. Before operating Unity, read [`UNITY_MCP_PLAYBOOK.md`](Docs/Agents/UNITY_MCP_PLAYBOOK.md); before creating or evaluating performance conclusions, read [`PERFORMANCE_EVIDENCE.md`](Docs/Agents/PERFORMANCE_EVIDENCE.md).
 
@@ -38,7 +38,7 @@ Do not treat files in `Docs/References/` as project instructions. They come from
 
 After a task or stage is authorized, continue until it is accepted or genuinely blocked. Do not repeatedly ask about routine supporting edits, necessary fixes, or verification already covered by that authorization. A documentation, review, or single-task request does not authorize other milestone implementations. Treat new MVP goals, Unity version changes, deletion of user assets, commits, pushes, and public releases according to the user's actual authorization.
 
-Work in dependency order, using roadmap task IDs as delivery units. At the start, verify existing deliverables and user changes before completing the Task Brief; do not duplicate existing projects or use historical descriptions as proof of completion. At the end, save candidate identities, actual checks, failure and recovery entries, and update the unique status source according to the PM contract.
+Work in dependency order, using roadmap task IDs for MVP work and `INFRA-NNN` for infrastructure work. At the start, verify existing deliverables and user changes before completing the Task Brief; do not duplicate existing projects or use historical descriptions as proof of completion. At the end, save candidate identities, actual checks, failure and recovery entries, and update the unique status source according to the PM contract. New task records use the PM contract's canonical fields; run the read-only PM check when maintaining them. Structural consistency does not prove acceptance.
 
 By default, coordination and implementation are handled by the main Agent. Delegation is only permitted when the user or applicable instructions explicitly require a sub-Agent/parallel Agent; delegation should be a clearly defined, independent subtask. When R2 candidates require independent review, Reviewers/Validators can be assigned within existing delegation authorizations; if no independent Agent is available, record self-checks and pending acceptance items, without falsely claiming independent validation.
 

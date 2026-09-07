@@ -2,10 +2,14 @@
 
 > 模板；填写后存入 `Docs/PM/Tasks/<Task-ID>/TASK_BRIEF.md`。删除无关提示，不能把占位符当事实。
 
-- 合同修订：<r1>
-- 路线图任务／依赖：<ID 与证据链接>
+- brief_revision: r1
+- task_type: <mvp 或 infra>
+- risk: <R0/R1/R2/R3>
+- review_required: <true 或 false；R2/R3 必须 true>
+- execution_required: <true 或 false>
+- 任务范围依据：<MVP 阶段或 INFRA 授权目标；依赖状态在 TASK_STATUS 唯一维护>
 - 用户授权依据：<请求范围；已有授权即可，不人为增加审批>
-- 风险级别：<R0/R1/R2/R3；理由>
+- 风险理由：<解释顶部 risk 的依据；不再填写第二个等级>
 - 流程状态入口：<同目录 TASK_STATUS.md；此处不复制状态>
 
 ## 目标与范围
@@ -27,13 +31,21 @@
 
 ## 验收矩阵
 
-| 验收目标 | required / not applicable | 方法与成功判据 | 证据产物 |
-| --- | --- | --- | --- |
-| <具体目标> | <值；不适用需理由> | <可核对判据> | <预期位置> |
+| ID | requirement | 判据 |
+| --- | --- | --- |
+| <A1 等唯一 ID> | <required 或 not_applicable> | <目标、方法、成功判据、预期证据；不适用写理由> |
 
 - 性能实验协议：<链接；变量、不变量、指标能力、统计及有效性规则>
 - 是否要求独立审查／独立执行：<分别填写；按风险决定>
 - 用户学习复盘目标：<如适用；与技术完成分开记录>
+
+## 路线图验收映射
+
+新 v1 MVP 任务按[静态映射](../../MVP/ACCEPTANCE_MAP.md)填写本任务所有 acceptanceIds，绑定到上方 required ID；INFRA 填 not_applicable，不伪造 MVP 映射。
+
+| acceptance_id | brief_id |
+| --- | --- |
+| <稳定条款 ID> | <本次 required ID> |
 
 ## 分工与执行条件
 

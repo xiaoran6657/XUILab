@@ -2,31 +2,40 @@
 
 > 模板；此文件为单个任务流程状态的唯一来源，由主 Agent 更新。
 
-- 更新日期／负责人：
-- Brief 修订／链接：
-- state：<proposed / ready / running / frozen / verifying / rework / blocked / done / cancelled>
-- 当前候选：<candidate-id 或尚未冻结>
-- commit／dirty／源文件清单与哈希：
-- 当前分派：<角色、Agent ID、尝试号；无则 none>
-- Unity 占用：<指向 PROJECT_STATUS.md 的唯一活动记录>
+- pm_schema: xuilab.pm/v1
+- task_id: <目录 Task-ID>
+- task_type: <mvp 或 infra>
+- state: proposed
+- brief: [Brief](TASK_BRIEF.md)
+- brief_revision: r1
+- candidate: none
+- dependencies: none
+- blockers: none
+- recovery: none
+- next_action: <本次下一条具体动作>
+- review: not_run
+- verification: not_run
+- review_independence: not_run
+- execution_independence: not_run
+
+固定键与枚举使用 [PM 合同](../PM_CONTRACT.md)，每键恰好一次；创建实际记录后，将此说明链接改为该记录到合同的相对路径或删除。候选哈希／未跟踪清单、分派身份、更新日期与原因写交接正文，不混入字段值。
 
 ## 验收状态
 
-| Brief 验收项 | 检查结果 | 证据与对应候选 | 未满足原因 |
+| ID | result | candidate | evidence |
 | --- | --- | --- | --- |
-| <ID> | <pass/fail/not_run/not_applicable> | <真实文件> | <原因> |
+| <与 Brief 对应的 ID> | not_run | none | none |
 
-- review_independence：<independent / self-check / not_run / not_applicable>
-- execution_independence：<independent / shared-operator / self-check / not_run / not_applicable>
 - measurement_validity：<valid / invalid / not_assessed；非性能任务说明不适用>
 - performance_comparison：<improved / regressed / no_clear_difference / inconclusive；非性能任务说明不适用>
 - 学习复盘：<未安排／待复盘／已完成／不适用；证据链接>
 
-## 收口或阻塞
+## 交接
 
 - 当前可支持的结论：
-- 首个未解决问题／外部条件：
-- 尚未运行或未审查内容：
-- 恢复条件及第一步动作：
-- 最新 Handoff／Review／Verification：
+- 尚未运行或未审查内容及原因：
+- 候选文件／哈希、commit／dirty、未跟踪文件：
+- 当前分派、请求配置／可观察配置：
+- Unity 占用：<链接到全局唯一登记；未操作不能声称实时状态>
+- 最新 Handoff：<R0 可将自检、候选和交接直接保存在本段>
 - 状态变更记录：<时间、前后状态、依据；done 需覆盖全部 required 项>

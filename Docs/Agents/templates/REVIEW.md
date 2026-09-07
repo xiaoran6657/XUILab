@@ -1,10 +1,13 @@
 # Review — <Task-ID> — <rN>
 
+- candidate: <候选 ID>
+- brief_revision: r1
+- verdict: <accept / changes_requested / not_reviewable>
 - Reviewer／Implementer 身份：
 - 请求配置／实际可观察配置：
 - Brief 修订／candidate-id／实际文件身份：
 - review_independence：<independent / self-check；理由>
-- 结论：<accept / changes_requested / not_reviewable>
+- verdict 的理由：<具体接受范围或不接受原因；不另存第二个结论值>
 
 ## 审查范围
 

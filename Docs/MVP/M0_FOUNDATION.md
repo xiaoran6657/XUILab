@@ -1,10 +1,10 @@
 # M0：工程基线与最小测量闭环
 
-阶段状态：`pass / complete`（2026-09-06）；第三次审查与 r6 post-freeze P2 均由 r7 关闭，三路独立复审 accept。r5 数据保持原身份和可信性，实际任务与证据见 [`Docs/PM/M0_STAGE_EXIT.md`](../PM/M0_STAGE_EXIT.md)。
+阶段出口与实际证据见 [M0_STAGE_EXIT](../PM/M0_STAGE_EXIT.md)；当前执行位置见 [项目状态](../PM/PROJECT_STATUS.md)。本页定义稳定目标，不维护动态验收状态。
 
 前置：[MVP 固定决策](ROADMAP.md)已确定；Unity 模板工程和初始提交已存在。
 
-后继：[M1 List Lab](M1_LIST_LAB.md)与 [M2 独立 Gradient Lab](M2_GRADIENT_LAB.md) 的 M0 前置已解锁；本轮未启动后继阶段。
+后继：[M1 List Lab](M1_LIST_LAB.md)与 [M2 独立 Gradient Lab](M2_GRADIENT_LAB.md)依赖 M0 出口；授权与实际启动状态见 [项目状态](../PM/PROJECT_STATUS.md)，依赖满足不代表获得执行授权。
 
 ## 1. 主题与目标
 

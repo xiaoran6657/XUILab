@@ -1,6 +1,6 @@
 # M2：Gradient Lab 正确性与基准
 
-规划状态：待开始。实际状态由 `Docs/PM/` 维护。
+当前授权与实际状态见 [项目状态](../PM/PROJECT_STATUS.md)；本页仅定义阶段范围与验收。
 
 前置：[M0](M0_FOUNDATION.md)出口通过；独立 Gradient Lab 不依赖 M1，裁剪列表集成依赖 [M1](M1_LIST_LAB.md)。
 

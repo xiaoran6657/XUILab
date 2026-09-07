@@ -6,16 +6,22 @@
 
 | 读者／目的 | 阅读顺序 |
 | --- | --- |
-| 第一次了解项目 | [项目分析](PROJECT_ANALYSIS.md) → [MVP 路线图](MVP/ROADMAP.md) |
-| 准备执行任务 | [MVP 文档索引](MVP/README.md) → 当前阶段文档 → [Agent 工作流](Agents/README.md) → [PM 合同](Agents/PM_CONTRACT.md) |
+| 查询当前进度 | [项目状态](PM/PROJECT_STATUS.md) → [待处理动作](PM/Next_Actions.md) → 所指任务状态；核对请求涉及的实际文件 |
+| 第一次了解目标 | [MVP 索引](MVP/README.md) → [路线图](MVP/ROADMAP.md)；需要立项背景时再读 [历史项目分析](PROJECT_ANALYSIS.md) |
+| 执行 MVP 任务 | 当前 PM/任务 Brief → [MVP 索引](MVP/README.md)与相关阶段 → [Agent 工作流](Agents/README.md) → [PM 合同](Agents/PM_CONTRACT.md) |
+| 基础设施维护 | 当前 PM/INFRA 任务 Brief → [工作流](Agents/WORKFLOW.md) → [PM 合同](Agents/PM_CONTRACT.md) → 实际维护的文档或工具；涉及 MVP 边界时再查路线图 |
+| 审查候选 | 任务 Brief/状态 → 候选清单与实际文件 → 对应 Review/Verification；按风险补读相关 playbook |
 | 操作 Unity | 上述文档 → [Unity MCP 操作手册](Agents/UNITY_MCP_PLAYBOOK.md) |
 | 设计／审查性能实验 | 路线图 → [性能证据规范](Agents/PERFORMANCE_EVIDENCE.md) |
+| 搬迁证据／离线验证／出图／恢复计划 | [统一证据入口](Experiments/EVIDENCE.md) → [复现工具手册](Agents/REPRODUCIBILITY_PLAYBOOK.md) |
+| M2/M3 离线计划与质量工具 | [Gradient 工具合同](Agents/GRADIENT_BENCHMARK_TOOLING.md)；实际阶段仍按PM授权启动 |
+| 一次性检查／CI与源码归档 | [离线调度](Agents/OFFLINE_AUTOMATION.md) → [源码归档](Agents/SOURCE_ARCHIVE.md) |
 | 续接已有任务 | `PM/PROJECT_STATUS.md` → `PM/Next_Actions.md` → 当前任务记录；文件不存在时表示尚未初始化 |
 | 查历史背景或参考源码 | 先读当前需求和项目文档，再按需进入 [`References/`](References/) |
 
 ## 目录职责
 
-### `Agents/`：项目设计工作流
+### `Agents/`：项目执行工作流
 
 存放 Agent 的执行模型、角色、模型建议、Unity MCP、安全边界、性能取证规则、启动提示词和记录模板。这里回答“如何完成并证明任务”，不重复定义版本目标，也不保存每次任务的动态状态。
 
@@ -44,7 +50,7 @@ PM/
       └─ VERIFICATION-r<N>.md
 ```
 
-`PROJECT_STATUS.md` 保存唯一全局游标和 Unity 占用记录；每个 `TASK_STATUS.md` 是该任务流程状态的唯一来源；`Next_Actions.md` 只保存排序后的链接，不复制状态。尚未启动执行时可以保持 PM 为空，不提前生成“已完成”记录。完整合同见 [Agents/PM_CONTRACT.md](Agents/PM_CONTRACT.md)。
+`PROJECT_STATUS.md` 保存唯一全局游标和 Unity 占用记录；每个 `TASK_STATUS.md` 是该任务流程状态的唯一来源；`Next_Actions.md` 只保存尚待处理的动作与链接，不复制状态或已完成列表。MVP 任务沿用路线图 ID；基础设施采用 `INFRA-NNN`，共用上述目录与状态机。新记录使用 [PM 合同](Agents/PM_CONTRACT.md)的固定字段；历史记录的兼容范围与 [离线检查](Agents/PM_CHECK_PLAYBOOK.md)明确列出。
 
 ### `References/`：参考文件
 
@@ -59,7 +65,7 @@ PM/
 
 ### 根级文档
 
-- [PROJECT_ANALYSIS.md](PROJECT_ANALYSIS.md)：已认可的需求分析、可展示主题、风险和总体方案。
+- [PROJECT_ANALYSIS.md](PROJECT_ANALYSIS.md)：立项时的需求分析、可展示主题、风险和总体方案；其中工程/Git/工具状态属于当时观测，不作为续接起点。
 - 本文件：文档导航和归档规则。
 
 ### `Experiments/`：已产生的实验与案例
@@ -73,7 +79,7 @@ PM/
 
 1. 先判断信息的唯一职责：目标进 MVP，动态状态进 PM，执行规范进 Agents，输入材料进 References。
 2. 同一事实只维护一个权威位置，其他页面使用相对链接并写简短摘要。不要复制进度表、测试结果或性能数字。
-3. 文件名优先使用稳定、可检索的英文大写入口和路线图任务 ID；正文以中文为主，代码/API 名称保留原文。
+3. 文件名优先使用稳定、可检索的英文大写入口和任务 ID；正文以中文为主，代码/API 名称保留原文。PM 机器字段使用合同规定的英文键，解释另写正文。
 4. 路径使用仓库相对链接。移动文档后检查所有入站链接；引用本机或外部产物时同时记录可恢复位置和身份。
 5. 文档声明结果时链接实际证据，明确 pass、fail、not_run、invalid、inconclusive 等边界。未来计划使用“待创建／计划”，不能写成当前事实。
 6. 参考文件尽量保留来源语义。需要注释或整理时另写分析，不悄悄改写原始记录；必须脱敏时记录处理原因。
