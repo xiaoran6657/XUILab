@@ -1,0 +1,1 @@
+{"name":"XUILab.Showcase.Tests.PlayMode","references":["XUILab.Showcase.Runtime","XUILab.Benchmarking.Runtime","XUILab.GradientLab.Runtime","XUILab.GradientLab.Presentation","UnityEngine.UI"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

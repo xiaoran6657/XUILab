@@ -23,8 +23,12 @@ namespace XUILab.ListLab.Tests
             Click("2 templates");yield return null;Assert.AreEqual(1,demo.View.Cells[1].Template);
             Click("Effects");yield return null;Assert.True(demo.View.Animate);Assert.True(demo.View.EdgeFade);
             Click("Effects");yield return null;Assert.False(demo.View.Animate);Assert.False(demo.View.EdgeFade);
-            int binds=demo.View.Pool.BindCount;Click("Refresh");Assert.AreEqual(binds+demo.View.VisibleCount,demo.View.Pool.BindCount);
+            int binds=demo.View.Pool.BindCount;Click("Update item");Assert.AreEqual(binds+demo.View.VisibleCount,demo.View.Pool.BindCount);
+            Click("Policy");Assert.AreEqual(ListRefreshPolicy.TargetOnly,demo.View.RefreshPolicy);
+            binds=demo.View.Pool.BindCount;Click("Update item");Assert.AreEqual(binds+1,demo.View.Pool.BindCount);
+            Assert.That(demo.View.GetItem(demo.View.CapturePosition().Index).Label,Does.Contain("revision"));
             Click("Backend");yield return null;Assert.False(demo.View.Virtualized);Assert.AreEqual(1000,demo.View.Pool.Leased);
+            Assert.AreEqual(ListRefreshPolicy.TargetOnly,demo.View.RefreshPolicy);
             Click("Clear / refill");Assert.AreEqual(0,demo.View.Count);Click("Clear / refill");Click("Reopen");
             Assert.True(demo.View.ValidateState(out var reason),reason);
             var system=new GameObject("test-events",typeof(EventSystem));system.transform.SetParent(root.transform);

@@ -14,6 +14,8 @@ namespace XUILab.ListLab
         private bool virtualized = true;
         private bool dual;
         private bool effects;
+        private ListRefreshPolicy refreshPolicy;
+        private int revision;
         private ListPosition saved;
         private float nextDiagnostic;
         private void Start() { if (!MeasurementMode) Rebuild(); }
@@ -21,6 +23,10 @@ namespace XUILab.ListLab
         {
             if (root) { root.SetActive(false); Destroy(root); }
             View = ListLabFactory.Create(virtualized, out root);
+            root.GetComponent<CanvasScaler>().referenceResolution = new Vector2(960,600);
+            root.GetComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            root.GetComponent<CanvasScaler>().screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
+            View.RefreshPolicy = refreshPolicy;
             View.Animate = effects; View.EdgeFade = effects;
             View.SetItems(ListItem.Generate(count, dual), false);
             TextAt("LIST LAB  /  FIXED-HEIGHT VIRTUALIZATION", 245, 22);
@@ -34,8 +40,24 @@ namespace XUILab.ListLab
             ButtonAt("Restore", -180, -216, () => { View.RestorePosition(saved); CurrentAction = "Position restored"; });
             ButtonAt("Clear / refill", -60, -216, () => { View.SetItems(View.Count == 0 ? ListItem.Generate(count, dual) : new ListItem[0]); CurrentAction = "Clear / refill"; });
             ButtonAt("Reopen", 60, -216, () => { View.gameObject.SetActive(false); View.gameObject.SetActive(true); CurrentAction = "Disable / reopen"; });
-            ButtonAt("Refresh", 180, -216, () => { if (View.Count > 0) View.RefreshItem(View.CapturePosition().Index); CurrentAction = "Refresh visible window"; });
+            ButtonAt("Update item", 180, -216, UpdateVisibleItem);
+            ButtonAt("Policy", 300, -216, ToggleRefreshPolicy);
             diagnostic = TextAt("", -249, 14); saved = View.CapturePosition(); CurrentAction = "Drag / wheel to scroll"; UpdateDiagnostic();
+        }
+        public void ToggleRefreshPolicy()
+        {
+            refreshPolicy = refreshPolicy == ListRefreshPolicy.VisibleWindow ? ListRefreshPolicy.TargetOnly : ListRefreshPolicy.VisibleWindow;
+            if (View) View.RefreshPolicy = refreshPolicy;
+            CurrentAction = "Refresh policy: " + refreshPolicy;
+        }
+        public void UpdateVisibleItem()
+        {
+            if (!View || View.Count == 0) { CurrentAction = "No item to update"; return; }
+            int index = View.CapturePosition().Index;
+            var item = View.GetItem(index);
+            int before = View.Pool.BindCount;
+            View.UpdateItem(index, new ListItem(item.Id, item.Template, "Item " + item.Id + " / revision " + (++revision)));
+            CurrentAction = "Updated " + index + " / binds +" + (View.Pool.BindCount - before);
         }
         private void Update()
         {
@@ -48,7 +70,7 @@ namespace XUILab.ListLab
             Canvas.ForceUpdateCanvases();
             diagnostic.text = (virtualized ? "VIRTUAL" : "NORMAL") + "   N " + View.Count + "   visible " + View.VisibleCount +
                 "   leased " + View.Pool.Leased + "   cached " + View.Pool.Cached + "   created " + View.Pool.Created +
-                "   binds " + View.Pool.BindCount + "   | " + CurrentAction;
+                "   binds " + View.Pool.BindCount + " / " + refreshPolicy + "   | " + CurrentAction;
         }
         private Text TextAt(string value, float y, int size)
         {

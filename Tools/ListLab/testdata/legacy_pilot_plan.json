@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "xuilab.list-refresh.plan/v1",
+  "status": "frozen",
+  "planId": "legacy-pilot-fixture",
+  "contractId": "list-refresh/v1",
+  "contractSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "candidateId": "sanitized-candidate",
+  "buildId": "sanitized-build",
+  "sourceRevision": "sanitized-source",
+  "dirty": true,
+  "evidenceKind": "windows-development-player",
+  "protocolVersion": "xuilab.benchmark.protocol/v1",
+  "artifacts": [
+    "config.json",
+    "environment.json",
+    "identity.json",
+    "samples.csv",
+    "summary.json",
+    "report.md",
+    "events.log",
+    "refresh-metrics.json",
+    "refresh-samples.csv",
+    "refresh-binding.json"
+  ],
+  "runs": [
+    {
+      "runId": "legacy-pilot-fixture-listrefresh-virtual-1000-window-high-fps-1-r1",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 1,
+      "plannedRepeatCount": 1,
+      "warmupFrames": 300,
+      "measureFrames": 1800,
+      "sampleCapacity": 1800,
+      "frameBudgetMs": 16.6666667,
+      "timeoutSeconds": 180,
+      "parameters": {
+        "targetFrameRate": -1,
+        "vSyncCount": 0,
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "graphicsApi": "Direct3D11",
+        "qualityLevel": "High Fidelity",
+        "preflightSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "buildManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "runId": "legacy-pilot-fixture-listrefresh-virtual-1000-target-high-fps-1-r1",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 1,
+      "plannedRepeatCount": 1,
+      "warmupFrames": 300,
+      "measureFrames": 1800,
+      "sampleCapacity": 1800,
+      "frameBudgetMs": 16.6666667,
+      "timeoutSeconds": 180,
+      "parameters": {
+        "targetFrameRate": -1,
+        "vSyncCount": 0,
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "graphicsApi": "Direct3D11",
+        "qualityLevel": "High Fidelity",
+        "preflightSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "buildManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "runId": "legacy-pilot-fixture-listrefresh-normal-1000-window-batch-fps-1-r1",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-window-batch",
+      "variant": "window",
+      "runIndex": 1,
+      "plannedRepeatCount": 1,
+      "warmupFrames": 300,
+      "measureFrames": 1800,
+      "sampleCapacity": 1800,
+      "frameBudgetMs": 16.6666667,
+      "timeoutSeconds": 180,
+      "parameters": {
+        "targetFrameRate": -1,
+        "vSyncCount": 0,
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "graphicsApi": "Direct3D11",
+        "qualityLevel": "High Fidelity",
+        "preflightSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "buildManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "runId": "legacy-pilot-fixture-listrefresh-normal-1000-target-batch-fps-1-r1",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-target-batch",
+      "variant": "target",
+      "runIndex": 1,
+      "plannedRepeatCount": 1,
+      "warmupFrames": 300,
+      "measureFrames": 1800,
+      "sampleCapacity": 1800,
+      "frameBudgetMs": 16.6666667,
+      "timeoutSeconds": 180,
+      "parameters": {
+        "targetFrameRate": -1,
+        "vSyncCount": 0,
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "graphicsApi": "Direct3D11",
+        "qualityLevel": "High Fidelity",
+        "preflightSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "buildManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ]
+}

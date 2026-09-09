@@ -1,0 +1,1 @@
+{"name":"XUILab.Showcase.Media","references":["XUILab.Showcase.Runtime","XUILab.Benchmarking.Runtime","XUILab.ListLab.Runtime","XUILab.ListLab.Presentation","XUILab.GradientLab.Runtime","XUILab.GradientLab.Presentation","UnityEngine.UI"],"autoReferenced":true}
