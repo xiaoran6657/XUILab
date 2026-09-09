@@ -2,6 +2,8 @@
 
 `Docs/` 是 XUILab 的唯一项目文档库。根目录 [`README.md`](../README.md) 和 [`AGENTS.md`](../AGENTS.md) 分别作为人类入口与 Agent 启动入口；需求分析、规划、工作流、项目状态、实验结论和参考资料的正文统一放在这里。
 
+学习两主题与性能诊断，从[Learn学习入口](Learn/README.md)开始；包含基础术语、源码/实验导航与Profiler边界。
+
 ## 从哪里开始
 
 | 读者／目的 | 阅读顺序 |
