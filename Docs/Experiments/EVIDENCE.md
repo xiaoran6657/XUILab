@@ -12,3 +12,7 @@
 | B 工具交付验证 | 目录包哈希、隔离检出覆盖层、自检／独立审查 | [INFRA-002](../PM/Tasks/INFRA-002/TASK_STATUS.md) |
 
 历史 raw、build、媒体在被忽略的 Artifacts；单纯 Git 检出不包含这些文件。接收者需要可信交接的目录包和 bundle.json SHA-256 才能验证数据。缺包就是 evidence not_run，不能用旧文档或生成空样本替代。需要完整历史归档时沿原索引另外交接媒体／诊断，不能把 core 包称为全部证据。
+
+Gradient r5 历史partial矩阵、完整构建/272源输入/质量/媒体与可搬迁归档见[M2证据索引](../PM/Tasks/M2-04/EVIDENCE_INDEX-r5.md)。[结果](GRADIENT_BENCHMARK_RESULTS.md)及[案例](GRADIENT_LAB_CASE_STUDY.md)保留限制；历史复算不代表新Player执行。
+
+M3列表/固定段/自适应实验与历史包入口：[列表](LIST_REFRESH_RESULTS.md)、[固定段](GRADIENT_SUBDIVISION_RESULTS.md)、[自适应](GRADIENT_ADAPTIVE_RESULTS.md)。综合默认、代表回归与学习边界见[M3决定](M3_OPTIMIZATION_DECISIONS.md)。

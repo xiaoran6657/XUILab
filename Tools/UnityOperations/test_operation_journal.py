@@ -99,6 +99,15 @@ class JournalTests(unittest.TestCase):
         bad = copy.deepcopy(good); bad['response'] = {'success': False, 'error': 'job unknown'}
         with self.assertRaises(JournalError): self.j.terminal(self.op, bad)
 
+    def test_equivalent_declared_absolute_output_separators(self):
+        self.start(); good = self.success()
+        for output in (str(self.root / 'player.exe'), (self.root / 'player.exe').as_posix()):
+            good['response']['data']['output_path'] = output
+            self.assertEqual(self.j.terminal(self.op, good, validate_only=True)['outcome'], 'pass')
+        for output in ((self.root / 'other.exe').as_posix(), (self.root.parent / 'player.exe').as_posix()):
+            good['response']['data']['output_path'] = output
+            with self.assertRaises(JournalError): self.j.terminal(self.op, good, validate_only=True)
+
     def test_missing_artifact_and_post_terminal_drift(self):
         self.start(); good = self.success(); (self.root / 'player.exe').unlink()
         with self.assertRaises(JournalError): self.j.terminal(self.op, good)

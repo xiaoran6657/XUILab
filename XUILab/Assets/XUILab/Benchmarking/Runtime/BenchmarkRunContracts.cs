@@ -166,7 +166,7 @@ namespace XUILab.Benchmarking
                 return "runId must be one safe path segment.";
             }
 
-            if (caseId != "idle" && caseId != "known-load" && !IsListCaseId(caseId))
+            if (caseId != "idle" && caseId != "known-load" && !IsListCaseId(caseId) && !IsGradientCaseId(caseId) && !IsListRefreshCaseId(caseId))
             {
                 return "caseId must be a supported benchmark profile.";
             }
@@ -229,6 +229,20 @@ namespace XUILab.Benchmarking
         {
             return value != null && System.Text.RegularExpressions.Regex.IsMatch(value,
                 @"\Alist-(normal|virtual)-(100|300|1000|10000)-(scroll|lifecycle)\z",
+                System.Text.RegularExpressions.RegexOptions.CultureInvariant);
+        }
+
+        public static bool IsListRefreshCaseId(string value)
+        {
+            return value != null && System.Text.RegularExpressions.Regex.IsMatch(value,
+                @"\Alistrefresh-(normal|virtual)-1000-(window|target)-(idle|sparse|burst|high|batch)\z",
+                System.Text.RegularExpressions.RegexOptions.CultureInvariant);
+        }
+
+        public static bool IsGradientCaseId(string value)
+        {
+            return value != null && System.Text.RegularExpressions.Regex.IsMatch(value,
+                @"\A(?:gradient-(grid|split|clip|large)-(1|100|500|1000|2000|5000)-(image|disabled|linear|static|same|few|all)-(horizontal|vertical)-(05|25|95)|gradient-subdivision-(large|grid)-(static-(05|50|95)|dynamic)-s(8|16|32|64)|gradient-adaptive-(large|grid)-(static-(05|50|95)|dynamic)-(fixed32|adaptive64))\z",
                 System.Text.RegularExpressions.RegexOptions.CultureInvariant);
         }
 

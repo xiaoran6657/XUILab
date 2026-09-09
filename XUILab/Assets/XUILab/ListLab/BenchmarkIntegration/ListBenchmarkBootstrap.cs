@@ -26,6 +26,21 @@ namespace XUILab.ListLab
         private void Start()
         {
             if(!requested)return;
+            if(Array.IndexOf(Environment.GetCommandLineArgs(),"--refresh-plan")>=0)
+            {
+                try
+                {
+                    var binding=RefreshPlayerBinding.Load(Environment.GetCommandLineArgs());
+                    binding.CaptureStartFocus(Application.isFocused);
+                    width=Screen.width;height=Screen.height;
+                    var refreshFactory=new ListRefreshBenchmarkFactory();
+                    runner=new BenchmarkRunner(refreshFactory,writer:new ListRefreshBenchmarkWriter(refreshFactory,binding));
+                    runner.Start(binding.Config);
+                    if(!binding.StartFocus)runner.MarkFocusLost();
+                }
+                catch(Exception exception){Debug.LogError(exception);Application.Quit(2);}
+                return;
+            }
             if(!BenchmarkCommandLine.TryCreateRunConfig(Environment.GetCommandLineArgs(),out var config,out var error))
             {Debug.LogError(error);Application.Quit(2);return;}
             width=Screen.width;height=Screen.height;var factory=new ListBenchmarkFactory();

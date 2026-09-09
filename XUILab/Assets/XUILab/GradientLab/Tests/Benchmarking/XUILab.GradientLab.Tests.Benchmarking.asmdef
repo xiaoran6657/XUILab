@@ -1,0 +1,1 @@
+{"name": "XUILab.GradientLab.Tests.Benchmarking", "references": ["XUILab.GradientLab.Runtime", "XUILab.GradientLab.Benchmarking", "XUILab.Benchmarking.Runtime", "UnityEngine.UI"], "optionalUnityReferences": ["TestAssemblies"], "overrideReferences": true, "precompiledReferences": ["Newtonsoft.Json.dll"], "autoReferenced": false}

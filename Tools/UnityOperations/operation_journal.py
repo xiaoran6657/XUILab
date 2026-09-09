@@ -182,7 +182,7 @@ class Journal:
         if request['kind'] == 'build':
             require(data.get('platform') == request['parameters']['platform'], 'wrong build platform')
             output = data.get('output_path')
-            require(output in (request['artifacts'][0], str(local(self.root, request['artifacts'][0]))), 'wrong build output')
+            require(output in (request['artifacts'][0], str(local(self.root, request['artifacts'][0])), local(self.root, request['artifacts'][0]).as_posix()), 'wrong build output')
             passed = status == 'succeeded' and type(data.get('errors')) is int and data['errors'] == 0
             if passed:
                 require(timestamp(data.get('completed_at')) <= timestamp(evidence['observed_at']), 'completion after observation')

@@ -72,6 +72,8 @@ PM/
 
 - [List合同](Experiments/LIST_CONTRACT.md)与[Player A/B协议](Experiments/LIST_BENCHMARK_PROTOCOL.md)。
 - [ListLab Player结果](Experiments/LIST_BENCHMARK_RESULTS.md)、[实现与学习案例](Experiments/LIST_LAB_CASE_STUDY.md)、[M1阶段出口](PM/M1_STAGE_EXIT.md)。
+- [Gradient Lab结果](Experiments/GRADIENT_BENCHMARK_RESULTS.md)、[M2阶段出口](PM/M2_STAGE_EXIT.md)。
+- [M3默认策略与两主题学习](Experiments/M3_OPTIMIZATION_DECISIONS.md)、[统一证据入口](Experiments/EVIDENCE.md)。
 
 实验协议／报告与展示文案在首次产生时分别建立 `Experiments/`、`Showcase/`。不要预建空目录或空报告。大体积运行数据、构建和视频使用仓库根 `Artifacts/` 等产物目录，并由 PM／实验文档以 run-id 和哈希引用；它们不是另一套文档库。
 

@@ -1,0 +1,1 @@
+{"name":"XUILab.GradientLab.Tests.EditMode","references":["XUILab.GradientLab.Runtime","UnityEngine.UI"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

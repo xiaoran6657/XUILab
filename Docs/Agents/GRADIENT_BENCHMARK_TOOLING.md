@@ -1,9 +1,6 @@
 # Gradient Lab offline benchmark tooling
 
-This directory contains the offline part of the Gradient Lab experiment. It
-does not implement GradientEffect, TransitionController, mesh generation, or a
-gradient evaluation function. Those remain an M2-01 Unity contract and must be
-frozen by the owning task before Player evidence is accepted.
+Tools/GradientLab contains generic offline contracts and the M2-04 Player execution/verification adapters. Unity implements GradientEffect, TransitionController and mesh generation; current acceptance is recorded in Docs/PM/Tasks/M2-04. The raw verifier independently recomputes the frozen Schlick quality curve.
 
 ## Files and commands
 
@@ -28,8 +25,7 @@ Inspect run directories without changing them:
 
     python -B Tools/GradientLab/gradient_recovery.py --root Artifacts/gradient-plan --plan plan.json
 
-The tools use only the Python standard library. They never start Unity or a
-Player and do not write analysis output. JSON input rejects duplicate object
+The two generic tools above use only the Python standard library. They never start Unity or a Player and do not write analysis output. The separate Player adapters below have explicit execution/output behavior and additional dependencies. JSON input rejects duplicate object
 keys, non-finite constants, path reparse points, and unsafe identifiers.
 
 ## Plan contract
@@ -137,3 +133,35 @@ The recovery report is safe to pass to a reviewer when it has no invalid or
 interrupted runs. Failed runs remain failed; the tool does not retry, delete,
 rewrite, or launch anything. A later execution adapter must use a new run
 identity and the frozen plan.
+
+## M2-04 Player adapters
+
+- player_plan.py freezes all run IDs, geometry/actions, quality contract, preflight and build-manifest hashes before execution. The generic plan validator requires all Windows Player runs to share a valid buildManifestSha256.
+- player_launch.py dispatches serial owned Player processes, with a repository-wide Artifacts/gradient-player.lock, durable intent, exit-code receipt, raw verification and no automatic redispatch of retained failures.
+- player_verify.py independently validates the complete original all-pass matrix. It requires complete files, current run quality identity, real mesh topology, valid/correct terminal states, process success, raw statistics and all receipts. It does not convert missing or failed runs into pass. NumPy 2.3.5 was used for dense scans in M2-04.
+- player_resume.py is a separately frozen orchestration addendum for the interrupted matrix. A policy binds the script SHA, recovery protocol SHA, original plan and build. It never retries a failed run or unresolved intent; verified timeouts defer subsequent repetitions of the same case. Other original run IDs continue in their original order. See [recovery rules](../Experiments/GRADIENT_MATRIX_RECOVERY-r1.md).
+- player_matrix_report.py audits this partial matrix, retaining completed/timeout/deferred/not_run separately. Only groups with every originally planned repetition completed enter group statistics. The complete-plan status remains partial if any planned run timed out or was deferred. CLI exit 0 requires the whole matrix to be complete; a partial report is still written but returns exit 1. Read status/counts and the task review.
+
+Example new-run dispatch (paths are repository-relative):
+
+    python Tools/GradientLab/player_launch.py --plan Artifacts/gradient-player-r5/matrix-plan.json --runs Artifacts/gradient-player-r5/matrix-runs --gate Artifacts/gradient-validation/preflight-r5.json --player Artifacts/gradient-player-r5/build/XUILab-Gradient.exe --build-manifest Artifacts/gradient-player-r5/build-manifest.json --repo .
+
+For a confirmed interrupted matrix use player_resume.py with the same arguments plus --policy <frozen-policy.json>; first inspect retained markers and PM. Do not use this example to redispatch an active or uncertain job. For reports use player_matrix_report.py with --plan/--runs/--gate/--build-manifest/--repo/--policy, a new --output directory, and optional --plot.
+
+### Plot dependencies
+
+The optional plot path uses Matplotlib 3.10.6. In this run, missing plotting packages were installed only under Artifacts/gradient-report-deps using the pinned requirements below and --no-deps; existing bundled NumPy/Pillow/packaging/python-dateutil/six were reused. No global Python installation was changed. Add that directory to the reporting process Python path only. Runtime sampling does not import Matplotlib.
+
+    python -m pip install --target Artifacts/gradient-report-deps --no-deps -r Tools/GradientLab/requirements-plot.txt
+
+A fresh environment must also provide NumPy, Pillow, packaging, python-dateutil and six. Exact actual dependency versions are saved with the generated report. Charts are SVG and PNG artifacts; visual inspection runs after all sampling.
+
+## 历史M2基线
+
+进入M3前使用freeze_baseline.py将原272项输入和Gradient证据冻结到新的Artifacts/baselines目录；该入口只适用于明确的M2 r5集合，不是任意候选打包器。它先执行当前source/build/gate检查，拒绝已有输出、活动Player锁和reparse，原始文件按字节复制后复核。
+
+搬迁后使用归档自身的historical_verify.py，Python -B，输出在归档外新文件；先从可信交接核对baseline-manifest.json SHA。它验证原始绝对路径与记录中的repoRoot，使用归档的相对文件重新算raw质量/网格/帧时与跨轮统计，不访问原机器绝对路径、不改写journal、不重派Player，也不把partial改成全通过。详见[M2保全记录](../PM/Tasks/M2-04/BASELINE_PRESERVATION-r3.md)。
+
+    python -B <archive>/Tools/GradientLab/historical_verify.py --archive <archive> --manifest-sha256 <trusted-manifest-sha256> --output <new-path-outside-archive.json>
+
+原player_launch/player_verify的当前源码门禁保持严格；M3修改源码后不能用它们证明旧M2候选。历史核验退出0表示所声明的历史partial证据完整且可复算，须同时读matrixStatus/counts；不等于所有计划run都完成。

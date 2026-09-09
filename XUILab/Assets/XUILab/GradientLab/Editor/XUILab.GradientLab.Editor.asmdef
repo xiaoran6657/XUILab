@@ -1,0 +1,1 @@
+{"name": "XUILab.GradientLab.Editor", "references": ["XUILab.GradientLab.Runtime", "XUILab.GradientLab.Presentation", "UnityEngine.UI"], "autoReferenced": true, "includePlatforms": ["Editor"]}

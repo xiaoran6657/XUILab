@@ -311,6 +311,10 @@ def validate_plan(value, require_frozen=False):
                                 "runIndex": run_index, "plannedRepeatCount": repeats, "warmupFrames": warmup,
                                 "measureFrames": measure, "sampleCapacity": capacity, "frameBudgetMs": frame_budget,
                                 "timeoutSeconds": timeout, "parameters": parameters})
+    if evidence=="windows-development-player":
+        hashes=[run["parameters"].get("buildManifestSha256") for run in normalized_runs]
+        if not all(_hash(value) for value in hashes) or len(set(hashes))!=1:
+            _fail("plan.runs.parameters.buildManifestSha256", "all Player runs require the same SHA-256")
     for group_id, group in groups.items():
         if sorted(group["indexes"]) != list(range(1, group["repeats"] + 1)):
             _fail("plan group " + group_id, "run indexes must be exactly 1..plannedRepeatCount")

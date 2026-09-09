@@ -48,7 +48,16 @@ namespace XUILab.ListLab
                 cell.DestroyedExternally = OnExternalDestroy; Created++;
             }
             if (!leased.Add(cell.GetInstanceID())) throw new InvalidOperationException("Duplicate lease.");
-            cell.transform.SetParent(parent, false); cell.gameObject.SetActive(true); return cell;
+            try
+            {
+                cell.transform.SetParent(parent, false); cell.gameObject.SetActive(true); return cell;
+            }
+            catch
+            {
+                // A failed activation/parent callback must not keep an unreturned lease.
+                try { Return(cell); } catch { }
+                throw;
+            }
         }
         public void Bind(ListCell cell, ListItem item, int index, bool animate)
         {
@@ -60,7 +69,7 @@ namespace XUILab.ListLab
         {
             if (!cell || !leased.Contains(cell.GetInstanceID()) || !owned.TryGetValue(cell.GetInstanceID(), out var known) || known != cell ||
                 item == null || item.Template != cell.Template || index < 0) throw new InvalidOperationException("Invalid rebind.");
-            if (cell.IsBound) { cell.Unbind(); UnbindCount++; }
+            if (cell.IsBound) { UnbindCount++; cell.Unbind(); }
             Bind(cell, item, index, animate);
         }
         public bool ValidateOwnership(out string reason)
@@ -78,13 +87,31 @@ namespace XUILab.ListLab
             { reason = "Unowned identity or counter mismatch."; return false; }
             reason = string.Empty; return true;
         }
+        internal bool IsLeased(ListCell cell)
+        {
+            return cell && leased.Contains(cell.GetInstanceID());
+        }
         public bool Return(ListCell cell)
         {
             if (disposed || !cell || !owned.TryGetValue(cell.GetInstanceID(), out var known) || known != cell || !leased.Remove(cell.GetInstanceID()))
             { RejectedReturns++; Sweep(); return false; }
-            if (cell.IsBound) { cell.Unbind(); UnbindCount++; }
-            cell.gameObject.SetActive(false); cell.transform.SetParent(cacheRoot, false);
-            if (cache[cell.Template].Count < capacity) cache[cell.Template].Add(cell); else DestroyOwned(cell);
+            // Complete each ownership cleanup step and preserve the first callback error.
+            Exception firstError = null;
+            try { if (cell.IsBound) { UnbindCount++; cell.Unbind(); } }
+            catch (Exception error) { firstError = error; }
+            try { if (cell) cell.gameObject.SetActive(false); }
+            catch (Exception error) { if (firstError == null) firstError = error; }
+            try { if (cell) cell.transform.SetParent(cacheRoot, false); }
+            catch (Exception error) { if (firstError == null) firstError = error; }
+            try
+            {
+                if (!cell) Sweep();
+                else if (cell.gameObject.activeSelf || cell.transform.parent != cacheRoot) DestroyOwned(cell);
+                else if (cache[cell.Template].Count < capacity) cache[cell.Template].Add(cell);
+                else DestroyOwned(cell);
+            }
+            catch (Exception error) { if (firstError == null) firstError = error; }
+            if (firstError != null) System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(firstError).Throw();
             return true;
         }
         public void Sweep()
