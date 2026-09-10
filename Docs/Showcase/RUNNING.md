@@ -29,3 +29,5 @@
 ## 公开ZIP的许可补充
 
 公开Windows ZIP在原r4基础上仅添加项目LICENSE.txt、锁定MCP提交的MIT正文和PUBLIC_PACKAGE.json。r4的275个既有条目逐字节保留，二进制未改、没有新构建；PUBLIC_PACKAGE.json列出除自身外的完整文件SHA，原package-manifest.json继续描述r4基础包。外层ZIP的当前SHA由[发布记录](PUBLICATION.md)维护。
+
+包内RUNNING.txt是r4生成时的快照，其中“未公开发布”不表示当前下载状态；当前版本、公开状态及附件哈希以GitHub Release和[发布记录](PUBLICATION.md)为准。

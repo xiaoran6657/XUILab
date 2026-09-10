@@ -27,3 +27,7 @@ public-local-r2使用Python3.12.14/NumPy2.3.5；GradientLab恢复通过，但Lis
 ## Windows包许可文本补充
 
 发布前发现r4附有MCP package.json的licensesUrl但未附实际MIT正文，同时包含MCPForUnity.Runtime.dll。公开派生包只增加锁定acf5e3dd3b864c140862e0c6644ff9e8f2120a64的原MIT文本、项目MIT和PUBLIC_PACKAGE.json。上游Git blob e7f878d1da6b4d9488058157ce6b48cb584460b1已按下载内容复算；MIT文本SHA256 6efe650c965012ac418238dcd6b9116e4130a5220717ef0dfb539dd159c4245c。原r4全部275条目保持字节一致，不改二进制、不新建Unity构建。新公开ZIP SHA256 ddc5e44c72ceb710563b62465eb6d1e1024af0e8d3a7d6eb4a2180fc43dbb818；旧草稿附件在仓库私有期间替换，旧本地文件保留。
+
+## 独立审查的模板目录整改
+
+首版独立审查changes_requested：Unity模板Layout.wlt的m_LastProjectPath保留作者目录。二版通过全新隔离克隆，在全部历史中只替换该字符串；meta/GUID不变。该字段仅由TutorialInfo/Scripts/Editor/ReadmeEditor.cs载入编辑器布局，不参与Player逻辑。本地原工程与二进制均不改，公开295项Unity输入的对照更新为294项Git一致/1项布局路径脱敏；与原测量工作区262字节一致/32换行/1布局变化。后续扫描绑定二版最终HEAD，不沿用旧b822f07扫描结论。

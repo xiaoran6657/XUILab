@@ -1,7 +1,7 @@
 {
   "candidate": "m4-final-b017672",
   "unityInputCount": 295,
-  "unityInputsMatch": "Git source blobs identical; 263 byte-exact measured files and 32 newline-only differences",
+  "unityInputsMatch": "294 Git blobs unchanged; one template editor-layout path anonymized. Versus measured workspace: 262 byte-exact, 32 newline-only, one template layout path change.",
   "inputs": {
     "XUILab/Assets/Plugins.meta": {
       "measuredSha256": "6f7f188e6ebf0535b8abb67f5333c7da24cc324703f05184e246c5b741678e30",
@@ -185,8 +185,8 @@
     },
     "XUILab/Assets/TutorialInfo/Layout.wlt": {
       "measuredSha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b",
-      "publicSha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b",
-      "transformation": "none"
+      "publicSha256": "3c0c9cbc2fb0e2927e3803e563548f8d7022f4e77d2e6a5a5c903e1c6318ba54",
+      "transformation": "template editor-layout path anonymized only; not a runtime asset"
     },
     "XUILab/Assets/TutorialInfo/Layout.wlt.meta": {
       "measuredSha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
@@ -1481,6 +1481,6 @@
   },
   "note": "Current Unity inputs match historical manifest byte-for-byte. Publishing tools and docs are separate changes.",
   "originalSourceRevision": "b0176724d58c7cda86b472340845d239714888d0",
-  "filteredMeasuredRevision": "9510967a6f7f50a374661231c20be721a4da55c4",
-  "scope": "295 Unity Git blobs identical to original commit; 263 measured files exact and 32 newline-only; not all 391 inputs; no new Unity run"
+  "filteredMeasuredRevision": "c6a4b57c190c844fa1146963dc5d935447aec2e7",
+  "scope": "295 historical Unity inputs accounted for; no new Unity run. Only template editor-layout author path changed."
 }

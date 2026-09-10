@@ -6,7 +6,7 @@
 - state: frozen
 - brief: [Brief](TASK_BRIEF.md)
 - brief_revision: r1
-- candidate: public-source-r1
+- candidate: public-source-r2
 - dependencies: none
 - blockers: none
 - recovery: none

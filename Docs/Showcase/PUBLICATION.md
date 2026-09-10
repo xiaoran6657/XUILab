@@ -1,6 +1,8 @@
 # 公开交付记录
 
-目标为[xiaoran6657/XUILab](https://github.com/xiaoran6657/XUILab)，先私有验证再公开。当前候选正在离线与独立审查，远端CI、公开访问尚未完成；下表为准备附件，实际发布后再登记结果。
+本版本源码位于[xiaoran6657/XUILab](https://github.com/xiaoran6657/XUILab)，版本附件入口如下。当前下载可用状态以[GitHub Release](https://github.com/xiaoran6657/XUILab/releases/tag/v0.1.0-preview.1)页面为准。
+
+私有验证阶段已完成[离线CI](https://github.com/xiaoran6657/XUILab/actions/runs/34463455743)、远端新克隆检查、公开ZIP解压复算及草稿附件hash核对。此CI属于首版efb386c，二版只将模板编辑器布局的预置目录在历史中脱敏并补充交付记录，最终二版CI与访问验收由任务记录另存。
 
 v0.1.0-preview.1为技术预览，M4个人学习复盘仍待完成。[源码对应](PUBLIC_SOURCE.md)、[主页交接](WEBSITE_HANDOFF.md)、[许可边界](THIRD_PARTY_NOTICES.md)。
 
