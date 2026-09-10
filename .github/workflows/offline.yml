@@ -26,3 +26,5 @@ jobs:
         run: python -B Tools/Automation/run_checks.py run --run-id ci-offline --timeout-seconds 300
       - name: Verify publishing boundaries
         run: python -B -m unittest discover -s Tools/Publishing -p test_*.py -v
+      - name: Check tracked showcase fingerprints
+        run: python -B Tools/Publishing/check_tracked_assets.py
