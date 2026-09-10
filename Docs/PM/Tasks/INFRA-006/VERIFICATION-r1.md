@@ -22,3 +22,9 @@
 GitHub草稿Release的7个附件名、大小、服务器digest与最终本地文件逐项一致；当时draft=true、仓库PRIVATE，target=efb386c。附件及SHA见[发布记录](../../../Showcase/PUBLICATION.md)。最终发布后的匿名访问与下载核对待完成。
 
 二版历史整改：全部待推送历史清理模板布局中的预置作者目录；最终扫描与CI需绑定二版新SHA。首版独立审查记录见[REVIEW-r1](REVIEW-r1.md)。
+
+## 二版冻结与放行前终态
+
+最终版本冻结为231c8161175c7edd8debfe7b75ac7aa6f4a9f020；[CI34464845765](https://github.com/xiaoran6657/XUILab/actions/runs/34464845765)实际success。该SHA的911可达对象/663 blob重新扫描，UTF8/UTF16LE私人标识、模板作者及凭据模式无命中；中性说明和当前INFRA006以外的原内部PM/References历史均排除。882个当前Markdown本地目标存在；此检查不包括锚点及远端访问。
+
+独立复核[REVIEW-r2](REVIEW-r2.md)明确accept。私有草稿Release ID386159265，target=231c816，7附件名称/大小/服务器SHA与最终r2包一致。此前的efb386c CI与扫描只作首版历史，不能代替本节二版终态。版本tag固定该审查源码与资料快照，随后只补交付记录；公开访问仍须另记实际结果。

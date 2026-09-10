@@ -2,7 +2,7 @@
 
 本版本源码位于[xiaoran6657/XUILab](https://github.com/xiaoran6657/XUILab)，版本附件入口如下。当前下载可用状态以[GitHub Release](https://github.com/xiaoran6657/XUILab/releases/tag/v0.1.0-preview.1)页面为准。
 
-私有验证阶段已完成[离线CI](https://github.com/xiaoran6657/XUILab/actions/runs/34463455743)、远端新克隆检查、公开ZIP解压复算及草稿附件hash核对。此CI属于首版efb386c，二版只将模板编辑器布局的预置目录在历史中脱敏并补充交付记录，最终二版CI与访问验收由任务记录另存。
+发布前冻结提交为`231c8161175c7edd8debfe7b75ac7aa6f4a9f020`，已完成[对应CI](https://github.com/xiaoran6657/XUILab/actions/runs/34464845765)、远端克隆检查、公开ZIP解压复算、草稿附件hash核对及[独立复核](../PM/Tasks/INFRA-006/REVIEW-r2.md)。版本tag保留冻结的源码和资料快照；公开后的访问验收在main的[交付验证](../PM/Tasks/INFRA-006/VERIFICATION-r1.md)补记。
 
 v0.1.0-preview.1为技术预览，M4个人学习复盘仍待完成。[源码对应](PUBLIC_SOURCE.md)、[主页交接](WEBSITE_HANDOFF.md)、[许可边界](THIRD_PARTY_NOTICES.md)。
 

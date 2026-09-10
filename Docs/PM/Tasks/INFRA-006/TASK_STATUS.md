@@ -3,28 +3,28 @@
 - pm_schema: xuilab.pm/v1
 - task_id: INFRA-006
 - task_type: infra
-- state: frozen
+- state: verifying
 - brief: [Brief](TASK_BRIEF.md)
 - brief_revision: r1
 - candidate: public-source-r2
 - dependencies: none
 - blockers: none
 - recovery: none
-- next_action: 独立审查冻结公开副本后推送私有远端执行CI
-- review: not_run
-- verification: not_run
-- review_independence: not_run
+- next_action: 公开经独立接受的仓库和草稿Release后验证匿名访问
+- review: [Review](REVIEW-r2.md)
+- verification: [Verification](VERIFICATION-r1.md)
+- review_independence: independent
 - execution_independence: self-check
 
 ## 验收状态
 
 | ID | result | candidate | evidence |
 | --- | --- | --- | --- |
-| P1 | not_run | none | none |
-| P2 | not_run | none | none |
-| P3 | not_run | none | none |
-| P4 | not_run | none | none |
-| P5 | not_run | none | none |
+| P1 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
+| P2 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
+| P3 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
+| P4 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
+| P5 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
 | P6 | not_run | none | none |
 
 ## 启动记录
