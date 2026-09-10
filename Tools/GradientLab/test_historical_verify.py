@@ -10,7 +10,7 @@ from operation_journal import Journal, canonical
 
 class HistoricalTests(unittest.TestCase):
     def setUp(self):
-        self.temp=tempfile.TemporaryDirectory();self.root=Path(self.temp.name);self.original=PureWindowsPath("<repo>")
+        self.temp=tempfile.TemporaryDirectory();self.root=Path(self.temp.name);self.original=PureWindowsPath("Z:/recorded/XUILab")
         source=self.root/"XUILab/Assets/a.cs";source.parent.mkdir(parents=True);source.write_text("fixture")
         output=self.root/"Artifacts/build/app.exe";output.parent.mkdir(parents=True);output.write_bytes(b"synthetic fixture, not Player")
         self.output="Artifacts/build/app.exe"
@@ -37,7 +37,7 @@ class HistoricalTests(unittest.TestCase):
         self.terminal["evidence"]["project_root"]="H:/wrong/XUILab";self.write()
         with self.assertRaises(ValueError):self.verify()
     def test_changed_native_output_rejected_even_rehashed(self):
-        self.terminal["evidence"]["response"]["data"]["output_path"]="G:/Programming/Other/app.exe";self.write()
+        self.terminal["evidence"]["response"]["data"]["output_path"]="Z:/recorded/Other/app.exe";self.write()
         with self.assertRaises(ValueError):self.verify()
     def test_wrong_job_rejected_even_rehashed(self):
         self.terminal["evidence"]["response"]["data"]["job_id"]="another";self.write()

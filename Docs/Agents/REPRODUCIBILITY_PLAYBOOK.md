@@ -8,11 +8,12 @@
 | --- | --- | --- |
 | PM 检查 | Python 3.10+ 标准库 | Unity、网络、pip |
 | B 批统一检查、证据目录包、SVG 出图、恢复检查 | Python 3.11+ 标准库（使用 hashlib.file_digest） | ReportLab、matplotlib、Unity、网络 |
+| 完整离线测试中的Gradient质量复核 | Python 3.11+与[NumPy固定依赖](../../Tools/requirements-ci.txt)，在项目虚拟环境安装 | Unity、Player、采样 |
 | List 实际恢复执行 | Windows x64 交互桌面、冻结的完整 Development Player、相匹配的计划／构建哈希、唯一操作者 | 重建 Editor（已有完整 Player 时） |
 | M0 旧工具 | Windows PowerShell 5.1；实跑另需对应 Windows Player | Python |
 | Unity 重建／测试 | 固定 2022.3.45f1c1，Packages manifest/lock 所列依赖 | Unity 6 |
 
-本轮实测 Python 3.14.3；3.11 是代码最低版本要求，未声称对所有解释器版本执行过测试。无需安装全局工具或执行 pip install。旧 `Artifacts/analyze_list_r3.py` 的 ReportLab 是历史脚本依赖；新出图入口不调用它。新工具只输出 SVG/JSON/Markdown，不复制历史 PDF/PNG 的像素布局或架构说明图。
+本轮实测 Python 3.14.3；3.11 是代码最低版本要求，未声称对所有解释器版本执行过测试。上述标准库入口无需安装全局工具。后续Gradient完整质量复核需要NumPy，完整CI依赖按上表安装到项目环境。旧 `Artifacts/analyze_list_r3.py` 的 ReportLab 是历史脚本依赖；新出图入口不调用它。新工具只输出 SVG/JSON/Markdown，不复制历史 PDF/PNG 的像素布局或架构说明图。
 
 ## 统一离线检查
 

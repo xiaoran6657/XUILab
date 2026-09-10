@@ -432,7 +432,9 @@ def _artifact_set_hash(run_dir: Path) -> str:
 
 def _read_text_file(path: Path, context: str, require_nonempty: bool = False) -> str:
     try:
-        text = path.read_text(encoding="utf-8", newline="")
+        # Path.read_text(newline=...) requires Python 3.13; preserve line endings on 3.11+.
+        with path.open(encoding="utf-8", newline="") as stream:
+            text = stream.read()
     except (OSError, UnicodeError) as exc:
         _fail(context, "cannot read text file ({})".format(exc))
     if require_nonempty and not text:

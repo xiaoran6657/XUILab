@@ -1,0 +1,2 @@
+# Gradient quality verification used by the offline test suite.
+numpy==2.3.5

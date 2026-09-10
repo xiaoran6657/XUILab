@@ -6,7 +6,7 @@ Unity Editor、Unity Player 或网络客户端。
 
 ## 依赖与范围
 
-需要 Python 3.11 或更高版本，只使用 Python 标准库。允许的检查集合固定为：
+需要Python 3.11或更高版本。调度器本身使用标准库；完整GradientLab测试与质量复核需要[固定NumPy依赖](../../Tools/requirements-ci.txt)，请先在项目虚拟环境执行 `python -m pip install --only-binary=:all: -r Tools/requirements-ci.txt`。检查执行期间不访问网络，CI安装阶段需要网络。允许的检查集合固定为：
 
 check_offline、ProjectManagement、ListLab、UnityOperations、GradientLab、Archiving、Automation。
 
@@ -48,7 +48,7 @@ interrupted。此时 inspect 返回 status=needs_review，要求人工确认子�
 ## CI
 
 最小托管入口是 [.github/workflows/offline.yml](../../.github/workflows/offline.yml)。它在
-Windows/Python 3.11 上运行相同的离线入口和六个工具目录的测试，不启动 Unity，也不上传产物。
+Windows/Python 3.11 上运行相同的离线入口和六个工具目录的测试，并单独运行Publishing导出边界测试，不启动Unity，也不上传产物。main推送、PR与手动调度均可触发；绿色结果不代表Unity/Player或性能已运行。
 隔离单元测试已验证调度器的计划、模拟成功、重复 ID、非零退出、超时和中断检查；本说明不宣称托管 CI
 已在远端实际运行。GitHub Actions 的 bootstrap 仍需要访问 GitHub 获取官方 action；相关
 来源为 [actions/checkout](https://github.com/actions/checkout) 与
