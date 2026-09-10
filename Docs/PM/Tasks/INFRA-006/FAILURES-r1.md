@@ -23,3 +23,7 @@ public-local-r2使用Python3.12.14/NumPy2.3.5；GradientLab恢复通过，但Lis
 ## Windows短路径身份
 
 [34460749088](https://github.com/xiaoran6657/XUILab/actions/runs/34460749088)在fb1809b上实际执行Python3.11.9，List 70测试出现5 failures/3 errors，其他6个命令通过。构建清单路径只有abspath，Player路径使用resolve，Windows 8.3别名导致同一文件不匹配。新增真实GetShortPathNameW回归，本机修复前复现同样ResumeError。修复统一现存pinned文件的解析身份，解析前后仍检查reparse；并拒绝同一文件不同别名绑定冲突哈希。源码工具有变化，旧Unity样本未重跑。
+
+## Windows包许可文本补充
+
+发布前发现r4附有MCP package.json的licensesUrl但未附实际MIT正文，同时包含MCPForUnity.Runtime.dll。公开派生包只增加锁定acf5e3dd3b864c140862e0c6644ff9e8f2120a64的原MIT文本、项目MIT和PUBLIC_PACKAGE.json。上游Git blob e7f878d1da6b4d9488058157ce6b48cb584460b1已按下载内容复算；MIT文本SHA256 6efe650c965012ac418238dcd6b9116e4130a5220717ef0dfb539dd159c4245c。原r4全部275条目保持字节一致，不改二进制、不新建Unity构建。新公开ZIP SHA256 ddc5e44c72ceb710563b62465eb6d1e1024af0e8d3a7d6eb4a2180fc43dbb818；旧草稿附件在仓库私有期间替换，旧本地文件保留。

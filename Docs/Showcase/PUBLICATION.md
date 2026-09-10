@@ -11,7 +11,7 @@ v0.1.0-preview.1为技术预览，M4个人学习复盘仍待完成。[源码对�
 | [list.mp4](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/list.mp4) | 3527638 | `40013b4390a225c1f8c489ff55cd237208f1f9c86ae220bc65a14444aee268f4` |
 | [XUILab-evidence-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-evidence-v0.1.0-preview.1.zip) | 37253431 | `8cac30c276e142d42871ea86e6b7ddfa02ec0e33f9ab4bcb7110523e79098ba7` |
 | [XUILab-showcase-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-showcase-v0.1.0-preview.1.zip) | 5988987 | `1418fff477c40ba8bd6973a9ead906d3993b6906850442725583e69b163e3d78` |
-| [XUILab-Windows-x64-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-Windows-x64-v0.1.0-preview.1.zip) | 31879450 | `52f0d3cdcfc1534744002446440a32ed1c3e90bef55544c45f057b680f0a9079` |
+| [XUILab-Windows-x64-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-Windows-x64-v0.1.0-preview.1.zip) | 32677629 | `ddc5e44c72ceb710563b62465eb6d1e1024af0e8d3a7d6eb4a2180fc43dbb818` |
 
 [SHA256SUMS.txt](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt)。素材包manifest SHA-256：`8304f96ede32b5145df30af19352d6057fc4a6fbaacbbb8a8de3cb116262cdb9`；数据包manifest SHA-256：`559ce56773e35a96aa464ca8db845831dfd90b610d18fa10717c1939c5fd394f`。
 

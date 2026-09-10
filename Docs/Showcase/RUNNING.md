@@ -25,3 +25,7 @@
 [包清单及ZIP哈希（历史记录未公开）](HISTORICAL_RECORDS.md)关联原始构建。Unity标记DoNotShip的Burst调试文件未进入包；12个无签名项目程序集中的CodeView PDB目录文字在副本内改为文件名，字节长度、IL、元数据及其他字节保留，变换偏移/原字串哈希见[包内清单（历史记录未公开）](HISTORICAL_RECORDS.md)。所有第三方二进制均与原构建逐字节相同，保留签名；早期r2/r3清理范围过宽而不作为交付。原始构建完全保留，打包不是新源码候选。
 
 包附实际依赖的许可/NOTICE；完整隐私与许可范围见[SOURCES](SOURCES.md)。原始本机日志、参考材料和失败打包目录不作为对外资料。新机器若缺依赖或启动失败，保留日志并据环境排查，不沿用本机通过结论。
+
+## 公开ZIP的许可补充
+
+公开Windows ZIP在原r4基础上仅添加项目LICENSE.txt、锁定MCP提交的MIT正文和PUBLIC_PACKAGE.json。r4的275个既有条目逐字节保留，二进制未改、没有新构建；PUBLIC_PACKAGE.json列出除自身外的完整文件SHA，原package-manifest.json继续描述r4基础包。外层ZIP的当前SHA由[发布记录](PUBLICATION.md)维护。
