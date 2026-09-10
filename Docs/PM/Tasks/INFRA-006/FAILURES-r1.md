@@ -19,3 +19,7 @@ public-local-r2使用Python3.12.14/NumPy2.3.5；GradientLab恢复通过，但Lis
 ## 首次私有CI
 
 [34460245242](https://github.com/xiaoran6657/XUILab/actions/runs/34460245242)在acc4f72上failure，jobs为空，CLI提示workflow file issue。核对发现pip的--only-binary=:all:后冒号加空格位于YAML未引用标量中，导致工作流解析失败。改为折叠块标量保留命令原样；新提交重新触发，原失败保留。
+
+## Windows短路径身份
+
+[34460749088](https://github.com/xiaoran6657/XUILab/actions/runs/34460749088)在fb1809b上实际执行Python3.11.9，List 70测试出现5 failures/3 errors，其他6个命令通过。构建清单路径只有abspath，Player路径使用resolve，Windows 8.3别名导致同一文件不匹配。新增真实GetShortPathNameW回归，本机修复前复现同样ResumeError。修复统一现存pinned文件的解析身份，解析前后仍检查reparse；并拒绝同一文件不同别名绑定冲突哈希。源码工具有变化，旧Unity样本未重跑。

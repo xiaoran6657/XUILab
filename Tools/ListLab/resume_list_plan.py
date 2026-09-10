@@ -538,8 +538,9 @@ def _mapped_hash_paths(
             current = base / raw_path
             if _relative_under(current, base) is None:
                 _fail("relative build hash path {} escapes its build root".format(raw_name))
-        current = pathlib.Path(os.path.abspath(os.path.normpath(str(current))))
-        _assert_path(current, "pinned build file")
+        # Match the Player's canonical identity, including Windows 8.3 aliases.
+        # Guard both spellings against reparse points before/after resolution.
+        current = _absolute_existing(current, "pinned build file")
         if current in mapped and mapped[current] != expected:
             _fail("build hashes map two different hashes to {}".format(current))
         mapped[current] = expected

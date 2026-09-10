@@ -337,6 +337,27 @@ class ResumeTests(unittest.TestCase):
             self.execute()
         self.assertEqual(lock.read_text(encoding="utf-8"), "stale operator lock")
 
+    @unittest.skipUnless(os.name == "nt", "Windows short-path identity")
+    def test_short_path_build_key_matches_resolved_player_and_rejects_alias_conflict(self):
+        import ctypes
+        from ctypes import wintypes
+        get_short = ctypes.windll.kernel32.GetShortPathNameW
+        get_short.argtypes = [wintypes.LPCWSTR, wintypes.LPWSTR, wintypes.DWORD]
+        get_short.restype = wintypes.DWORD
+        long_path = self.fixture.player.resolve()
+        buffer = ctypes.create_unicode_buffer(32768)
+        length = get_short(str(long_path), buffer, len(buffer))
+        if not length or length >= len(buffer) or os.path.normcase(buffer.value) == os.path.normcase(str(long_path)):
+            self.skipTest("Filesystem does not expose a distinct 8.3 alias")
+        short_path = Path(buffer.value)
+        digest = hashlib.sha256(long_path.read_bytes()).hexdigest()
+        self.fixture.hash_path.write_text(json.dumps({str(short_path): digest}), encoding="utf-8")
+        mapped = resume.verify_build_hashes(self.fixture.hash_path, long_path)
+        self.assertEqual({str(long_path): digest.upper()}, mapped)
+        self.fixture.hash_path.write_text(json.dumps({str(short_path): digest, str(long_path): "0" * 64}), encoding="utf-8")
+        with self.assertRaisesRegex(resume.ResumeError, "two different hashes"):
+            resume.verify_build_hashes(self.fixture.hash_path, long_path)
+
     def test_absolute_build_hashes_map_from_recorded_root(self):
         old_root = Path(self.temp.name) / "old-build"
         new_root = Path(self.temp.name) / "new-build"
