@@ -84,3 +84,7 @@
 *.zip binary
 *.7z binary
 *.unitypackage binary
+
+# Public evidence identity depends on original JSON bytes, including line endings.
+Docs/Showcase/Data/*.json -text
+Docs/Showcase/PUBLISHING_INPUTS.json -text
