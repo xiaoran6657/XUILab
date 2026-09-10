@@ -15,3 +15,7 @@ public-local-r2使用Python3.12.14/NumPy2.3.5；GradientLab恢复通过，但Lis
 ## Git换行转换检查
 
 准备提交后逐字节比较发现，根规则会将部分证据JSON的CRLF转换为LF，导致公开clone中的manifest与记录SHA不同。修复为仅对Docs/Showcase/Data/*.json和PUBLISHING_INPUTS.json保留原字节；其他项目文本继续LF规范。原始数据、清单与哈希均未重写，Git中重新记录原字节，并在发布副本再次比对。该修复不涉及Unity源文件。
+
+## 首次私有CI
+
+[34460245242](https://github.com/xiaoran6657/XUILab/actions/runs/34460245242)在acc4f72上failure，jobs为空，CLI提示workflow file issue。核对发现pip的--only-binary=:all:后冒号加空格位于YAML未引用标量中，导致工作流解析失败。改为折叠块标量保留命令原样；新提交重新触发，原失败保留。

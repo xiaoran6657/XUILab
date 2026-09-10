@@ -16,6 +16,6 @@ python -B <archive>/source/Tools/Archiving/source_archive.py check --archive <ar
 
 恢复到新工作区时，将source/内容放回仓库根；按[恢复映射（历史记录未公开）](HISTORICAL_RECORDS.md)把extra放回对应Artifacts相对路径。只打开恢复后的XUILab/。原receipt保留原机器路径，不重写成新路径来假装当时在那里运行；历史核对遵循[复跑说明](REPLAY.md)，新运行使用新的身份和目录。
 
-本地归档含原日志、路径和可能涉及个人/公司的Docs/References背景资料，只供本地保留，**不能直接上传公开**。可运行展示包单独见[RUNNING](RUNNING.md)；公开许可与发布仍需要另外处理。Unity安装、Library包缓存、Python/Node本机依赖、ffmpeg可执行文件不作为源码工具重新分发；运行时版本与来源清单保留。
+本地归档含原日志、路径和可能涉及个人/公司的Docs/References背景资料，只供本地保留，**不能直接上传公开**。可运行展示包单独见[RUNNING](RUNNING.md)；公开许可与实际发布状态见[公开交付记录](PUBLICATION.md)。Unity安装、Library包缓存、Python/Node本机依赖、ffmpeg可执行文件不作为源码工具重新分发；运行时版本与来源清单保留。
 
 归档中PM是归档时点快照；最终收尾文档如晚于该快照，会由单独`m4-final-docs-r2.zip`和manifest记录。源码候选与最终运行数据不因文档后补而改变。
