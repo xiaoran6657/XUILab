@@ -4,6 +4,8 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 
 本项目的重点是理解和解释 UI 性能问题，并形成可用于个人作品展示的证据。界面视觉精修服务于演示，不是首要目标。
 
+[项目概览与展示素材](Docs/Showcase/PROFILE.md) · [公开交付记录](Docs/Showcase/PUBLICATION.md) · [许可](LICENSE)
+
 ## 当前状态
 
 - Unity 工程已经创建，路径为 [`XUILab/`](XUILab/)。
@@ -14,7 +16,7 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 
 离线验证、证据搬迁、出图和计划恢复从 [统一证据入口](Docs/Experiments/EVIDENCE.md) 开始；依赖和可复制命令见 [复现工具手册](Docs/Agents/REPRODUCIBILITY_PLAYBOOK.md)。
 
-List Lab：[Player实验报告](Docs/Experiments/LIST_BENCHMARK_RESULTS.md) · [实现与学习案例](Docs/Experiments/LIST_LAB_CASE_STUDY.md) · [30秒演示](Artifacts/list-media/list-demo-r4.mp4)。展示场景为 `XUILab/Assets/XUILab/Scenes/ListLab.unity`；Editor最近观测时间及状态见[交接记录](Docs/PM/PROJECT_STATUS.md)，操作前重新查询。
+List Lab：[Player实验报告](Docs/Experiments/LIST_BENCHMARK_RESULTS.md) · [实现与学习案例](Docs/Experiments/LIST_LAB_CASE_STUDY.md) · [最终演示资料](Docs/Showcase/MEDIA.md)。展示场景为 `XUILab/Assets/XUILab/Scenes/ListLab.unity`；Editor最近观测时间及状态见[交接记录](Docs/PM/PROJECT_STATUS.md)，操作前重新查询。
 
 ## 计划交付
 

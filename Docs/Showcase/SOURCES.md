@@ -18,7 +18,7 @@ UGUI 1.0.0、URP 14.0.11、TextMesh Pro 3.0.9的已解析包均包含LICENSE.md�
 
 MCP for Unity已解析package.json版本为10.2.1-beta.3；manifest使用beta引用，但lock固定解析提交acf5e3dd3b864c140862e0c6644ff9e8f2120a64。该工具服务Editor操作，来源为 [CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp)，许可入口由实际package.json的licensesUrl提供。最终源码不打包Library/PackageCache替代依赖获取；不要把可移动beta名字当作已固定的身份。
 
-仓库根目录当前没有项目级LICENSE文件。本次没有擅自选择开源许可证、改变原依赖条款或授予第三方再分发权。
+2026-09-10用户同意公开方案后，新增根目录[MIT许可](../../LICENSE)，适用于有权授权的原创部分。第三方范围见[许可与第三方声明](THIRD_PARTY_NOTICES.md)，原依赖条款保持不变。
 
 ## 研究材料与公开文案
 

@@ -1,0 +1,5068 @@
+{
+  "schemaVersion": "xuilab.list-refresh.subset-report/v1",
+  "status": "pass",
+  "generatedBy": {
+    "script": "Artifacts/m4-final-validation/list_subset_report.py",
+    "scriptSha256": "57ca033c3256c95fde0c394980bd6700e7b9794f5b2e51ca1a84e5ff629e004a"
+  },
+  "inputs": {
+    "plan": {
+      "path": "Artifacts/m4-final-validation/list-matrix-plan-r1.json",
+      "sha256": "713f685e97e60f5a102a64327b267e79cf5528b3245aefe8bf2ceeda5e084cc1"
+    },
+    "gate": {
+      "path": "Artifacts/m4-final-validation/list-preflight-r1.json",
+      "sha256": "14d4559f4ae91ad78183068c0ddc5bc05405e009e8b4b35699e93977c3fa1669"
+    },
+    "buildManifest": {
+      "path": "Artifacts/m4-list-build-manifest-r1.json",
+      "sha256": "530efb29742fadd61fbcfe9e83da083d1352a8d80817644920af79d91adc8f71"
+    }
+  },
+  "identity": {
+    "candidateId": "m4-final-b017672",
+    "buildId": "m4-development-b017672-r1",
+    "sourceRevision": "b0176724d58c7cda86b472340845d239714888d0",
+    "dirty": false
+  },
+  "selection": {
+    "backends": [
+      "normal",
+      "virtual"
+    ],
+    "profiles": [
+      "high",
+      "batch"
+    ],
+    "pilot": false
+  },
+  "scope": {
+    "runCount": 50,
+    "groupCount": 5,
+    "measuredGroups": [
+      "normal-high-fps-1",
+      "normal-batch-fps-1",
+      "virtual-high-fps-1",
+      "virtual-batch-fps-1",
+      "virtual-high-fps60"
+    ],
+    "unmeasuredGroups": [
+      "normal-idle-fps-1",
+      "normal-sparse-fps-1",
+      "normal-burst-fps-1",
+      "virtual-idle-fps-1",
+      "virtual-sparse-fps-1",
+      "virtual-burst-fps-1"
+    ],
+    "claimBoundary": "Only the five measured groups are covered."
+  },
+  "verification": {
+    "status": "pass",
+    "planSha256": "713f685e97e60f5a102a64327b267e79cf5528b3245aefe8bf2ceeda5e084cc1",
+    "failureCount": 0
+  },
+  "runs": [
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r1",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-window-high",
+      "variant": "window",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 28.260599825,
+      "frameP95Ms": 29.0387043695,
+      "frameP99Ms": 29.6371175886,
+      "frameMaxMs": 30.79029918,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 383.60839999999916,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r1",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-target-high",
+      "variant": "target",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 3.9185998,
+      "frameP95Ms": 4.2198147875,
+      "frameP99Ms": 4.5773308105999995,
+      "frameMaxMs": 6.17559999,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 382.4306999999999,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r2",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-target-high",
+      "variant": "target",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 3.98635003,
+      "frameP95Ms": 4.3499548485,
+      "frameP99Ms": 4.808670170499999,
+      "frameMaxMs": 8.01800005,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 376.3876,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r2",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-window-high",
+      "variant": "window",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 28.080650605,
+      "frameP95Ms": 28.717564236,
+      "frameP99Ms": 29.2630640763,
+      "frameMaxMs": 31.4650014,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 384.5787,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r3",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-window-high",
+      "variant": "window",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 27.734800245000002,
+      "frameP95Ms": 28.6961693355,
+      "frameP99Ms": 29.1529996718,
+      "frameMaxMs": 30.35219945,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 382.97760000000017,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r3",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-target-high",
+      "variant": "target",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 4.003100095000001,
+      "frameP95Ms": 4.285340150500001,
+      "frameP99Ms": 4.7373008711,
+      "frameMaxMs": 6.21409994,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 388.5744999999997,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r4",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-target-high",
+      "variant": "target",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 3.987000095,
+      "frameP95Ms": 4.4389149145,
+      "frameP99Ms": 4.8483869001999995,
+      "frameMaxMs": 6.13360014,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 383.5457000000006,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r4",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-window-high",
+      "variant": "window",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 28.342450035,
+      "frameP95Ms": 29.127299223999998,
+      "frameP99Ms": 29.702543210600002,
+      "frameMaxMs": 32.73529932,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 377.799,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r5",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-window-high",
+      "variant": "window",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 27.912050485,
+      "frameP95Ms": 28.7559645265,
+      "frameP99Ms": 29.3300906956,
+      "frameMaxMs": 33.73090178,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 380.9324999999999,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r5",
+      "groupId": "normal-high-fps-1",
+      "caseId": "listrefresh-normal-1000-target-high",
+      "variant": "target",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 3.950400045,
+      "frameP95Ms": 4.3438347980000005,
+      "frameP99Ms": 4.803703909999999,
+      "frameMaxMs": 6.77239988,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 379.1908999999996,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r1",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-window-batch",
+      "variant": "window",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 28.115100225,
+      "frameP95Ms": 29.018484148000002,
+      "frameP99Ms": 29.9935495118,
+      "frameMaxMs": 33.57509896,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 383.8262999999997,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r1",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-target-batch",
+      "variant": "target",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 4.47024987,
+      "frameP95Ms": 4.977515176499999,
+      "frameP99Ms": 5.474140772299999,
+      "frameMaxMs": 7.18569988,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 379.71480000000065,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r2",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-target-batch",
+      "variant": "target",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 4.5301499750000005,
+      "frameP95Ms": 5.000374787999999,
+      "frameP99Ms": 5.492224140199999,
+      "frameMaxMs": 6.7317998,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 377.1321000000007,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r2",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-window-batch",
+      "variant": "window",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 27.996400375,
+      "frameP95Ms": 28.8358295385,
+      "frameP99Ms": 29.4826470454,
+      "frameMaxMs": 32.33370185,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 376.0713999999998,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r3",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-window-batch",
+      "variant": "window",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 27.879550125,
+      "frameP95Ms": 28.7055850995,
+      "frameP99Ms": 29.2682147006,
+      "frameMaxMs": 30.74580058,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 380.5731999999998,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r3",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-target-batch",
+      "variant": "target",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 4.499899925,
+      "frameP95Ms": 4.8243148475,
+      "frameP99Ms": 5.16075895,
+      "frameMaxMs": 6.69799978,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 374.16579999999976,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r4",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-target-batch",
+      "variant": "target",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 4.483100025000001,
+      "frameP95Ms": 4.803850009,
+      "frameP99Ms": 5.1798950896,
+      "frameMaxMs": 6.77980017,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 381.21330000000034,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r4",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-window-batch",
+      "variant": "window",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 27.918750420000002,
+      "frameP95Ms": 28.794059533,
+      "frameP99Ms": 29.2831977279,
+      "frameMaxMs": 32.33179823,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 384.0637000000006,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r5",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-window-batch",
+      "variant": "window",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 27.89149992,
+      "frameP95Ms": 28.813529383,
+      "frameP99Ms": 29.4291128767,
+      "frameMaxMs": 31.77399933,
+      "overBudgetRatio": 1,
+      "bindDelta": 16200,
+      "coldBuildMs": 383.84950000000026,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r5",
+      "groupId": "normal-batch-fps-1",
+      "caseId": "listrefresh-normal-1000-target-batch",
+      "variant": "target",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 4.46800003,
+      "frameP95Ms": 4.7828401000000005,
+      "frameP99Ms": 5.2293517712,
+      "frameMaxMs": 6.67970022,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 391.16370000000006,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r1",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.85180002,
+      "frameP95Ms": 0.9003799905,
+      "frameP99Ms": 1.0044379603,
+      "frameMaxMs": 3.17230006,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 143.82200000000012,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r1",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.59890002,
+      "frameP95Ms": 0.6670100105,
+      "frameP99Ms": 0.7142040201000001,
+      "frameMaxMs": 2.87760003,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 140.59750000000076,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r2",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.60005,
+      "frameP95Ms": 0.66180498,
+      "frameP99Ms": 0.69010602,
+      "frameMaxMs": 3.0596999,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 145.65229999999974,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r2",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.8556,
+      "frameP95Ms": 0.9153099805,
+      "frameP99Ms": 0.9520399703,
+      "frameMaxMs": 3.17859999,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.20589999999993,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r3",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.85539999,
+      "frameP95Ms": 0.92741502,
+      "frameP99Ms": 1.06624897,
+      "frameMaxMs": 3.22269998,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.72839999999997,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r3",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.60119998,
+      "frameP95Ms": 0.6678200200000001,
+      "frameP99Ms": 0.6962030001,
+      "frameMaxMs": 2.91209994,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 141.47809999999936,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r4",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.60199999,
+      "frameP95Ms": 0.6746050105,
+      "frameP99Ms": 0.7342120001,
+      "frameMaxMs": 2.92079989,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 141.70570000000043,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r4",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.88160002,
+      "frameP95Ms": 0.96032498,
+      "frameP99Ms": 1.06620697,
+      "frameMaxMs": 3.4095,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 140.45830000000024,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r5",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.8561,
+      "frameP95Ms": 0.93040498,
+      "frameP99Ms": 0.9782480002999999,
+      "frameMaxMs": 3.17130005,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 141.48070000000007,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r5",
+      "groupId": "virtual-high-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.60249999,
+      "frameP95Ms": 0.67470502,
+      "frameP99Ms": 0.71440103,
+      "frameMaxMs": 2.91809998,
+      "overBudgetRatio": 0,
+      "bindDelta": 1800,
+      "coldBuildMs": 141.95740000000023,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r1",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-batch",
+      "variant": "window",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.94449997,
+      "frameP95Ms": 1.02049997,
+      "frameP99Ms": 1.0660369702999999,
+      "frameMaxMs": 3.32430005,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.14989999999943,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r1",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-batch",
+      "variant": "target",
+      "runIndex": 1,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93620003,
+      "frameP95Ms": 0.99121498,
+      "frameP99Ms": 1.0214119801,
+      "frameMaxMs": 3.29950009,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 140.57999999999993,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r2",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-batch",
+      "variant": "target",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93430001,
+      "frameP95Ms": 0.9794400099999999,
+      "frameP99Ms": 1.05865003,
+      "frameMaxMs": 3.2391001,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.86200000000008,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r2",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-batch",
+      "variant": "window",
+      "runIndex": 2,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93390001,
+      "frameP95Ms": 1.00500497,
+      "frameP99Ms": 1.0519259801999998,
+      "frameMaxMs": 3.28629999,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 141.82240000000002,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r3",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-batch",
+      "variant": "window",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.9397,
+      "frameP95Ms": 0.99950004,
+      "frameP99Ms": 1.05070197,
+      "frameMaxMs": 3.29030002,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 141.54620000000068,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r3",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-batch",
+      "variant": "target",
+      "runIndex": 3,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.94170001,
+      "frameP95Ms": 1.0069099805,
+      "frameP99Ms": 1.0773080489,
+      "frameMaxMs": 3.39969993,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 141.5592000000006,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r4",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-batch",
+      "variant": "target",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93480002,
+      "frameP95Ms": 1.01062001,
+      "frameP99Ms": 1.1024600101,
+      "frameMaxMs": 3.21429991,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.54379999999946,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r4",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-batch",
+      "variant": "window",
+      "runIndex": 4,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93949999,
+      "frameP95Ms": 1.01510505,
+      "frameP99Ms": 1.0679359803,
+      "frameMaxMs": 3.2563,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.91820000000007,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r5",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-window-batch",
+      "variant": "window",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93829999,
+      "frameP95Ms": 1.0056199705,
+      "frameP99Ms": 1.0443160401,
+      "frameMaxMs": 3.40629998,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 143.71129999999994,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r5",
+      "groupId": "virtual-batch-fps-1",
+      "caseId": "listrefresh-virtual-1000-target-batch",
+      "variant": "target",
+      "runIndex": 5,
+      "targetFrameRate": -1,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 0.93729998,
+      "frameP95Ms": 1.0085,
+      "frameP99Ms": 1.1325160101,
+      "frameMaxMs": 3.23539996,
+      "overBudgetRatio": 0,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.40539999999964,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": -1,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r1",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 1,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66709967,
+      "frameP95Ms": 17.002205646,
+      "frameP99Ms": 17.0267090766,
+      "frameMaxMs": 17.07479917,
+      "overBudgetRatio": 0.78777778,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.22289999999975,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r1",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 1,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66730084,
+      "frameP95Ms": 17.00169966,
+      "frameP99Ms": 17.031615694299997,
+      "frameMaxMs": 17.07950048,
+      "overBudgetRatio": 0.79944444,
+      "bindDelta": 1800,
+      "coldBuildMs": 143.54840000000058,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r2",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 2,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66720025,
+      "frameP95Ms": 17.00250059,
+      "frameP99Ms": 17.0290034488,
+      "frameMaxMs": 17.07280055,
+      "overBudgetRatio": 0.79722222,
+      "bindDelta": 1800,
+      "coldBuildMs": 142.15000000000055,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r2",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 2,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66760072,
+      "frameP95Ms": 17.00259931,
+      "frameP99Ms": 17.029307333600002,
+      "frameMaxMs": 17.07440056,
+      "overBudgetRatio": 0.80166667,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.67109999999957,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r3",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 3,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66730084,
+      "frameP95Ms": 17.00199954,
+      "frameP99Ms": 17.0362035747,
+      "frameMaxMs": 17.07850024,
+      "overBudgetRatio": 0.8,
+      "bindDelta": 16200,
+      "coldBuildMs": 146.57739999999922,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r3",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 3,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.667250545,
+      "frameP95Ms": 17.00129919,
+      "frameP99Ms": 17.0214138327,
+      "frameMaxMs": 17.07020029,
+      "overBudgetRatio": 0.77722222,
+      "bindDelta": 1800,
+      "coldBuildMs": 141.63630000000012,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r4",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 4,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66720025,
+      "frameP95Ms": 17.00199954,
+      "frameP99Ms": 17.0195021075,
+      "frameMaxMs": 17.06920005,
+      "overBudgetRatio": 0.78944444,
+      "bindDelta": 1800,
+      "coldBuildMs": 142.02840000000015,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r4",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 4,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66730084,
+      "frameP95Ms": 17.00259931,
+      "frameP99Ms": 17.0320523109,
+      "frameMaxMs": 17.07289927,
+      "overBudgetRatio": 0.80333333,
+      "bindDelta": 16200,
+      "coldBuildMs": 144.5092999999997,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r5",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-window-high",
+      "variant": "window",
+      "runIndex": 5,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66709967,
+      "frameP95Ms": 17.00180024,
+      "frameP99Ms": 17.0252116396,
+      "frameMaxMs": 17.06860028,
+      "overBudgetRatio": 0.79666667,
+      "bindDelta": 16200,
+      "coldBuildMs": 142.8702000000003,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    },
+    {
+      "runId": "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r5",
+      "groupId": "virtual-high-fps60",
+      "caseId": "listrefresh-virtual-1000-target-high",
+      "variant": "target",
+      "runIndex": 5,
+      "targetFrameRate": 60,
+      "correctness": "pass",
+      "measurementValidity": "valid",
+      "frameP50Ms": 16.66739956,
+      "frameP95Ms": 17.00310037,
+      "frameP99Ms": 17.0465309944,
+      "frameMaxMs": 17.07869954,
+      "overBudgetRatio": 0.78888889,
+      "bindDelta": 1800,
+      "coldBuildMs": 141.1769000000004,
+      "totalGcAllocatedBytes": null,
+      "environment": {
+        "schemaVersion": "xuilab.benchmark.environment/v1",
+        "tier": "windows-development-player",
+        "unityVersion": "2022.3.45f1c1",
+        "operatingSystem": "Windows 10  (10.0.19045) 64bit",
+        "processorType": "AMD Ryzen 5 5600G with Radeon Graphics ",
+        "processorCount": 12,
+        "graphicsDeviceName": "AMD Radeon RX 9070",
+        "graphicsDeviceType": "Direct3D11",
+        "graphicsDeviceVersion": "Direct3D 11.0 [level 11.1]",
+        "screenWidth": 960,
+        "screenHeight": 540,
+        "qualityLevel": "High Fidelity",
+        "vSyncCount": 0,
+        "targetFrameRate": 60,
+        "scriptingBackend": "mono",
+        "buildType": "development",
+        "metricCapabilities": [
+          {
+            "name": "Frame Interval",
+            "category": "BuiltIn",
+            "unit": "Milliseconds",
+            "required": true,
+            "status": "available",
+            "reason": ""
+          },
+          {
+            "name": "Main Thread",
+            "category": "Internal",
+            "unit": "TimeNanoseconds",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "GC Allocated In Frame",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          },
+          {
+            "name": "System Used Memory",
+            "category": "Memory",
+            "unit": "Bytes",
+            "required": false,
+            "status": "unavailable",
+            "reason": "ProfilerRecorder produced no usable samples."
+          }
+        ]
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group": "normal-high-fps-1",
+      "targetFrameRate": -1,
+      "window": {
+        "runIds": [
+          "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r1",
+          "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r2",
+          "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r3",
+          "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r4",
+          "m4-list-r1-listrefresh-normal-1000-window-high-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            28.260599825,
+            28.080650605,
+            27.734800245000002,
+            28.342450035,
+            27.912050485
+          ],
+          "frameP95Ms": [
+            29.0387043695,
+            28.717564236,
+            28.6961693355,
+            29.127299223999998,
+            28.7559645265
+          ],
+          "frameP99Ms": [
+            29.6371175886,
+            29.2630640763,
+            29.1529996718,
+            29.702543210600002,
+            29.3300906956
+          ],
+          "frameMaxMs": [
+            30.79029918,
+            31.4650014,
+            30.35219945,
+            32.73529932,
+            33.73090178
+          ],
+          "overBudgetRatio": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            383.60839999999916,
+            384.5787,
+            382.97760000000017,
+            377.799,
+            380.9324999999999
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 28.080650605,
+            "repeatMin": 27.734800245000002,
+            "repeatMax": 28.342450035
+          },
+          "frameP95Ms": {
+            "repeatMedian": 28.7559645265,
+            "repeatMin": 28.6961693355,
+            "repeatMax": 29.127299223999998
+          },
+          "frameP99Ms": {
+            "repeatMedian": 29.3300906956,
+            "repeatMin": 29.1529996718,
+            "repeatMax": 29.702543210600002
+          },
+          "frameMaxMs": {
+            "repeatMedian": 31.4650014,
+            "repeatMin": 30.35219945,
+            "repeatMax": 33.73090178
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 1,
+            "repeatMin": 1,
+            "repeatMax": 1
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 382.97760000000017,
+            "repeatMin": 377.799,
+            "repeatMax": 384.5787
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "target": {
+        "runIds": [
+          "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r1",
+          "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r2",
+          "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r3",
+          "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r4",
+          "m4-list-r1-listrefresh-normal-1000-target-high-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            3.9185998,
+            3.98635003,
+            4.003100095000001,
+            3.987000095,
+            3.950400045
+          ],
+          "frameP95Ms": [
+            4.2198147875,
+            4.3499548485,
+            4.285340150500001,
+            4.4389149145,
+            4.3438347980000005
+          ],
+          "frameP99Ms": [
+            4.5773308105999995,
+            4.808670170499999,
+            4.7373008711,
+            4.8483869001999995,
+            4.803703909999999
+          ],
+          "frameMaxMs": [
+            6.17559999,
+            8.01800005,
+            6.21409994,
+            6.13360014,
+            6.77239988
+          ],
+          "overBudgetRatio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bindDelta": [
+            1800,
+            1800,
+            1800,
+            1800,
+            1800
+          ],
+          "coldBuildMs": [
+            382.4306999999999,
+            376.3876,
+            388.5744999999997,
+            383.5457000000006,
+            379.1908999999996
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 3.98635003,
+            "repeatMin": 3.9185998,
+            "repeatMax": 4.003100095000001
+          },
+          "frameP95Ms": {
+            "repeatMedian": 4.3438347980000005,
+            "repeatMin": 4.2198147875,
+            "repeatMax": 4.4389149145
+          },
+          "frameP99Ms": {
+            "repeatMedian": 4.803703909999999,
+            "repeatMin": 4.5773308105999995,
+            "repeatMax": 4.8483869001999995
+          },
+          "frameMaxMs": {
+            "repeatMedian": 6.21409994,
+            "repeatMin": 6.13360014,
+            "repeatMax": 8.01800005
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0,
+            "repeatMin": 0,
+            "repeatMax": 0
+          },
+          "bindDelta": {
+            "repeatMedian": 1800,
+            "repeatMin": 1800,
+            "repeatMax": 1800
+          },
+          "coldBuildMs": {
+            "repeatMedian": 382.4306999999999,
+            "repeatMin": 376.3876,
+            "repeatMax": 388.5744999999997
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "paired": {
+        "frameP50MsDelta": [
+          -24.342000025,
+          -24.094300575,
+          -23.73170015,
+          -24.35544994,
+          -23.961650440000003
+        ],
+        "frameP95MsDelta": [
+          -24.818889582,
+          -24.3676093875,
+          -24.410829184999997,
+          -24.688384309499998,
+          -24.412129728500002
+        ],
+        "frameP99MsDelta": [
+          -25.059786778,
+          -24.454393905800003,
+          -24.4156988007,
+          -24.8541563104,
+          -24.5263867856
+        ],
+        "frameMaxMsDelta": [
+          -24.614699190000003,
+          -23.44700135,
+          -24.13809951,
+          -26.601699180000004,
+          -26.9585019
+        ],
+        "overBudgetRatioDelta": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "bindDeltaDelta": [
+          -14400,
+          -14400,
+          -14400,
+          -14400,
+          -14400
+        ],
+        "coldBuildMsDelta": [
+          -1.1776999999992768,
+          -8.191100000000006,
+          5.59689999999955,
+          5.746700000000601,
+          -1.7416000000002896
+        ],
+        "totalGcAllocatedBytesDelta": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "comparison": {
+        "windowP95": [
+          29.0387043695,
+          28.717564236,
+          28.6961693355,
+          29.127299223999998,
+          28.7559645265
+        ],
+        "targetP95": [
+          4.2198147875,
+          4.3499548485,
+          4.285340150500001,
+          4.4389149145,
+          4.3438347980000005
+        ],
+        "medianDifference": -24.412129728500002,
+        "threshold": 1.4377982263250002,
+        "result": "improved"
+      }
+    },
+    {
+      "group": "normal-batch-fps-1",
+      "targetFrameRate": -1,
+      "window": {
+        "runIds": [
+          "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r1",
+          "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r2",
+          "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r3",
+          "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r4",
+          "m4-list-r1-listrefresh-normal-1000-window-batch-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            28.115100225,
+            27.996400375,
+            27.879550125,
+            27.918750420000002,
+            27.89149992
+          ],
+          "frameP95Ms": [
+            29.018484148000002,
+            28.8358295385,
+            28.7055850995,
+            28.794059533,
+            28.813529383
+          ],
+          "frameP99Ms": [
+            29.9935495118,
+            29.4826470454,
+            29.2682147006,
+            29.2831977279,
+            29.4291128767
+          ],
+          "frameMaxMs": [
+            33.57509896,
+            32.33370185,
+            30.74580058,
+            32.33179823,
+            31.77399933
+          ],
+          "overBudgetRatio": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            383.8262999999997,
+            376.0713999999998,
+            380.5731999999998,
+            384.0637000000006,
+            383.84950000000026
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 27.918750420000002,
+            "repeatMin": 27.879550125,
+            "repeatMax": 28.115100225
+          },
+          "frameP95Ms": {
+            "repeatMedian": 28.813529383,
+            "repeatMin": 28.7055850995,
+            "repeatMax": 29.018484148000002
+          },
+          "frameP99Ms": {
+            "repeatMedian": 29.4291128767,
+            "repeatMin": 29.2682147006,
+            "repeatMax": 29.9935495118
+          },
+          "frameMaxMs": {
+            "repeatMedian": 32.33179823,
+            "repeatMin": 30.74580058,
+            "repeatMax": 33.57509896
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 1,
+            "repeatMin": 1,
+            "repeatMax": 1
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 383.8262999999997,
+            "repeatMin": 376.0713999999998,
+            "repeatMax": 384.0637000000006
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "target": {
+        "runIds": [
+          "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r1",
+          "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r2",
+          "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r3",
+          "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r4",
+          "m4-list-r1-listrefresh-normal-1000-target-batch-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            4.47024987,
+            4.5301499750000005,
+            4.499899925,
+            4.483100025000001,
+            4.46800003
+          ],
+          "frameP95Ms": [
+            4.977515176499999,
+            5.000374787999999,
+            4.8243148475,
+            4.803850009,
+            4.7828401000000005
+          ],
+          "frameP99Ms": [
+            5.474140772299999,
+            5.492224140199999,
+            5.16075895,
+            5.1798950896,
+            5.2293517712
+          ],
+          "frameMaxMs": [
+            7.18569988,
+            6.7317998,
+            6.69799978,
+            6.77980017,
+            6.67970022
+          ],
+          "overBudgetRatio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            379.71480000000065,
+            377.1321000000007,
+            374.16579999999976,
+            381.21330000000034,
+            391.16370000000006
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 4.483100025000001,
+            "repeatMin": 4.46800003,
+            "repeatMax": 4.5301499750000005
+          },
+          "frameP95Ms": {
+            "repeatMedian": 4.8243148475,
+            "repeatMin": 4.7828401000000005,
+            "repeatMax": 5.000374787999999
+          },
+          "frameP99Ms": {
+            "repeatMedian": 5.2293517712,
+            "repeatMin": 5.16075895,
+            "repeatMax": 5.492224140199999
+          },
+          "frameMaxMs": {
+            "repeatMedian": 6.7317998,
+            "repeatMin": 6.67970022,
+            "repeatMax": 7.18569988
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0,
+            "repeatMin": 0,
+            "repeatMax": 0
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 379.71480000000065,
+            "repeatMin": 374.16579999999976,
+            "repeatMax": 391.16370000000006
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "paired": {
+        "frameP50MsDelta": [
+          -23.644850355,
+          -23.4662504,
+          -23.3796502,
+          -23.435650395000003,
+          -23.423499890000002
+        ],
+        "frameP95MsDelta": [
+          -24.040968971500003,
+          -23.835454750500002,
+          -23.881270252,
+          -23.990209524,
+          -24.030689282999997
+        ],
+        "frameP99MsDelta": [
+          -24.5194087395,
+          -23.9904229052,
+          -24.107455750600003,
+          -24.1033026383,
+          -24.1997611055
+        ],
+        "frameMaxMsDelta": [
+          -26.389399079999997,
+          -25.601902049999996,
+          -24.0478008,
+          -25.551998059999995,
+          -25.094299109999998
+        ],
+        "overBudgetRatioDelta": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "bindDeltaDelta": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coldBuildMsDelta": [
+          -4.111499999999069,
+          1.0607000000009066,
+          -6.407400000000052,
+          -2.8504000000002634,
+          7.314199999999801
+        ],
+        "totalGcAllocatedBytesDelta": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "comparison": {
+        "windowP95": [
+          29.018484148000002,
+          28.8358295385,
+          28.7055850995,
+          28.794059533,
+          28.813529383
+        ],
+        "targetP95": [
+          4.977515176499999,
+          5.000374787999999,
+          4.8243148475,
+          4.803850009,
+          4.7828401000000005
+        ],
+        "medianDifference": -23.989214535499997,
+        "threshold": 1.44067646915,
+        "result": "improved"
+      }
+    },
+    {
+      "group": "virtual-high-fps-1",
+      "targetFrameRate": -1,
+      "window": {
+        "runIds": [
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r1",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r2",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r3",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r4",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            0.85180002,
+            0.8556,
+            0.85539999,
+            0.88160002,
+            0.8561
+          ],
+          "frameP95Ms": [
+            0.9003799905,
+            0.9153099805,
+            0.92741502,
+            0.96032498,
+            0.93040498
+          ],
+          "frameP99Ms": [
+            1.0044379603,
+            0.9520399703,
+            1.06624897,
+            1.06620697,
+            0.9782480002999999
+          ],
+          "frameMaxMs": [
+            3.17230006,
+            3.17859999,
+            3.22269998,
+            3.4095,
+            3.17130005
+          ],
+          "overBudgetRatio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            143.82200000000012,
+            142.20589999999993,
+            142.72839999999997,
+            140.45830000000024,
+            141.48070000000007
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 0.8556,
+            "repeatMin": 0.85180002,
+            "repeatMax": 0.88160002
+          },
+          "frameP95Ms": {
+            "repeatMedian": 0.92741502,
+            "repeatMin": 0.9003799905,
+            "repeatMax": 0.96032498
+          },
+          "frameP99Ms": {
+            "repeatMedian": 1.0044379603,
+            "repeatMin": 0.9520399703,
+            "repeatMax": 1.06624897
+          },
+          "frameMaxMs": {
+            "repeatMedian": 3.17859999,
+            "repeatMin": 3.17130005,
+            "repeatMax": 3.4095
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0,
+            "repeatMin": 0,
+            "repeatMax": 0
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 142.20589999999993,
+            "repeatMin": 140.45830000000024,
+            "repeatMax": 143.82200000000012
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "target": {
+        "runIds": [
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r1",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r2",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r3",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r4",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            0.59890002,
+            0.60005,
+            0.60119998,
+            0.60199999,
+            0.60249999
+          ],
+          "frameP95Ms": [
+            0.6670100105,
+            0.66180498,
+            0.6678200200000001,
+            0.6746050105,
+            0.67470502
+          ],
+          "frameP99Ms": [
+            0.7142040201000001,
+            0.69010602,
+            0.6962030001,
+            0.7342120001,
+            0.71440103
+          ],
+          "frameMaxMs": [
+            2.87760003,
+            3.0596999,
+            2.91209994,
+            2.92079989,
+            2.91809998
+          ],
+          "overBudgetRatio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bindDelta": [
+            1800,
+            1800,
+            1800,
+            1800,
+            1800
+          ],
+          "coldBuildMs": [
+            140.59750000000076,
+            145.65229999999974,
+            141.47809999999936,
+            141.70570000000043,
+            141.95740000000023
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 0.60119998,
+            "repeatMin": 0.59890002,
+            "repeatMax": 0.60249999
+          },
+          "frameP95Ms": {
+            "repeatMedian": 0.6678200200000001,
+            "repeatMin": 0.66180498,
+            "repeatMax": 0.67470502
+          },
+          "frameP99Ms": {
+            "repeatMedian": 0.7142040201000001,
+            "repeatMin": 0.69010602,
+            "repeatMax": 0.7342120001
+          },
+          "frameMaxMs": {
+            "repeatMedian": 2.91809998,
+            "repeatMin": 2.87760003,
+            "repeatMax": 3.0596999
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0,
+            "repeatMin": 0,
+            "repeatMax": 0
+          },
+          "bindDelta": {
+            "repeatMedian": 1800,
+            "repeatMin": 1800,
+            "repeatMax": 1800
+          },
+          "coldBuildMs": {
+            "repeatMedian": 141.70570000000043,
+            "repeatMin": 140.59750000000076,
+            "repeatMax": 145.65229999999974
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "paired": {
+        "frameP50MsDelta": [
+          -0.2529,
+          -0.25555000000000005,
+          -0.25420001000000003,
+          -0.27960003,
+          -0.25360001
+        ],
+        "frameP95MsDelta": [
+          -0.23336997999999998,
+          -0.2535050005,
+          -0.2595949999999999,
+          -0.2857199695,
+          -0.25569996000000006
+        ],
+        "frameP99MsDelta": [
+          -0.29023394019999993,
+          -0.2619339503,
+          -0.37004596989999994,
+          -0.3319949699000001,
+          -0.26384697029999993
+        ],
+        "frameMaxMsDelta": [
+          -0.29470003,
+          -0.1189000899999999,
+          -0.31060003999999974,
+          -0.4887001099999999,
+          -0.2532000700000001
+        ],
+        "overBudgetRatioDelta": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bindDeltaDelta": [
+          -14400,
+          -14400,
+          -14400,
+          -14400,
+          -14400
+        ],
+        "coldBuildMsDelta": [
+          -3.2244999999993524,
+          3.4463999999998123,
+          -1.2503000000006068,
+          1.247400000000198,
+          0.47670000000016444
+        ],
+        "totalGcAllocatedBytesDelta": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "comparison": {
+        "windowP95": [
+          0.9003799905,
+          0.9153099805,
+          0.92741502,
+          0.96032498,
+          0.93040498
+        ],
+        "targetP95": [
+          0.6670100105,
+          0.66180498,
+          0.6678200200000001,
+          0.6746050105,
+          0.67470502
+        ],
+        "medianDifference": -0.2595949999999999,
+        "threshold": 0.046370751,
+        "result": "improved"
+      }
+    },
+    {
+      "group": "virtual-batch-fps-1",
+      "targetFrameRate": -1,
+      "window": {
+        "runIds": [
+          "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r1",
+          "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r2",
+          "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r3",
+          "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r4",
+          "m4-list-r1-listrefresh-virtual-1000-window-batch-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            0.94449997,
+            0.93390001,
+            0.9397,
+            0.93949999,
+            0.93829999
+          ],
+          "frameP95Ms": [
+            1.02049997,
+            1.00500497,
+            0.99950004,
+            1.01510505,
+            1.0056199705
+          ],
+          "frameP99Ms": [
+            1.0660369702999999,
+            1.0519259801999998,
+            1.05070197,
+            1.0679359803,
+            1.0443160401
+          ],
+          "frameMaxMs": [
+            3.32430005,
+            3.28629999,
+            3.29030002,
+            3.2563,
+            3.40629998
+          ],
+          "overBudgetRatio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            142.14989999999943,
+            141.82240000000002,
+            141.54620000000068,
+            142.91820000000007,
+            143.71129999999994
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 0.93949999,
+            "repeatMin": 0.93390001,
+            "repeatMax": 0.94449997
+          },
+          "frameP95Ms": {
+            "repeatMedian": 1.0056199705,
+            "repeatMin": 0.99950004,
+            "repeatMax": 1.02049997
+          },
+          "frameP99Ms": {
+            "repeatMedian": 1.0519259801999998,
+            "repeatMin": 1.0443160401,
+            "repeatMax": 1.0679359803
+          },
+          "frameMaxMs": {
+            "repeatMedian": 3.29030002,
+            "repeatMin": 3.2563,
+            "repeatMax": 3.40629998
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0,
+            "repeatMin": 0,
+            "repeatMax": 0
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 142.14989999999943,
+            "repeatMin": 141.54620000000068,
+            "repeatMax": 143.71129999999994
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "target": {
+        "runIds": [
+          "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r1",
+          "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r2",
+          "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r3",
+          "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r4",
+          "m4-list-r1-listrefresh-virtual-1000-target-batch-fps-1-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            0.93620003,
+            0.93430001,
+            0.94170001,
+            0.93480002,
+            0.93729998
+          ],
+          "frameP95Ms": [
+            0.99121498,
+            0.9794400099999999,
+            1.0069099805,
+            1.01062001,
+            1.0085
+          ],
+          "frameP99Ms": [
+            1.0214119801,
+            1.05865003,
+            1.0773080489,
+            1.1024600101,
+            1.1325160101
+          ],
+          "frameMaxMs": [
+            3.29950009,
+            3.2391001,
+            3.39969993,
+            3.21429991,
+            3.23539996
+          ],
+          "overBudgetRatio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            140.57999999999993,
+            142.86200000000008,
+            141.5592000000006,
+            142.54379999999946,
+            142.40539999999964
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 0.93620003,
+            "repeatMin": 0.93430001,
+            "repeatMax": 0.94170001
+          },
+          "frameP95Ms": {
+            "repeatMedian": 1.0069099805,
+            "repeatMin": 0.9794400099999999,
+            "repeatMax": 1.01062001
+          },
+          "frameP99Ms": {
+            "repeatMedian": 1.0773080489,
+            "repeatMin": 1.0214119801,
+            "repeatMax": 1.1325160101
+          },
+          "frameMaxMs": {
+            "repeatMedian": 3.2391001,
+            "repeatMin": 3.21429991,
+            "repeatMax": 3.39969993
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0,
+            "repeatMin": 0,
+            "repeatMax": 0
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 142.40539999999964,
+            "repeatMin": 140.57999999999993,
+            "repeatMax": 142.86200000000008
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "paired": {
+        "frameP50MsDelta": [
+          -0.008299940000000006,
+          0.00039999999999995595,
+          0.002000010000000052,
+          -0.004699969999999998,
+          -0.0010000099999999401
+        ],
+        "frameP95MsDelta": [
+          -0.029284989999999955,
+          -0.025564960000000192,
+          0.007409940499999879,
+          -0.004485040000000051,
+          0.002880029499999992
+        ],
+        "frameP99MsDelta": [
+          -0.04462499019999999,
+          0.006724049800000076,
+          0.026606078899999996,
+          0.03452402980000002,
+          0.08819997000000002
+        ],
+        "frameMaxMsDelta": [
+          -0.024799960000000176,
+          -0.04719988999999991,
+          0.10939991000000004,
+          -0.042000090000000156,
+          -0.17090001999999993
+        ],
+        "overBudgetRatioDelta": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bindDeltaDelta": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coldBuildMsDelta": [
+          -1.5698999999995067,
+          1.039600000000064,
+          0.012999999999919964,
+          -0.37440000000060536,
+          -1.3059000000002925
+        ],
+        "totalGcAllocatedBytesDelta": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "comparison": {
+        "windowP95": [
+          1.02049997,
+          1.00500497,
+          0.99950004,
+          1.01510505,
+          1.0056199705
+        ],
+        "targetP95": [
+          0.99121498,
+          0.9794400099999999,
+          1.0069099805,
+          1.01062001,
+          1.0085
+        ],
+        "medianDifference": 0.0012900099999999526,
+        "threshold": 0.050280998525,
+        "result": "inconclusive"
+      }
+    },
+    {
+      "group": "virtual-high-fps60",
+      "targetFrameRate": 60,
+      "window": {
+        "runIds": [
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r1",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r2",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r3",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r4",
+          "m4-list-r1-listrefresh-virtual-1000-window-high-fps60-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            16.66709967,
+            16.66760072,
+            16.66730084,
+            16.66730084,
+            16.66709967
+          ],
+          "frameP95Ms": [
+            17.002205646,
+            17.00259931,
+            17.00199954,
+            17.00259931,
+            17.00180024
+          ],
+          "frameP99Ms": [
+            17.0267090766,
+            17.029307333600002,
+            17.0362035747,
+            17.0320523109,
+            17.0252116396
+          ],
+          "frameMaxMs": [
+            17.07479917,
+            17.07440056,
+            17.07850024,
+            17.07289927,
+            17.06860028
+          ],
+          "overBudgetRatio": [
+            0.78777778,
+            0.80166667,
+            0.8,
+            0.80333333,
+            0.79666667
+          ],
+          "bindDelta": [
+            16200,
+            16200,
+            16200,
+            16200,
+            16200
+          ],
+          "coldBuildMs": [
+            142.22289999999975,
+            142.67109999999957,
+            146.57739999999922,
+            144.5092999999997,
+            142.8702000000003
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 16.66730084,
+            "repeatMin": 16.66709967,
+            "repeatMax": 16.66760072
+          },
+          "frameP95Ms": {
+            "repeatMedian": 17.002205646,
+            "repeatMin": 17.00180024,
+            "repeatMax": 17.00259931
+          },
+          "frameP99Ms": {
+            "repeatMedian": 17.029307333600002,
+            "repeatMin": 17.0252116396,
+            "repeatMax": 17.0362035747
+          },
+          "frameMaxMs": {
+            "repeatMedian": 17.07440056,
+            "repeatMin": 17.06860028,
+            "repeatMax": 17.07850024
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0.8,
+            "repeatMin": 0.78777778,
+            "repeatMax": 0.80333333
+          },
+          "bindDelta": {
+            "repeatMedian": 16200,
+            "repeatMin": 16200,
+            "repeatMax": 16200
+          },
+          "coldBuildMs": {
+            "repeatMedian": 142.8702000000003,
+            "repeatMin": 142.22289999999975,
+            "repeatMax": 146.57739999999922
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "target": {
+        "runIds": [
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r1",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r2",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r3",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r4",
+          "m4-list-r1-listrefresh-virtual-1000-target-high-fps60-r5"
+        ],
+        "values": {
+          "frameP50Ms": [
+            16.66730084,
+            16.66720025,
+            16.667250545,
+            16.66720025,
+            16.66739956
+          ],
+          "frameP95Ms": [
+            17.00169966,
+            17.00250059,
+            17.00129919,
+            17.00199954,
+            17.00310037
+          ],
+          "frameP99Ms": [
+            17.031615694299997,
+            17.0290034488,
+            17.0214138327,
+            17.0195021075,
+            17.0465309944
+          ],
+          "frameMaxMs": [
+            17.07950048,
+            17.07280055,
+            17.07020029,
+            17.06920005,
+            17.07869954
+          ],
+          "overBudgetRatio": [
+            0.79944444,
+            0.79722222,
+            0.77722222,
+            0.78944444,
+            0.78888889
+          ],
+          "bindDelta": [
+            1800,
+            1800,
+            1800,
+            1800,
+            1800
+          ],
+          "coldBuildMs": [
+            143.54840000000058,
+            142.15000000000055,
+            141.63630000000012,
+            142.02840000000015,
+            141.1769000000004
+          ],
+          "totalGcAllocatedBytes": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "repeatStats": {
+          "frameP50Ms": {
+            "repeatMedian": 16.667250545,
+            "repeatMin": 16.66720025,
+            "repeatMax": 16.66739956
+          },
+          "frameP95Ms": {
+            "repeatMedian": 17.00199954,
+            "repeatMin": 17.00129919,
+            "repeatMax": 17.00310037
+          },
+          "frameP99Ms": {
+            "repeatMedian": 17.0290034488,
+            "repeatMin": 17.0195021075,
+            "repeatMax": 17.0465309944
+          },
+          "frameMaxMs": {
+            "repeatMedian": 17.07280055,
+            "repeatMin": 17.06920005,
+            "repeatMax": 17.07950048
+          },
+          "overBudgetRatio": {
+            "repeatMedian": 0.78944444,
+            "repeatMin": 0.77722222,
+            "repeatMax": 0.79944444
+          },
+          "bindDelta": {
+            "repeatMedian": 1800,
+            "repeatMin": 1800,
+            "repeatMax": 1800
+          },
+          "coldBuildMs": {
+            "repeatMedian": 142.02840000000015,
+            "repeatMin": 141.1769000000004,
+            "repeatMax": 143.54840000000058
+          },
+          "totalGcAllocatedBytes": {
+            "available": false,
+            "reason": "optional metric unavailable in one or more repeats"
+          }
+        },
+        "note": "Repeat statistics are median/min/max only; no p95-of-five is computed."
+      },
+      "paired": {
+        "frameP50MsDelta": [
+          0.00020117000000041685,
+          -0.0004004699999988759,
+          -5.029499999764653e-05,
+          -0.00010058999999884577,
+          0.0002998900000008575
+        ],
+        "frameP95MsDelta": [
+          -0.0005059860000002914,
+          -9.872000000044068e-05,
+          -0.000700349999998906,
+          -0.0005997700000008876,
+          0.0013001299999970684
+        ],
+        "frameP99MsDelta": [
+          0.004906617699997895,
+          -0.0003038848000009864,
+          -0.014789742000001382,
+          -0.012550203400000015,
+          0.0213193548000028
+        ],
+        "frameMaxMsDelta": [
+          0.004701310000001513,
+          -0.0016000100000006512,
+          -0.008299950000001388,
+          -0.0036992200000014464,
+          0.010099260000000498
+        ],
+        "overBudgetRatioDelta": [
+          0.011666660000000051,
+          -0.004444450000000044,
+          -0.02277778000000008,
+          -0.013888889999999932,
+          -0.007777780000000067
+        ],
+        "bindDeltaDelta": [
+          -14400,
+          -14400,
+          -14400,
+          -14400,
+          -14400
+        ],
+        "coldBuildMsDelta": [
+          1.3255000000008295,
+          -0.5210999999990236,
+          -4.941099999999096,
+          -2.480899999999565,
+          -1.6932999999999083
+        ],
+        "totalGcAllocatedBytesDelta": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "comparison": {
+        "windowP95": [
+          17.002205646,
+          17.00259931,
+          17.00199954,
+          17.00259931,
+          17.00180024
+        ],
+        "targetP95": [
+          17.00169966,
+          17.00250059,
+          17.00129919,
+          17.00199954,
+          17.00310037
+        ],
+        "medianDifference": -0.00020610600000026125,
+        "threshold": 0.8501102823000001,
+        "result": "inconclusive"
+      }
+    }
+  ],
+  "limitations": [
+    "This is a representative 50-run subset, not the historical 110-run matrix.",
+    "Repeat summaries report median/min/max; no p95-of-five is computed.",
+    "Frame Interval is wall-clock evidence under the frozen protocol."
+  ]
+}
