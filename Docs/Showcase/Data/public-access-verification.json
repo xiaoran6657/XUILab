@@ -1,0 +1,235 @@
+{
+  "checkedAt": "2026-09-10T10:28:11.228187+00:00",
+  "contentAuthentication": "none; no Authorization or Cookie headers",
+  "metadataAuthentication": "GitHub CLI; anonymous API returned 403 rate limit, so anonymous proof uses pages and direct content URLs",
+  "repositoryPublic": true,
+  "releaseId": 386159265,
+  "tag": "v0.1.0-preview.1",
+  "source": "231c8161175c7edd8debfe7b75ac7aa6f4a9f020",
+  "results": [
+    {
+      "url": "https://github.com/xiaoran6657/XUILab",
+      "status": "pass",
+      "http": 200,
+      "bytes": 283744,
+      "sha256": "f8b01d4092c9db40b818b3c8f4c9680679e8fa69f0db51976859f03cc646ac0b",
+      "kind": "repository-page",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/tag/v0.1.0-preview.1",
+      "status": "pass",
+      "http": 200,
+      "bytes": 202678,
+      "sha256": "33a9ac960633a45c37540354db94394928748313da833c0c6f8aa42873811745",
+      "kind": "release-page",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/agent.mp4",
+      "status": "pass",
+      "kind": "release-asset",
+      "http": 200,
+      "bytes": 414794,
+      "sha256": "e70e4ff084b0ad534892bf71f5f541a17072bb00ade6928b7b1fb2da3b9b4a60",
+      "contentType": "application/octet-stream",
+      "retry": "one sequential retry after transient connection failure"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/gradient.mp4",
+      "status": "pass",
+      "kind": "release-asset",
+      "http": 200,
+      "bytes": 501212,
+      "sha256": "e6bcb69035b8c29882e285c484138b8163c025545b7525579c98332a18d2fdd0",
+      "contentType": "application/octet-stream",
+      "retry": "one sequential retry after transient connection failure"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/list.mp4",
+      "status": "pass",
+      "http": 200,
+      "bytes": 3527638,
+      "sha256": "40013b4390a225c1f8c489ff55cd237208f1f9c86ae220bc65a14444aee268f4",
+      "kind": "release-asset",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt",
+      "status": "pass",
+      "http": 200,
+      "bytes": 542,
+      "sha256": "9da7f1fd9f85725d02f9324a4ec91538ca17b7628575b6f4f6f8e6b6c70a6e56",
+      "kind": "release-asset",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-evidence-v0.1.0-preview.1.zip",
+      "status": "pass",
+      "http": 200,
+      "bytes": 37253431,
+      "sha256": "8cac30c276e142d42871ea86e6b7ddfa02ec0e33f9ab4bcb7110523e79098ba7",
+      "kind": "release-asset",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-showcase-v0.1.0-preview.1.zip",
+      "status": "pass",
+      "http": 200,
+      "bytes": 5988987,
+      "sha256": "1418fff477c40ba8bd6973a9ead906d3993b6906850442725583e69b163e3d78",
+      "kind": "release-asset",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-Windows-x64-v0.1.0-preview.1.zip",
+      "status": "pass",
+      "http": 200,
+      "bytes": 32677629,
+      "sha256": "ddc5e44c72ceb710563b62465eb6d1e1024af0e8d3a7d6eb4a2180fc43dbb818",
+      "kind": "release-asset",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/AgentBenchmark/cover.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 247324,
+      "sha256": "255516095675e6641660d8cab70041a8a04088122d4dee2364044df89b33e0f9",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/AgentBenchmark/outcomes.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 119248,
+      "sha256": "603ca29bd11a5d731cdf9992f5b49f01a3cf7128c2b737e22fcb931c75c17520",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/AgentBenchmark/pipeline.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 136419,
+      "sha256": "fbf2d572379be9147b647dddb1c260a707472fc2f546c43d427f0a7669799d28",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/AgentBenchmark/recovery.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 129163,
+      "sha256": "232d8e289fd43956b7863b1eaeed825c018456a0b9cc3c4eeded90dcd9a281e6",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/GradientLab/cover.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 150765,
+      "sha256": "004c4123711e3e15114748efb821b81955199b76ed8df6f22c7fd8e8ae434e11",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/GradientLab/gradient-contract.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 132809,
+      "sha256": "7ef87de57896381f3aa7026b8c9c4645b9fc707da9c1666a4c3f0adf678a3412",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/GradientLab/performance.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 178006,
+      "sha256": "196141ad220147ee9db1203c86acaad02fa08d6d82bd70e9be938fff70f760f3",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/GradientLab/quality-cost.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 145718,
+      "sha256": "053166f4676cf3e4b32a4a3dffd4d7b12d9169f7f85b0ba8dc3df815bec92ed2",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/ListLab/cover.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 184317,
+      "sha256": "cb60a23212f61cfbf3da03236563686c00c54889475ea730f717e12249b6b3aa",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/ListLab/performance.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 158110,
+      "sha256": "dd106b790f220ac4172293070604d0b5a3a5b4fbca73053de65df002d0a5f900",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/ListLab/pool-contract.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 121366,
+      "sha256": "1d02c9a6226255359130c77ccb45aa52108fb37fb0be67014f0381f901d546a5",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/Media/ListLab/update-paths.png",
+      "status": "pass",
+      "http": 200,
+      "bytes": 120677,
+      "sha256": "b1d820eca720e169f42e64b2db880db57cd6bdcdb34220bf05de14307ed75b36",
+      "kind": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/PROFILE.md",
+      "status": "pass",
+      "http": 200,
+      "bytes": 2269,
+      "sha256": "17b67f360b53ea495364bfb468eda3d1a879fcc03817ec8656bcf0789cbc8c9b",
+      "kind": "handoff-doc",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/WEBSITE_HANDOFF.md",
+      "status": "pass",
+      "http": 200,
+      "bytes": 2564,
+      "sha256": "e6772808d6e41976934d7030ec2fec1c8fbe0f2e5e465a5fef29b273696ef1a4",
+      "kind": "handoff-doc",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xiaoran6657/XUILab/v0.1.0-preview.1/Docs/Showcase/PUBLIC_SOURCE.md",
+      "status": "pass",
+      "http": 200,
+      "bytes": 1360,
+      "sha256": "cf1c711f5ad5b1acec56a01f349b4e4b2aed1ff2d4763491ac82fabeca9c6d65",
+      "kind": "handoff-doc",
+      "contentType": "text/plain; charset=utf-8"
+    }
+  ],
+  "status": "pass",
+  "previousAttempt": "anonymous-public-check-r1.json preserved: 22 pass, two transient TLS/connection failures",
+  "retried": [
+    "agent.mp4",
+    "gradient.mp4"
+  ]
+}

@@ -3,14 +3,14 @@
 - pm_schema: xuilab.pm/v1
 - task_id: INFRA-006
 - task_type: infra
-- state: verifying
+- state: done
 - brief: [Brief](TASK_BRIEF.md)
 - brief_revision: r1
 - candidate: public-source-r2
 - dependencies: none
 - blockers: none
 - recovery: none
-- next_action: 公开经独立接受的仓库和草稿Release后验证匿名访问
+- next_action: 等待另行授权；个人学习复盘仍单独待完成
 - review: [Review](REVIEW-r2.md)
 - verification: [Verification](VERIFICATION-r1.md)
 - review_independence: independent
@@ -25,7 +25,7 @@
 | P3 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
 | P4 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
 | P5 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
-| P6 | not_run | none | none |
+| P6 | pass | public-source-r2 | [Evidence](VERIFICATION-r1.md) |
 
 ## 启动记录
 

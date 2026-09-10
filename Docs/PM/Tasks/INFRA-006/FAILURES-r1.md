@@ -31,3 +31,9 @@ public-local-r2使用Python3.12.14/NumPy2.3.5；GradientLab恢复通过，但Lis
 ## 独立审查的模板目录整改
 
 首版独立审查changes_requested：Unity模板Layout.wlt的m_LastProjectPath保留作者目录。二版通过全新隔离克隆，在全部历史中只替换该字符串；meta/GUID不变。该字段仅由TutorialInfo/Scripts/Editor/ReadmeEditor.cs载入编辑器布局，不参与Player逻辑。本地原工程与二进制均不改，公开295项Unity输入的对照更新为294项Git一致/1项布局路径脱敏；与原测量工作区262字节一致/32换行/1布局变化。后续扫描绑定二版最终HEAD，不沿用旧b822f07扫描结论。
+
+## 公开与匿名访问恢复
+
+仓库切换PUBLIC成功后，CLI按tag发布草稿返回release not found。按已有Release ID386159265读取仍为draft且附件完整，随后PATCH同一Release draft=false成功，无重复创建；2026-09-10T10:23:42Z实际发布。
+
+匿名GitHub API返回403 rate limit exceeded，元数据改由认证CLI核对；直接网页/附件/素材请求仍保持无认证。24项内容首轮有两段视频出现连接/SSL EOF，22项成功。只对两段失败视频顺序重试一次，完整字节与哈希均匹配，最终24项通过。保留首轮失败与重试回执，不把网络失败归为文件完整性通过。

@@ -28,3 +28,11 @@ GitHub草稿Release的7个附件名、大小、服务器digest与最终本地文
 最终版本冻结为231c8161175c7edd8debfe7b75ac7aa6f4a9f020；[CI34464845765](https://github.com/xiaoran6657/XUILab/actions/runs/34464845765)实际success。该SHA的911可达对象/663 blob重新扫描，UTF8/UTF16LE私人标识、模板作者及凭据模式无命中；中性说明和当前INFRA006以外的原内部PM/References历史均排除。882个当前Markdown本地目标存在；此检查不包括锚点及远端访问。
 
 独立复核[REVIEW-r2](REVIEW-r2.md)明确accept。私有草稿Release ID386159265，target=231c816，7附件名称/大小/服务器SHA与最终r2包一致。此前的efb386c CI与扫描只作首版历史，不能代替本节二版终态。版本tag固定该审查源码与资料快照，随后只补交付记录；公开访问仍须另记实际结果。
+
+## 最终公开访问
+
+2026-09-10T10:23:42Z，仓库PUBLIC，Release386159265的draft=false、prerelease=true，版本v0.1.0-preview.1指向冻结231c816。无需登录的24项检查全部通过：仓库页/Release页2项、完整7附件、12张PNG、3份主页/来源文档。所有附件、图片和文档实际下载流的大小/sha256与固定来源一致；页面检查仅确认HTTP可访问。
+
+[逐项公开访问回执](../../../Showcase/Data/public-access-verification.json)保留时间、URL、字节与检查范围。匿名API受共享出口rate limit限制，因此repo/release/tag元数据用已认证CLI读取；24项内容请求均无Authorization/Cookie。首轮22项通过、两视频瞬时连接失败，针对两项顺序重试后均通过。未把失败首轮覆盖成成功。
+
+验收登记提交8cbb4b2的[CI34465656038](https://github.com/xiaoran6657/XUILab/actions/runs/34465656038)也已success。版本tag保留发布前冻结源码，main追加本验收；未修改Runtime、发布附件或历史数据。M4个人学习复盘仍待完成。
