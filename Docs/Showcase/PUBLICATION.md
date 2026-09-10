@@ -1,7 +1,18 @@
 # 公开交付记录
 
-目标仓库xiaoran6657/XUILab已获用户确认，先私有验证再公开。当前仍为本地准备，远端CI与公开Release均not_run；不能将计划地址视为已经可下载。
+目标为[xiaoran6657/XUILab](https://github.com/xiaoran6657/XUILab)，先私有验证再公开。当前候选正在离线与独立审查，远端CI、公开访问尚未完成；下表为准备附件，实际发布后再登记结果。
 
-候选版本名v0.1.0-preview.1表示技术预览，不表示M4个人学习复盘已经完成。公开源码、演示包、资料包会分别记录提交、来源与SHA-256。原始性能样本属于m4-final-b017672，公开历史净化后需另存对应关系。
+v0.1.0-preview.1为技术预览，M4个人学习复盘仍待完成。[源码对应](PUBLIC_SOURCE.md)、[主页交接](WEBSITE_HANDOFF.md)、[许可边界](THIRD_PARTY_NOTICES.md)。
 
-[PROFILE](PROFILE.md)、[主页交接](WEBSITE_HANDOFF.md)、[MIT范围与第三方归属](THIRD_PARTY_NOTICES.md)、[冻结资料输入](PUBLISHING_INPUTS.json)为公开准备内容。实际执行、审查与未完成项见[INFRA-006](../PM/Tasks/INFRA-006/TASK_STATUS.md)。
+| 附件 | 字节 | SHA-256 |
+| --- | ---: | --- |
+| [agent.mp4](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/agent.mp4) | 414794 | `e70e4ff084b0ad534892bf71f5f541a17072bb00ade6928b7b1fb2da3b9b4a60` |
+| [gradient.mp4](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/gradient.mp4) | 501212 | `e6bcb69035b8c29882e285c484138b8163c025545b7525579c98332a18d2fdd0` |
+| [list.mp4](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/list.mp4) | 3527638 | `40013b4390a225c1f8c489ff55cd237208f1f9c86ae220bc65a14444aee268f4` |
+| [XUILab-evidence-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-evidence-v0.1.0-preview.1.zip) | 37253431 | `8cac30c276e142d42871ea86e6b7ddfa02ec0e33f9ab4bcb7110523e79098ba7` |
+| [XUILab-showcase-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-showcase-v0.1.0-preview.1.zip) | 5988987 | `1418fff477c40ba8bd6973a9ead906d3993b6906850442725583e69b163e3d78` |
+| [XUILab-Windows-x64-v0.1.0-preview.1.zip](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/XUILab-Windows-x64-v0.1.0-preview.1.zip) | 31879450 | `52f0d3cdcfc1534744002446440a32ed1c3e90bef55544c45f057b680f0a9079` |
+
+[SHA256SUMS.txt](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt)。素材包manifest SHA-256：`8304f96ede32b5145df30af19352d6057fc4a6fbaacbbb8a8de3cb116262cdb9`；数据包manifest SHA-256：`559ce56773e35a96aa464ca8db845831dfd90b610d18fa10717c1939c5fd394f`。
+
+素材manifest和输入计划的prepared-not-published是创建时快照，不代表当前访问状态；保持原字节以便验证。三视频均为45秒帧驱动演示，不是实时性能录像。离线CI不执行Unity构建、Player或性能采样。

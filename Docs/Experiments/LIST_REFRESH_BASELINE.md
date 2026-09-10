@@ -8,9 +8,9 @@
 
 ## 冻结输入与实际执行
 
-候选list-refresh-trace-r1，277项输入清单见[M3-L1](../PM/Tasks/M3-L1/WORKSPACE_SNAPSHOT-r1.sha256)。M1 Runtime16项与M1-04原r3逐哈希一致；仅新增测试探针，不改基线实现。Unity2022.3.45f1c1，Windows Editor，两个后端各N1000、48px行高、384px viewport、初始offset492、双模板、无动画/fade。移动项使用自然ScrollRect velocity，实际移动普通6.071716px、虚拟1.104309px，非SetPixelOffset伪造滚动。
+候选list-refresh-trace-r1，277项输入清单见[M3-L1（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。M1 Runtime16项与M1-04原r3逐哈希一致；仅新增测试探针，不改基线实现。Unity2022.3.45f1c1，Windows Editor，两个后端各N1000、48px行高、384px viewport、初始offset492、双模板、无动画/fade。移动项使用自然ScrollRect velocity，实际移动普通6.071716px、虚拟1.104309px，非SetPixelOffset伪造滚动。
 
-实际PlayMode单测试内执行18个独立场景，1/1Passed、0failed/skipped。操作及恢复见[验证](../PM/Tasks/M3-L1/VERIFICATION-r1.md)。[原始trace](../../Artifacts/list-refresh-trace-r1/trace.json) SHA-256：0de1f1d46d0c92cc911a8129b3a30e0a9c51287213049264a2ff1621d26a9ad8；[离线复算](../../Artifacts/list-refresh-validation/trace-r1-verification.json)重新核对每阶段映射、绑定、文本、几何、池、事件index、重入及自然移动。
+实际PlayMode单测试内执行18个独立场景，1/1Passed、0failed/skipped。操作及恢复见[验证（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。[原始trace（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) SHA-256：0de1f1d46d0c92cc911a8129b3a30e0a9c51287213049264a2ff1621d26a9ad8；[离线复算（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)重新核对每阶段映射、绑定、文本、几何、池、事件index、重入及自然移动。
 
 ## 观察
 

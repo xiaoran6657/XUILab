@@ -4,19 +4,19 @@
 
 ## 正确性、有效性和质量
 
-120次 completed 均经原始数据、下一帧动作对应、预期 dirty/rebuild、实际可见集合、提交网格/颜色/索引、输出清理、启动焦点与构建/计划身份复核，correctness=pass、measurementValidity=valid。标准 bias .25 静态及 .25→.75 动态的固定32近似最大RGBA分量误差约0.001216856；bias .05/.95分别约0.038422115/0.038422127，超过0.01并正确标为quality_limited。质量函数采用encoded RGB/Alpha等权；dense 4097点与Color32量化分别检查，量化误差约0.0019608以内。网格误差不是最终屏幕像素误差；受控Shader/像素证据见[M2-03验证](../PM/Tasks/M2-03/VERIFICATION-r5.md)。
+120次 completed 均经原始数据、下一帧动作对应、预期 dirty/rebuild、实际可见集合、提交网格/颜色/索引、输出清理、启动焦点与构建/计划身份复核，correctness=pass、measurementValidity=valid。标准 bias .25 静态及 .25→.75 动态的固定32近似最大RGBA分量误差约0.001216856；bias .05/.95分别约0.038422115/0.038422127，超过0.01并正确标为quality_limited。质量函数采用encoded RGB/Alpha等权；dense 4097点与Color32量化分别检查，量化误差约0.0019608以内。网格误差不是最终屏幕像素误差；受控Shader/像素证据见[M2-03验证（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 
 ## 身份与环境
 
 - candidate `gradient-runner-r5`，build `gradient-baseline-dev-r5`；sourceRevision `b40eac4397bf5f717d86deaa2058f13c33b3e7b8`，dirty=true。
-- [272项源清单](../PM/Tasks/M2-04/WORKSPACE_SNAPSHOT-r5.sha256)、[296文件构建清单](../../Artifacts/gradient-player-r5/build-manifest.json)、[前置语义gate](../../Artifacts/gradient-validation/preflight-r5.json)。
+- [272项源清单（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)、[296文件构建清单（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)、[前置语义gate（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 - Unity2022.3.45f1c1、Windows x64 Mono Development；Ryzen5 5600G/12逻辑处理器、RX9070、Windows10 19045、D3D11，High Fidelity、Linear项目、960×540、VSync0、targetFrameRate=-1。
-- 300帧预热+1800帧采样，每组5个新进程，正/逆序交替。完整配置/动作/几何见[首次采样前协议](GRADIENT_BENCHMARK_PROTOCOL.md)及[原计划](../../Artifacts/gradient-player-r5/matrix-plan.json)。每轮(n-1)p线性插值，跨轮median/range/MAD/IQR，未拼接所有帧。
+- 300帧预热+1800帧采样，每组5个新进程，正/逆序交替。完整配置/动作/几何见[首次采样前协议](GRADIENT_BENCHMARK_PROTOCOL.md)及[原计划（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。每轮(n-1)p线性插值，跨轮median/range/MAD/IQR，未拼接所有帧。
 - Main Thread、GC Allocated、System Used Memory均为unavailable（Recorder无有效样本）；UI marker、DrawCalls/Batches、GPU未取得。本报告没有CPU耗时、零GC、GPU或批次改善结论。帧间隔不是Mesh专属耗时。
 
 ## 五轮结果
 
-p95是帧间隔毫秒。下面只显示有五轮的组；完整p50/p95/p99/max/超预算比例、每轮样本和波动见[机器报告](../../Artifacts/gradient-player-r5/matrix-report-r1/matrix-review.json)和[逐run表](../../Artifacts/gradient-player-r5/matrix-report-r1/runs.csv)。
+p95是帧间隔毫秒。下面只显示有五轮的组；完整p50/p95/p99/max/超预算比例、每轮样本和波动见[机器报告（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)和[逐run表（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 
 | 布局/生成数 | 状态/方向/bias | p95 median ms | 五轮范围 ms | 质量 |
 | --- | --- | ---: | --- | --- |
@@ -45,7 +45,7 @@ p95是帧间隔毫秒。下面只显示有五轮的组；完整p50/p95/p99/max/�
 | grid/2000 | static/Horizontal/0.25 | 0.887 | 0.878–0.908 | pass |
 | grid/5000 | static/Horizontal/0.25 | 1.434 | 1.432–1.451 | pass |
 
-![五轮p95汇总](../../Artifacts/gradient-player-r5/matrix-report-r1/frame-p95.png)
+![五轮p95汇总（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 Image-only与Effect-disabled视觉等价，p95区间重叠，结论no_clear_difference。Static与same-value同画面、同参数，五轮dirty/rebuild均0，帧时没有清晰区别；这支持setter不主动持续标脏，不能推出渲染零成本。Linear与Nonlinear不是相同曲线，不把约0.63ms静态结果说成无损优化。
 
@@ -57,11 +57,11 @@ Clip生成1000行，实际可见19行（含末尾部分可见），981行culled�
 
 ## 复算与失败保留
 
-[三组pilot验证](../../Artifacts/gradient-player-r5/pilot-verification.json)已通过。矩阵工具重新验证每个receipt、13项产物身份及hash、600状态质量扫描/实际网格，得到120 completed、2 timeout、8 deferred、0 unresolved/not_run。`player_matrix_report.py`因完整计划partial返回1，这是预期非全通过信号；120个有效run及24完整组不受其余压力组缺项污染。
+[三组pilot验证（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)已通过。矩阵工具重新验证每个receipt、13项产物身份及hash、600状态质量扫描/实际网格，得到120 completed、2 timeout、8 deferred、0 unresolved/not_run。`player_matrix_report.py`因完整计划partial返回1，这是预期非全通过信号；120个有效run及24完整组不受其余压力组缺项污染。
 
-原始目录：[matrix-runs](../../Artifacts/gradient-player-r5/matrix-runs)、[恢复策略](../../Artifacts/gradient-player-r5/resume-policy-r1.json)。保留r4大小写配置hash误判及旧失败目录；r5是新候选/构建/计划，没有改写失败receipt。报告工具与恢复工具在构建之后新增、分别hash绑定，不冒充272项原构建输入。历史证据在M3修改前还需冻结源快照，不能拿M3工作区直接通过旧输入门禁。
+原始目录：[matrix-runs（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)、[恢复策略（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。保留r4大小写配置hash误判及旧失败目录；r5是新候选/构建/计划，没有改写失败receipt。报告工具与恢复工具在构建之后新增、分别hash绑定，不冒充272项原构建输入。历史证据在M3修改前还需冻结源快照，不能拿M3工作区直接通过旧输入门禁。
 
-复算入口见[工具手册](../Agents/GRADIENT_BENCHMARK_TOOLING.md)。使用原Python/NumPy和Artifacts/gradient-report-deps中已锁版本运行工具，输出必须新目录。独立数据审查与最终验收见[M2-04状态](../PM/Tasks/M2-04/TASK_STATUS.md)。
+复算入口见[工具手册](../Agents/GRADIENT_BENCHMARK_TOOLING.md)。使用原Python/NumPy和Artifacts/gradient-report-deps中已锁版本运行工具，输出必须新目录。独立数据审查与最终验收见[M2-04状态（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 
 ## 下一步
 

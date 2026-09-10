@@ -1,6 +1,6 @@
 # 有界自适应细分对照协议 r1
 
-M3-G2；首次 Player 前冻结。算法和质量范围见 [任务合同](../PM/Tasks/M3-G2/TASK_BRIEF.md)，沿用 [固定扫描](GRADIENT_SUBDIVISION_PROTOCOL-r1.md) 八个 scenario 的几何、方向、颜色、动作、作用集合及环境。G1 旧候选只作为历史输入；本轮固定32与Adaptive同一新构建比较。
+M3-G2；首次 Player 前冻结。算法和质量范围见 [任务合同（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)，沿用 [固定扫描](GRADIENT_SUBDIVISION_PROTOCOL-r1.md) 八个 scenario 的几何、方向、颜色、动作、作用集合及环境。G1 旧候选只作为历史输入；本轮固定32与Adaptive同一新构建比较。
 
 ## 选择与正确性
 

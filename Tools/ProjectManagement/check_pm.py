@@ -243,8 +243,8 @@ class Checker:
         for key in ("current_task", "latest_task", "unity_task"):
             value = values.get(key, "")
             if value == "none":
-                if key == "latest_task" and self.tasks:
-                    self.error(path, "latest_task may be none only before any tasks exist")
+                if key == "latest_task" and any(t.get("state") in TERMINAL for t in self.tasks.values()):
+                    self.error(path, "latest_task may be none only before any terminal tasks exist")
                 continue
             target = self.file_link(path, value, key)
             if target not in self.tasks:

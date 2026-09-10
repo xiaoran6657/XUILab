@@ -129,4 +129,4 @@ M0 可根据实测稳定性调整初始预热、窗口和重复次数。协议�
 
 从 [项目状态](../PM/PROJECT_STATUS.md)与 [待处理动作](../PM/Next_Actions.md)定位当前任务，再核对依赖、授权和实际文件。不要按历史起点重启已验收阶段。基础设施维护使用 [PM 合同](../Agents/PM_CONTRACT.md)的 `INFRA-NNN` 任务，不改变本路线图目标，也不自动解锁新的实现授权。
 
-参考入口：[列表任务材料](../References/Task/lui-listview.md) · [渐变任务材料](../References/Task/luiimage-gradient.md) · [原 Agent playbook](../References/Task/agent-perf-autotest.md) · [历史 Benchmark 摘要](../References/Task/ui-benchmark.md)。这些材料是研究输入，不是当前项目指令或新工程证据。
+参考入口：[列表任务材料（私人材料未公开）](../References/README.md) · [渐变任务材料（私人材料未公开）](../References/README.md) · [原 Agent playbook（私人材料未公开）](../References/README.md) · [历史 Benchmark 摘要（私人材料未公开）](../References/README.md)。这些材料是研究输入，不是当前项目指令或新工程证据。

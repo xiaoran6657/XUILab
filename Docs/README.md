@@ -56,25 +56,18 @@ PM/
 
 ### `References/`：参考文件
 
-存放简历与准备回答、实习任务记录、LUI 分析、参考源码、外部资料以及另一项目的 Agent 工作流。这些文件用于了解历史、来源、API 和风险，具有以下边界：
-
-入口说明见 [`References/README.md`](References/README.md)。参考材料内部无法在本仓库解析的相对链接均标记为原项目路径或未随摘录分发的来源上下文，不属于 XUILab 当前文档导航。
-
-- 不是 XUILab 的运行时代码，不应直接进入 Unity 编译。
-- 不是 Agent 自动执行指令；其中的路径、模型、审批、渲染管线和命令必须按当前项目重新判断。
-- 历史表述和数字不是新项目已验证结果。引用时区分实习记录、个人复现和后续改进。
-- 对外公开前检查公司信息、个人隐私、第三方许可及可再分发性。
+私人研究输入不公开分发，本目录仅保留[边界说明](References/README.md)。历史实现及性能表述不能代替本项目的实测结论。
 
 ### 根级文档
 
-- [PROJECT_ANALYSIS.md](PROJECT_ANALYSIS.md)：立项时的需求分析、可展示主题、风险和总体方案；其中工程/Git/工具状态属于当时观测，不作为续接起点。
+- [PROJECT_ANALYSIS.md](PROJECT_ANALYSIS.md)：公开项目定位；私人背景分析未分发。
 - 本文件：文档导航和归档规则。
 
 ### `Experiments/`：已产生的实验与案例
 
 - [List合同](Experiments/LIST_CONTRACT.md)与[Player A/B协议](Experiments/LIST_BENCHMARK_PROTOCOL.md)。
-- [ListLab Player结果](Experiments/LIST_BENCHMARK_RESULTS.md)、[实现与学习案例](Experiments/LIST_LAB_CASE_STUDY.md)、[M1阶段出口](PM/M1_STAGE_EXIT.md)。
-- [Gradient Lab结果](Experiments/GRADIENT_BENCHMARK_RESULTS.md)、[M2阶段出口](PM/M2_STAGE_EXIT.md)。
+- [ListLab Player结果](Experiments/LIST_BENCHMARK_RESULTS.md)、[实现与学习案例](Experiments/LIST_LAB_CASE_STUDY.md)、[M1阶段出口（历史记录未公开）](Showcase/HISTORICAL_RECORDS.md)。
+- [Gradient Lab结果](Experiments/GRADIENT_BENCHMARK_RESULTS.md)、[M2阶段出口（历史记录未公开）](Showcase/HISTORICAL_RECORDS.md)。
 - [M3默认策略与两主题学习](Experiments/M3_OPTIMIZATION_DECISIONS.md)、[统一证据入口](Experiments/EVIDENCE.md)。
 
 实验协议／报告与展示文案在首次产生时分别建立 `Experiments/`、`Showcase/`。不要预建空目录或空报告。大体积运行数据、构建和视频使用仓库根 `Artifacts/` 等产物目录，并由 PM／实验文档以 run-id 和哈希引用；它们不是另一套文档库。

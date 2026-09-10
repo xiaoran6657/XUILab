@@ -41,6 +41,6 @@
 - pilot：`pilot-recovery3`与`pilot-report-r1.json`。旧`pilot`/`pilot-recovery1`/`pilot-recovery2`分别为失焦、缺焦点回执、系统Python缺NumPy；均未计入正式或有效pilot。
 - 图与逐组CSV：`Artifacts/gradient-adaptive-player-r1/plots-r2/`；绘图依赖复用本机`Artifacts/gradient-report-deps`，版本锁定`Tools/GradientLab/requirements-plot.txt`。
 
-![逐轮质量与成本](../../Artifacts/gradient-adaptive-player-r1/plots-r2/quality-cost.png)
+![逐轮质量与成本（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
-正式采样期间未截图、录制、逐帧MCP或运行重型分析；图表来自采样完成后的报告。历史归档与独立接受入口见[任务状态](../PM/Tasks/M3-G2/TASK_STATUS.md)。
+正式采样期间未截图、录制、逐帧MCP或运行重型分析；图表来自采样完成后的报告。历史归档与独立接受入口见[任务状态（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。

@@ -60,7 +60,7 @@
 
 ## 8. 复跑与证据
 
-从[结果报告](../RESULTS.md)确认统计口径，再由[证据索引](../EvidenceIndex.md)追到候选、构建和原始目录；[RUN_INDEX](../RUN_INDEX.md)列出每个 run-id、变体和有效性。[聚合 JSON](../../../Artifacts/m4-final-validation/list-report-r1/list-refresh-subset-report.json)、[计划](../../../Artifacts/m4-final-validation/list-matrix-plan-r1.json)和[统计脚本](../../../Artifacts/m4-final-validation/list_subset_report.py)是当前实际输入。正确性测试见[RefreshUpdateTests](../../../XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshUpdateTests.cs)，术语和 p95 定义见[基础学习篇](../../Learn/FOUNDATIONS.md)与[Profiler 边界](../../Learn/PROFILER_GUIDE.md)。运行时产物在本地 `Artifacts/`，复跑时应保留 candidate、build-id、run-id、原始 samples 和失败记录的绑定关系。
+从[结果报告](../RESULTS.md)确认统计口径，再由[证据索引](../EvidenceIndex.md)追到候选、构建和原始目录；[RUN_INDEX](../RUN_INDEX.md)列出每个 run-id、变体和有效性。[聚合 JSON](../Data/list-report.json)、[计划（历史记录未公开）](../HISTORICAL_RECORDS.md)和[统计脚本（历史记录未公开）](../HISTORICAL_RECORDS.md)是当前实际输入。正确性测试见[RefreshUpdateTests](../../../XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshUpdateTests.cs)，术语和 p95 定义见[基础学习篇](../../Learn/FOUNDATIONS.md)与[Profiler 边界](../../Learn/PROFILER_GUIDE.md)。运行时产物在本地 `Artifacts/`，复跑时应保留 candidate、build-id、run-id、原始 samples 和失败记录的绑定关系。
 
 
 [媒体画廊](../MEDIA.md)提供封面、三张说明图与45秒独立演示。

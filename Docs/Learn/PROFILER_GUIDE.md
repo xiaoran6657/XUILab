@@ -6,7 +6,7 @@
 
 ## 1. 先读证据身份
 
-打开 [原始 trace](../../Artifacts/list-refresh-trace-r1/trace.json)，先看顶层字段，而不是先看某个好看的数字：
+打开 [原始 trace（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)，先看顶层字段，而不是先看某个好看的数字：
 
 ```json
 {
@@ -18,7 +18,7 @@
 }
 ```
 
-`measurement` 已经明确写出这是 Editor 诊断；`boundaries` 又说明了阶段和探针边界。对应的[离线复算](../../Artifacts/list-refresh-validation/trace-r1-verification.json)给出 `correctness: pass_for_diagnostic_contract`、`performance: not_assessed`，并核对了 trace 的 SHA-256。这里的 pass 只表示诊断合同和字段映射能复算，不能改写成“性能通过”。[M3-L1 验证记录](../PM/Tasks/M3-L1/VERIFICATION-r1.md)也明确记录没有执行 Player 性能测量。
+`measurement` 已经明确写出这是 Editor 诊断；`boundaries` 又说明了阶段和探针边界。对应的[离线复算（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)给出 `correctness: pass_for_diagnostic_contract`、`performance: not_assessed`，并核对了 trace 的 SHA-256。这里的 pass 只表示诊断合同和字段映射能复算，不能改写成“性能通过”。[M3-L1 验证记录（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)也明确记录没有执行 Player 性能测量。
 
 本次 trace 没有可用的 MainThread CPU 时间、GC Alloc、UGUI 实际重建耗时或 GPU 时间。各 case 的 `cpu`、`layoutRebuild`、`canvasRebuild` 都是 `"unavailable"`；这和测到 0 不一样。不要用 `totalBinds`、`vertexDirty` 或一次 `Canvas` 事件去填这些空白，也不要把 Editor 诊断数字写成 Player 帧时。
 

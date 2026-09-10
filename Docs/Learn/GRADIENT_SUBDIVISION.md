@@ -190,11 +190,11 @@ scaled随Time.timeScale变化；unscaled不受该缩放影响，适合需要在�
 
 六个静态对照均为inconclusive；单组件动态也不确定。静态网格不是每帧都重新生成，整帧还有其他固定工作与等待，所以减少顶点不一定能测出帧间隔改善。
 
-100组件的grid-dynamic五轮p95中位数从9.123955ms到4.723390ms，按预设规则improved，约-48.23%。第一对跨2026-09-08/09且Editor背景状态不同；轮2–5同日补充方向约-48.38%，是辅助解释，不能删掉首轮或隐去混杂。原始[矩阵报告](../../Artifacts/gradient-adaptive-player-r1/matrix-report-r1.json)保留五轮与失败排除记录。
+100组件的grid-dynamic五轮p95中位数从9.123955ms到4.723390ms，按预设规则improved，约-48.23%。第一对跨2026-09-08/09且Editor背景状态不同；轮2–5同日补充方向约-48.38%，是辅助解释，不能删掉首轮或隐去混杂。原始[矩阵报告（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)保留五轮与失败排除记录。
 
 Adaptive选择计时约0.094ms/采样帧（100组件），包含缓存检查和计时开销，也已经计入帧间隔。平均选择计时与p95差不能直接相减归因。CPU/GC/内存/UI/GPU分项unavailable，因此不能写成“CPU或GPU省了48%”。
 
-![自适应实验的质量与成本图](../../Artifacts/gradient-adaptive-player-r1/plots-r2/quality-cost.png)
+![自适应实验的质量与成本图（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 此图来自已有实验，不是新采样。三个面板分别读：
 

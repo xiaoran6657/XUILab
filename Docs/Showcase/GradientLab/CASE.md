@@ -61,7 +61,7 @@
 
 ## 8. 复跑与证据
 
-先读[结果与统计边界](../RESULTS.md)、[证据索引](../EvidenceIndex.md)和[RUN_INDEX](../RUN_INDEX.md)，再按[渐变计划](../../../Artifacts/m4-final-validation/gradient-matrix-plan-r2.json)、[策略](../../../Artifacts/m4-final-validation/gradient-policy-r2.json)和[报告](../../../Artifacts/m4-final-validation/gradient-report-r2.json)定位 run-id。质量和生命周期检查见[GradientAdaptiveTests](../../../XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientAdaptiveTests.cs)、[GradientMeshTests](../../../XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientMeshTests.cs)与[GradientTransitionController](../../../XUILab/Assets/XUILab/GradientLab/Runtime/GradientTransitionController.cs)。定义和限制见[渐变学习篇](../../Learn/GRADIENT_SUBDIVISION.md)及[证据导航](../../Learn/EVIDENCE_NAVIGATION.md)。原始运行目录在本地 `Artifacts/m4-gradient-runs-r2/`，应保留失败尝试、构建身份和报告输入的绑定。
+先读[结果与统计边界](../RESULTS.md)、[证据索引](../EvidenceIndex.md)和[RUN_INDEX](../RUN_INDEX.md)，再按[渐变计划（历史记录未公开）](../HISTORICAL_RECORDS.md)、[策略（历史记录未公开）](../HISTORICAL_RECORDS.md)和[报告](../Data/gradient-report.json)定位 run-id。质量和生命周期检查见[GradientAdaptiveTests](../../../XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientAdaptiveTests.cs)、[GradientMeshTests](../../../XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientMeshTests.cs)与[GradientTransitionController](../../../XUILab/Assets/XUILab/GradientLab/Runtime/GradientTransitionController.cs)。定义和限制见[渐变学习篇](../../Learn/GRADIENT_SUBDIVISION.md)及[证据导航](../../Learn/EVIDENCE_NAVIGATION.md)。原始运行目录在本地 `Artifacts/m4-gradient-runs-r2/`，应保留失败尝试、构建身份和报告输入的绑定。
 
 
 [媒体画廊](../MEDIA.md)提供封面、三张说明图与45秒独立演示。

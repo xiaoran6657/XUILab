@@ -60,7 +60,7 @@ Unity 重载、Play 切换、场景切换后重新查找对象，不缓存上一
 
 结束后读取状态，确认测试／Play／构建按约定结束、场景和必要设置得到恢复，再释放占用。恢复快照与交接摘要写明观测时间；旧快照不能证明后续操作后的实时状态。发现漂移时保留旧证据、重新观测并新增快照。需要保持 Play 供用户查看时明确记录，不让后续任务以为编辑器空闲。
 
-Package Manager错误需要保留文本并检查实际包查询终态，不能仅清空Console。本机已确认过启动进程缺少 `ALLUSERSPROFILE` 导致UPM路径异常，见[M1-04恢复记录](../PM/Tasks/M1-04/RESTORATION-r5.md)。新开Editor应保留正常Windows进程环境；若复现同一原因，可仅为目标子进程使用Windows公共数据目录补值，同版本重启后验证包查询与Console，同时核对manifest/lock未漂移。不要把全局环境修改或删除Library作为默认恢复步骤。
+Package Manager错误需要保留文本并检查实际包查询终态，不能仅清空Console。本机已确认过启动进程缺少 `ALLUSERSPROFILE` 导致UPM路径异常，见[M1-04恢复记录（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。新开Editor应保留正常Windows进程环境；若复现同一原因，可仅为目标子进程使用Windows公共数据目录补值，同版本重启后验证包查询与Console，同时核对manifest/lock未漂移。不要把全局环境修改或删除Library作为默认恢复步骤。
 
 断线先重新发现工具和实例，再核对原 job。工具确实不可用时记录失败阶段，可继续源码检查或离线报告；若需要用户在 Unity 打开 MCP 窗口或重连，只提出具体操作及成功信号。不要猜测端口、切换到其他工程、启动第二个服务或杀掉归属不明的进程。
 
@@ -68,6 +68,6 @@ CLI 替代仅在适用授权和工程独占条件下使用；不要让第二个 
 
 ## 已观测的缓存与测试恢复
 
-INFRA-004 在 MCP 包 `acf5e3dd3b` 中实际遇到空闲快照持续 `stale_status`：`EditorStateCache.OnUpdate` 在状态不变时不更新时间戳。处理前先核对当前包源码与实际工程；仅在同一原因确认后，可通过 MCP execute_code 调用现有 `ForceUpdate` 重新采集，再读取标准 editor/state 验证 ready。不得改时间戳字段、把旧快照改为ready、借此绕过真实编译/导入/测试阻塞，或未经核对推广到其他包版本。[实际恢复证据](../PM/Tasks/INFRA-004/RECOVERY-r1.md)
+INFRA-004 在 MCP 包 `acf5e3dd3b` 中实际遇到空闲快照持续 `stale_status`：`EditorStateCache.OnUpdate` 在状态不变时不更新时间戳。处理前先核对当前包源码与实际工程；仅在同一原因确认后，可通过 MCP execute_code 调用现有 `ForceUpdate` 重新采集，再读取标准 editor/state 验证 ready。不得改时间戳字段、把旧快照改为ready、借此绕过真实编译/导入/测试阻塞，或未经核对推广到其他包版本。[实际恢复证据（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 本轮 EditMode/PlayMode 终态后还出现过内存 runInBackground 已恢复false、磁盘仍为1的情况。输入哈希门禁应保持失败；核对仅该已知设置漂移后，用 Editor API 恢复原值并保存，再核验完整冻结输入。已有成功终态可以在恢复后重新交给 journal 验证，不得重新发起同一测试掩盖漂移；其他未保存用户资产不在自动保存范围内。

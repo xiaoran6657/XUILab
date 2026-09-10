@@ -51,12 +51,12 @@ Window 路径枚举当前 cells 并调用 Intersects：普通列表保留1000个
 Frame Interval available；Main Thread、GC Allocated In Frame、System Used Memory全部unavailable，未替换为零；UI rebuild marker也unavailable。每次coldBuildMs单列在原始metrics/复算details，未纳入稳态p95。
 
 - [冻结协议](LIST_REFRESH_PROTOCOL-r1.md)
-- [完整计划](../../Artifacts/list-refresh-player-r4/matrix-r4.json) / [预试验计划](../../Artifacts/list-refresh-player-r4/pilot-r4.json)
-- [构建清单](../../Artifacts/list-refresh-player-r4/build-manifest.json) / [实际测试门禁](../../Artifacts/list-refresh-validation/preflight-r3.json)
-- [110-run原始复算](../../Artifacts/list-refresh-player-r4/matrix-verification-r1.json) / [4-run预试验复算](../../Artifacts/list-refresh-player-r4/pilot-verification-r1.json)
-- [114-run目录/日志/收据补充验收](../../Artifacts/list-refresh-player-r4/matrix-supplement-r2.json) / [预试验补充](../../Artifacts/list-refresh-player-r4/pilot-supplement-r2.json)
-- [逐轮图SVG](../../Artifacts/list-refresh-player-r4/report-r2/list-refresh-p95.svg) / [全比较表JSON](../../Artifacts/list-refresh-player-r4/report-r2/comparison-table.json)
-- [功能与Runner验证](../PM/Tasks/M3-L2/VERIFICATION-r3.md) / [实际恢复](../../Artifacts/list-refresh-validation/player-matrix-r4-restore.json)
+- [完整计划（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) / [预试验计划（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
+- [构建清单（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) / [实际测试门禁（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
+- [110-run原始复算（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) / [4-run预试验复算（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
+- [114-run目录/日志/收据补充验收（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) / [预试验补充（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
+- [逐轮图SVG（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) / [全比较表JSON（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
+- [功能与Runner验证（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) / [实际恢复（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 构建输入294项、完整Player296文件；manifest SHA `00e65dc06fac859828fb94ca8d14a9958aabef675ac7189edc6b0c6c4c00b256`。主计划SHA `62c588a2a84eb158bac925737fa7af4f891cd1027ad73499ac650e6021839b91`。源码HEAD `b40eac4397bf5f717d86deaa2058f13c33b3e7b8`，dirty=true；这是M3探索证据，不是M4干净提交基准。
 
@@ -80,6 +80,6 @@ Frame Interval available；Main Thread、GC Allocated In Frame、System Used Mem
 
 可见单项Target确实从9Bind减为1，离屏更新0Bind/0创建，并在入屏后恢复最新数据。代价是pending、模板映射与回调异常恢复复杂度；54项真实测试和20组独立trace复算覆盖这些边界。批量更新说明减少扫描与减少Bind是不同因素。当前继续保留VisibleWindow默认，由M3-05结合渐变实验与最终回归选择默认策略。
 
-失败路径保留：r2测试因预期异常日志未声明而失败，修正精确LogAssert后r3通过；首次成功构建的输出路径表示不兼容journal，保留原响应并在独立目录按native路径完成下一构建。详见[实施记录](../PM/Tasks/M3-L2/IMPLEMENTATION_LOG.md)。
+失败路径保留：r2测试因预期异常日志未声明而失败，修正精确LogAssert后r3通过；首次成功构建的输出路径表示不兼容journal，保留原响应并在独立目录按native路径完成下一构建。详见[实施记录（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 
 补充验收不伪造旧receipt的启动字段：日志SHA在完成后捕获用于保全。执行身份来自冻结launcher的Popen/wait记录、实际Player路径门禁、构建来源及全raw关联；不声称密码学进程证明。Core参数化测试有三个数组用例被MCP显示为同名System.String[]，按冻结源的精确多重集合核验，未丢弃明细。SVG r2及PNG已视觉检查，11组轴/标签/图例可见；r1透明背景问题通过r2白底修复，原数据不变。

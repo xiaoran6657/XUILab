@@ -1,6 +1,6 @@
 # M0：工程基线与最小测量闭环
 
-阶段出口与实际证据见 [M0_STAGE_EXIT](../PM/M0_STAGE_EXIT.md)；当前执行位置见 [项目状态](../PM/PROJECT_STATUS.md)。本页定义稳定目标，不维护动态验收状态。
+阶段出口与实际证据见 [M0_STAGE_EXIT（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)；当前执行位置见 [项目状态](../PM/PROJECT_STATUS.md)。本页定义稳定目标，不维护动态验收状态。
 
 前置：[MVP 固定决策](ROADMAP.md)已确定；Unity 模板工程和初始提交已存在。
 

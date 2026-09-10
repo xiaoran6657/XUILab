@@ -14,7 +14,7 @@
 
 ## 实际依赖
 
-UGUI 1.0.0、URP 14.0.11、TextMesh Pro 3.0.9的已解析包均包含LICENSE.md，文件声明Unity Companion License。完整依赖版本及传递依赖以lock为准；本页不把它们重新许可为项目原创代码。实际解析包的90份package.json及现有许可/NOTICE文件已按原字节保存到[来源清单](../../Artifacts/m4-final-validation/dependency-notices-r1/manifest.json)，每项附SHA-256；重新获取包也应保留其原声明。
+UGUI 1.0.0、URP 14.0.11、TextMesh Pro 3.0.9的已解析包均包含LICENSE.md，文件声明Unity Companion License。完整依赖版本及传递依赖以lock为准；本页不把它们重新许可为项目原创代码。实际解析包的90份package.json及现有许可/NOTICE文件已按原字节保存到[来源清单（历史记录未公开）](HISTORICAL_RECORDS.md)，每项附SHA-256；重新获取包也应保留其原声明。
 
 MCP for Unity已解析package.json版本为10.2.1-beta.3；manifest使用beta引用，但lock固定解析提交acf5e3dd3b864c140862e0c6644ff9e8f2120a64。该工具服务Editor操作，来源为 [CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp)，许可入口由实际package.json的licensesUrl提供。最终源码不打包Library/PackageCache替代依赖获取；不要把可移动beta名字当作已固定的身份。
 

@@ -2,9 +2,9 @@
 
 候选 `gradient-subdivision-r2` 已完成160次有效Windows Development Player测量。独立只读复算确认32组各5次、所有原始统计与报告一致；24个对固定32的配对比较为2改善、1退化、21项无法区分。所有明确差异来自100组件持续变化的场景。
 
-原始完整报告：[matrix-report-r1.json](../../Artifacts/gradient-subdivision-player-r2/matrix-report-r1.json)；[图表与统计CSV](../../Artifacts/gradient-subdivision-player-r2/charts-r1/group-statistics.csv)。默认仍保持固定32；更少段数的速度收益不能代替0.01质量目标。
+原始完整报告：[matrix-report-r1.json（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)；[图表与统计CSV（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。默认仍保持固定32；更少段数的速度收益不能代替0.01质量目标。
 
-![质量与成本](../../Artifacts/gradient-subdivision-player-r2/charts-r1/quality-cost.png)
+![质量与成本（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 ## 身份与条件
 

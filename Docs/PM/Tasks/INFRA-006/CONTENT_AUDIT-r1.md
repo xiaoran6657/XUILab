@@ -1,0 +1,11 @@
+# 首轮公开内容审查
+
+审查者public_content_audit；只读审查，未修改文件或操作Unity。请求配置GPT-5.6 Luna/max，实际服务端模型unknown。本报告是实施前风险清单，不是最终候选accept。
+
+历史16个单父提交/776路径，单一作者身份。References的26文件包含私人及第三方研究输入；PROJECT_ANALYSIS含原项目背景；PM的279个文件包含操作记录与10份历史源码patch。决定在隔离发布副本的全部历史中排除Docs/References/、Docs/PROJECT_ANALYSIS.md、Docs/PM/，公开tip只添加中性导航、最小PM状态和本次发布合同/审查。原本地历史不改。
+
+Runtime/Editor/Tests及Tools生产代码没有发现公司源码、个人信息或凭据命中；生产实现未复制References源码。Tools中的合成历史夹具改用明确虚构根目录。Unity模板资源保留原文件及meta，补第三方声明，不改GUID。Packages保留原manifest/lock，说明可移动beta引用与锁定提交；不因此升级依赖。ProjectSettings未发现个人云项目绑定。
+
+保留的Agent文档、旧证据catalog、根入口在发布副本中将真实机器路径替换为占位符；作者映射GitHub公开handle/noreply。已排除的历史文档链接应明确标为未公开记录，不能伪造对应证据。所有待推送refs/对象重新扫描，文件过滤不等于全内容审查。
+
+审查覆盖模式搜索、路径/元数据、代表性内容及来源核对；未把凭据模式无命中当成绝对无风险。最终候选仍须独立冻结审查和公开附件核对。

@@ -35,7 +35,7 @@ Runner 的单元和完整程序集门禁覆盖状态转换、统计、身份、�
 
 | 层次 | 证据 |
 | --- | --- |
-| Runner 门禁 | Core 32/32、Runner 8/8；其余主题回归按[验证记录](../../PM/Tasks/M4-01/VERIFICATION-r1.md)列出，数量有重叠，不相加冒充独立总数。 |
+| Runner 门禁 | Core 32/32、Runner 8/8；其余主题回归按[验证记录（历史记录未公开）](../HISTORICAL_RECORDS.md)列出，数量有重叠，不相加冒充独立总数。 |
 | 展示 smoke | `m4-final-media/smoke-r1-receipt.json`，32 checks、6 images、恢复 `pass`、整体 exit 0。 |
 | 正式矩阵 | List 50 + Gradient 80，共 130 次有效 `pass / valid`。 |
 
@@ -47,7 +47,7 @@ Runner 的单元和完整程序集门禁覆盖状态转换、统计、身份、�
 | fail | `Failed` | `NotRun / NotAssessed` | 1 |
 | invalid | `Completed` | `Pass / Invalid` | 3 |
 
-这张表来自[最终 smoke 回执](../../../Artifacts/m4-final-media/smoke-r1-receipt.json)。整体 exit 0 表示展示验证正确识别了三个终态，不表示内部 fail 或 invalid 是性能成功。在形成正式 130 次有效样本的过程中，另有两次实际编排失败且没有 raw：列表第 15 次 180 秒 timeout，以及渐变第一次使用错误的默认 ListLab 入口而 exit2。两次失败的启动、日志和终态仍保留，未伪造 samples，也未删除失败目录；它们与 smoke 里的预设 fail case 是两类记录。
+这张表来自[最终 smoke 回执（历史记录未公开）](../HISTORICAL_RECORDS.md)。整体 exit 0 表示展示验证正确识别了三个终态，不表示内部 fail 或 invalid 是性能成功。在形成正式 130 次有效样本的过程中，另有两次实际编排失败且没有 raw：列表第 15 次 180 秒 timeout，以及渐变第一次使用错误的默认 ListLab 入口而 exit2。两次失败的启动、日志和终态仍保留，未伪造 samples，也未删除失败目录；它们与 smoke 里的预设 fail case 是两类记录。
 
 ## 7. 学习与适用边界
 

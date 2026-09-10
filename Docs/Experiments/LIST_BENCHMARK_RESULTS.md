@@ -2,15 +2,15 @@
 
 2026-09-06。这是未提交候选的工程探索，**不是作品集公开性能声明**。本次完成 50 轮共同主矩阵、4 轮预检，以及压力档的 3 轮有效运行和 1 轮预算超时。虚拟实例在已完成的 100/300/1000/10000 档保持 13 个；但 1000 档不限帧的 p95 帧间隔相对普通列表退化。100 档与 60 FPS 补充组的 p95 差异为 inconclusive。
 
-正确性、测量有效性与性能方向分别判定。最终独立审查/验收入口为 [M1-04 状态](../PM/Tasks/M1-04/TASK_STATUS.md)，设计取舍见 [案例草稿](LIST_LAB_CASE_STUDY.md)。
+正确性、测量有效性与性能方向分别判定。最终独立审查/验收入口为 [M1-04 状态（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)，设计取舍见 [案例草稿](LIST_LAB_CASE_STUDY.md)。
 
 ## 身份与方法
 
 | 项目 | 本次值 |
 | --- | --- |
 | candidate | `list-r3-8756E9288BE4`，dirty=true |
-| source revision | `9f032952199644624a58df41988e3679304ba7ac` + [冻结源码清单](../PM/Tasks/M1-04/WORKSPACE_SNAPSHOT-r3.sha256) |
-| build | `list-dev-20260906T071112Z`，[全量二进制清单](../PM/Tasks/M1-04/BUILD_SNAPSHOT-r3.sha256) |
+| source revision | `9f032952199644624a58df41988e3679304ba7ac` + [冻结源码清单（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) |
+| build | `list-dev-20260906T071112Z`，[全量二进制清单（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) |
 | Editor / Player | Unity 2022.3.45f1c1、Windows x64、Mono Development、可见窗口 |
 | 硬件 / OS | Ryzen 5 5600G，12 logical processors；Radeon RX 9070；Windows 10 10.0.19045 64bit |
 | 图形 / 画面 | Direct3D11，960×540，High Fidelity，VSync=0；两后端相同 Cell/字体/Canvas/视口/裁剪 |
@@ -32,9 +32,9 @@
 | 1000 / lifecycle / -1 | 13.280 [12.759,14.717] | 16.564 [16.469,16.927] | regressed |
 | 1000 / scroll / 60 | 17.087 [17.015,17.203] | 17.065 [17.024,17.456] | inconclusive |
 
-![p95五轮比较](../../Artifacts/list-analysis-r3/p95-comparison.png)
+![p95五轮比较（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
-完整 MAD/IQR、p50/p99/max、over-budget、冷开、首次可交互及生命周期分段表见 [推导表](../../Artifacts/list-analysis-r3/tables.md)。[SVG](../../Artifacts/list-analysis-r3/p95-comparison.svg) 与 [PDF](../../Artifacts/list-analysis-r3/p95-comparison.pdf) 可用于进一步排版。
+完整 MAD/IQR、p50/p99/max、over-budget、冷开、首次可交互及生命周期分段表见 [推导表（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。[SVG（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) 与 [PDF（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) 可用于进一步排版。
 
 ## 功能计数和生命周期成本
 
@@ -53,19 +53,19 @@
 
 这些中位数描述具体观测，不替代上面的 p95 方向规则。同步UI构造从创建 Canvas 到第一次 SetItems/Layout，**不含进程启动、场景加载或此前生成数据快照**；“首次下一帧就绪”是 Runner 的下一帧代理指标，不是完整应用启动耗时或端到端输入延迟。生命周期单次动作的范围见推导表。
 
-![实例和生命周期说明](../../Artifacts/list-analysis-r3/list-architecture.png)
+![实例和生命周期说明（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 ## 压力边界
 
 压力计划独立于五轮主矩阵。300档两后端完成；10000档虚拟列表完成1800样本，unique=13、位置误差0、Cleanup unique=0，单轮p95=16.430 ms。单轮数据不进入五轮聚合。
 
-10000档普通列表 `list-r3-stress-list-normal-10000-scroll--1-r1` 达到180秒预算。编排器只终止其创建的PID48156，receipt记录180.126秒；没有完整九文件终态，**p95、完成样本数及内部失败阶段 unavailable**，不能把超时填成零或有效比较。旁证保留在 [orchestration failure](../../Artifacts/list-player-r3/list-r3-stress-list-normal-10000-scroll--1-r1-orchestration-failure.json)。
+10000档普通列表 `list-r3-stress-list-normal-10000-scroll--1-r1` 达到180秒预算。编排器只终止其创建的PID48156，receipt记录180.126秒；没有完整九文件终态，**p95、完成样本数及内部失败阶段 unavailable**，不能把超时填成零或有效比较。旁证保留在 [orchestration failure（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 
-编排器在超时后停止，主 Agent 通过 [剩余计划执行脚本](../../Artifacts/finish_list_stress_r3.py) 校验原冻结manifest和build hash，只执行原计划最后的virtual10000；未重试失败普通轮，也未覆盖任何输出。压力档结论为“3轮有效 + 1轮预算失败”，不是整组全部通过。
+编排器在超时后停止，主 Agent 通过 [剩余计划执行脚本（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) 校验原冻结manifest和build hash，只执行原计划最后的virtual10000；未重试失败普通轮，也未覆盖任何输出。压力档结论为“3轮有效 + 1轮预算失败”，不是整组全部通过。
 
 ## 有效性和解释限制
 
-- 仅采用可见r3运行。r2隐藏窗口虽通过数据检查却导出黑帧，且存在工具重试构建干扰风险，全部排除；见 [恢复记录](../PM/Tasks/M1-04/RECOVERY-r2-hidden-player.md)。
+- 仅采用可见r3运行。r2隐藏窗口虽通过数据检查却导出黑帧，且存在工具重试构建干扰风险，全部排除；见 [恢复记录（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 - 正式窗口期间没有截图、录像、编码、Unity导入/测试/构建或重型分析。另一Unity项目仍打开，未控制或测量其全部后台负载；本结果只覆盖这台机器本次显示环境，不能泛化到其他设备。
 - Main Thread、GC Allocated In Frame、System Used Memory没有可用 recorder 样本；UI rebuild/batches/vertices没有验证的测量源，均 unavailable。不能声称“零GC”或从Bind推出网格重建数量。
 - 帧间隔包括可见Player的显示/调度影响，不能当作列表组件CPU耗时。虚拟列表在1000档p50、构造和重建动作上的数值较低，同时p95较高；本次没有足够marker证据解释其因果，不归因于某个驱动或合成器。
@@ -74,6 +74,6 @@
 
 ## 媒体与复核入口
 
-[30秒演示草稿](../../Artifacts/list-media/list-demo-r4.mp4) 由最终同build的独立可见Player生成，450帧/15fps，依次展示普通、虚拟和双模板/渐隐/位置恢复；它不是测量视频。原始图像为 `Artifacts/list-media/frames-r4`，capture.json与帧保留。图表由 [分析脚本](../../Artifacts/analyze_list_r3.py) 从同批原始数据导出。
+[30秒演示草稿（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) 由最终同build的独立可见Player生成，450帧/15fps，依次展示普通、虚拟和双模板/渐隐/位置恢复；它不是测量视频。原始图像为 `Artifacts/list-media/frames-r4`，capture.json与帧保留。图表由 [分析脚本（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) 从同批原始数据导出。
 
-审查、源码/构建/工具/产物哈希与状态分别见 [M1-04交接](../PM/Tasks/M1-04/HANDOFF-r3.md) 和 [任务状态](../PM/Tasks/M1-04/TASK_STATUS.md)。没有提交、推送或公开发布本轮产物。
+审查、源码/构建/工具/产物哈希与状态分别见 [M1-04交接（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) 和 [任务状态（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。没有提交、推送或公开发布本轮产物。

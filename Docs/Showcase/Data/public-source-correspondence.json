@@ -1,0 +1,1486 @@
+{
+  "candidate": "m4-final-b017672",
+  "unityInputCount": 295,
+  "unityInputsMatch": "Git source blobs identical; 263 byte-exact measured files and 32 newline-only differences",
+  "inputs": {
+    "XUILab/Assets/Plugins.meta": {
+      "measuredSha256": "6f7f188e6ebf0535b8abb67f5333c7da24cc324703f05184e246c5b741678e30",
+      "publicSha256": "6f7f188e6ebf0535b8abb67f5333c7da24cc324703f05184e246c5b741678e30",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn.meta": {
+      "measuredSha256": "ff054bc0669df703e6973580eca05789c6e0af8a734a80d6bab0dc781223e2de",
+      "publicSha256": "ff054bc0669df703e6973580eca05789c6e0af8a734a80d6bab0dc781223e2de",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/Microsoft.CodeAnalysis.CSharp.dll": {
+      "measuredSha256": "81b578b15e4a3f2ba928fab9d014e9fad6b885fa25a2a7e6176beda937588764",
+      "publicSha256": "81b578b15e4a3f2ba928fab9d014e9fad6b885fa25a2a7e6176beda937588764",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/Microsoft.CodeAnalysis.CSharp.dll.meta": {
+      "measuredSha256": "a328553c58dffdb6e8935c0948fde26a4875c8978d8019c682f5387341041b13",
+      "publicSha256": "a328553c58dffdb6e8935c0948fde26a4875c8978d8019c682f5387341041b13",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/Microsoft.CodeAnalysis.dll": {
+      "measuredSha256": "a8aef0aaec005c7c9c246669d35575c6075bd876f3095ef06fb07fee7df43b61",
+      "publicSha256": "a8aef0aaec005c7c9c246669d35575c6075bd876f3095ef06fb07fee7df43b61",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/Microsoft.CodeAnalysis.dll.meta": {
+      "measuredSha256": "110f964f432537900d0f794994e2569a588d42523318514d65e926c93b6bf9f3",
+      "publicSha256": "110f964f432537900d0f794994e2569a588d42523318514d65e926c93b6bf9f3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/System.Collections.Immutable.dll": {
+      "measuredSha256": "5b1b1c83ba3d135c2fdfe425842fbe9c7432878b7e468623acb554c69b4c130f",
+      "publicSha256": "5b1b1c83ba3d135c2fdfe425842fbe9c7432878b7e468623acb554c69b4c130f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/System.Collections.Immutable.dll.meta": {
+      "measuredSha256": "de72c5d796bbfb6270bc91a530022fff2324efb2bc3fd59ee25c7b1f40189b0e",
+      "publicSha256": "de72c5d796bbfb6270bc91a530022fff2324efb2bc3fd59ee25c7b1f40189b0e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/System.Reflection.Metadata.dll": {
+      "measuredSha256": "55ef768ffa305de58e38e15420669258b16f420618eb1f702bddb30e5c797961",
+      "publicSha256": "55ef768ffa305de58e38e15420669258b16f420618eb1f702bddb30e5c797961",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/System.Reflection.Metadata.dll.meta": {
+      "measuredSha256": "a731f257dc73931ba56f5fc252ae9f4499a09f2424b7d20373f09301317539cc",
+      "publicSha256": "a731f257dc73931ba56f5fc252ae9f4499a09f2424b7d20373f09301317539cc",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/System.Runtime.CompilerServices.Unsafe.dll": {
+      "measuredSha256": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9",
+      "publicSha256": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Plugins/Roslyn/System.Runtime.CompilerServices.Unsafe.dll.meta": {
+      "measuredSha256": "c3710425ff8667b9302192dde27c2887bfa3115f98cbbff45e6fb9f3c80656eb",
+      "publicSha256": "c3710425ff8667b9302192dde27c2887bfa3115f98cbbff45e6fb9f3c80656eb",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Readme.asset": {
+      "measuredSha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+      "publicSha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Readme.asset.meta": {
+      "measuredSha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+      "publicSha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Scenes.meta": {
+      "measuredSha256": "5bfb8a676cbede2a48f8418464330c3c9e4e01223aa698081a0513efe61aa4ad",
+      "publicSha256": "5bfb8a676cbede2a48f8418464330c3c9e4e01223aa698081a0513efe61aa4ad",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Scenes/SampleScene.unity": {
+      "measuredSha256": "93ff4bd5410520f04df9f14709ad4e8d5136a12a22d1361adf66e075c1947c92",
+      "publicSha256": "93ff4bd5410520f04df9f14709ad4e8d5136a12a22d1361adf66e075c1947c92",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Scenes/SampleScene.unity.meta": {
+      "measuredSha256": "b5815a6b12afaf810577bc89041c4ce46516c7cd6609693f8db616f8e5584d80",
+      "publicSha256": "b5815a6b12afaf810577bc89041c4ce46516c7cd6609693f8db616f8e5584d80",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings.meta": {
+      "measuredSha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+      "publicSha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/SampleSceneProfile.asset": {
+      "measuredSha256": "a9932bcba1b1b55c8939c72aca2b5cca21efc41847bd16208fe3e171c9cba89f",
+      "publicSha256": "a9932bcba1b1b55c8939c72aca2b5cca21efc41847bd16208fe3e171c9cba89f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/SampleSceneProfile.asset.meta": {
+      "measuredSha256": "ca16ad198ed1e1035cb3597a05a38465ceec9eac871e576e3b14280c7f4454d3",
+      "publicSha256": "ca16ad198ed1e1035cb3597a05a38465ceec9eac871e576e3b14280c7f4454d3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Balanced-Renderer.asset": {
+      "measuredSha256": "8ddaba42cf10b34a3797d185fb1755dd65bf9bcac2d31af190d0ad465e29cb57",
+      "publicSha256": "8ddaba42cf10b34a3797d185fb1755dd65bf9bcac2d31af190d0ad465e29cb57",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Balanced-Renderer.asset.meta": {
+      "measuredSha256": "ebbb7afa6c1a6e28d17b2125e19e634a4b03a8abe5d7263f220a042b0ea62103",
+      "publicSha256": "ebbb7afa6c1a6e28d17b2125e19e634a4b03a8abe5d7263f220a042b0ea62103",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Balanced.asset": {
+      "measuredSha256": "eedde674221607fab1912ed9110d23b1ef58a249cf6dd52deb7bc0824e70b63f",
+      "publicSha256": "eedde674221607fab1912ed9110d23b1ef58a249cf6dd52deb7bc0824e70b63f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Balanced.asset.meta": {
+      "measuredSha256": "582d59eee6f9e76075756f73ce0df51df7165d725956be92750ac4a7e2c6e4cd",
+      "publicSha256": "582d59eee6f9e76075756f73ce0df51df7165d725956be92750ac4a7e2c6e4cd",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-HighFidelity-Renderer.asset": {
+      "measuredSha256": "cc8be915944c9c27c3478f9931dc0baaf7c3f619cad063a9530ea90af8b542f4",
+      "publicSha256": "cc8be915944c9c27c3478f9931dc0baaf7c3f619cad063a9530ea90af8b542f4",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-HighFidelity-Renderer.asset.meta": {
+      "measuredSha256": "1f35ac5b27888da9ed16c57d619316d9aedc9d760f18fb2350592698f38702ee",
+      "publicSha256": "1f35ac5b27888da9ed16c57d619316d9aedc9d760f18fb2350592698f38702ee",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-HighFidelity.asset": {
+      "measuredSha256": "1f4c985f0d35506d797f086a754589957f5a2cfe329a532eb94a275fb0149c77",
+      "publicSha256": "1f4c985f0d35506d797f086a754589957f5a2cfe329a532eb94a275fb0149c77",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-HighFidelity.asset.meta": {
+      "measuredSha256": "4f4e042a301842e1e072de030d7dfafa1a6498c7d69177a62f645a233c54c234",
+      "publicSha256": "4f4e042a301842e1e072de030d7dfafa1a6498c7d69177a62f645a233c54c234",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Performant-Renderer.asset": {
+      "measuredSha256": "11d4463a714b8572792a6818dece9e3c84ee2635dff9048575155b064e056bb9",
+      "publicSha256": "11d4463a714b8572792a6818dece9e3c84ee2635dff9048575155b064e056bb9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Performant-Renderer.asset.meta": {
+      "measuredSha256": "299b5cb85aa3528d3255645dd3e11be5530ea4275255e0df460d3ca8866fa28b",
+      "publicSha256": "299b5cb85aa3528d3255645dd3e11be5530ea4275255e0df460d3ca8866fa28b",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Performant.asset": {
+      "measuredSha256": "1f83b9a0f9030157b0fd15176e293f42e2164b8a7d8d45492db03fe1c00a5f84",
+      "publicSha256": "1f83b9a0f9030157b0fd15176e293f42e2164b8a7d8d45492db03fe1c00a5f84",
+      "transformation": "none"
+    },
+    "XUILab/Assets/Settings/URP-Performant.asset.meta": {
+      "measuredSha256": "26a8380abc9f83be23c7a6749e165af3ee254ee1e6b13c5c5bc9a735a30ca241",
+      "publicSha256": "26a8380abc9f83be23c7a6749e165af3ee254ee1e6b13c5c5bc9a735a30ca241",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo.meta": {
+      "measuredSha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+      "publicSha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Icons.meta": {
+      "measuredSha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+      "publicSha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Icons/URP.png": {
+      "measuredSha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+      "publicSha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Icons/URP.png.meta": {
+      "measuredSha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+      "publicSha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Layout.wlt": {
+      "measuredSha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b",
+      "publicSha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Layout.wlt.meta": {
+      "measuredSha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+      "publicSha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Scripts.meta": {
+      "measuredSha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+      "publicSha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Scripts/Editor.meta": {
+      "measuredSha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+      "publicSha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs": {
+      "measuredSha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5",
+      "publicSha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta": {
+      "measuredSha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+      "publicSha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Scripts/Readme.cs": {
+      "measuredSha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e",
+      "publicSha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/TutorialInfo/Scripts/Readme.cs.meta": {
+      "measuredSha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+      "publicSha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+      "transformation": "none"
+    },
+    "XUILab/Assets/UniversalRenderPipelineGlobalSettings.asset": {
+      "measuredSha256": "ad47c9a555fa0774e8982e52f039ce9c33a21b1524c18d7e430d1505708bb014",
+      "publicSha256": "ad47c9a555fa0774e8982e52f039ce9c33a21b1524c18d7e430d1505708bb014",
+      "transformation": "none"
+    },
+    "XUILab/Assets/UniversalRenderPipelineGlobalSettings.asset.meta": {
+      "measuredSha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+      "publicSha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab.meta": {
+      "measuredSha256": "fc48548687e2bb4d2b7c6a11d86f1d3bea4f0f32f6b46c54299c5f5408f7dbff",
+      "publicSha256": "fc48548687e2bb4d2b7c6a11d86f1d3bea4f0f32f6b46c54299c5f5408f7dbff",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking.meta": {
+      "measuredSha256": "38d85a040033e3b0a1836750ccdc3f20f4d5771e01d0ec7e4b15257ef4f783bf",
+      "publicSha256": "38d85a040033e3b0a1836750ccdc3f20f4d5771e01d0ec7e4b15257ef4f783bf",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Editor.meta": {
+      "measuredSha256": "bfe488145e4785a99c81c3e59b0011600eaa8db98d6a2a12a211c8b47cab3635",
+      "publicSha256": "bfe488145e4785a99c81c3e59b0011600eaa8db98d6a2a12a211c8b47cab3635",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Editor/Build.meta": {
+      "measuredSha256": "ac60b62f1f864096cdffdcc1a045e81b8f39b67cf6df49e20d729187442b785c",
+      "publicSha256": "ac60b62f1f864096cdffdcc1a045e81b8f39b67cf6df49e20d729187442b785c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Editor/Build/BenchmarkBuildMenu.cs": {
+      "measuredSha256": "4efe853bf397a75031359446a9f7cc32e75628e5edec828b5c9d63905d1c40e3",
+      "publicSha256": "4efe853bf397a75031359446a9f7cc32e75628e5edec828b5c9d63905d1c40e3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Editor/Build/BenchmarkBuildMenu.cs.meta": {
+      "measuredSha256": "c04d8724ae27b8dacf32c5afff84ddc7f240556562c671722861b60bb0b25406",
+      "publicSha256": "c04d8724ae27b8dacf32c5afff84ddc7f240556562c671722861b60bb0b25406",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Editor/XUILab.Benchmarking.Editor.asmdef": {
+      "measuredSha256": "7de14640faf2683a8d65025e215327e4591fe56b0d2684c12875242d8c32f560",
+      "publicSha256": "7de14640faf2683a8d65025e215327e4591fe56b0d2684c12875242d8c32f560",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Editor/XUILab.Benchmarking.Editor.asmdef.meta": {
+      "measuredSha256": "72cd231349b6ada5a153f7f3cdb081cc3c4bb15bfc1df3da62f0c4a2cf14e33f",
+      "publicSha256": "72cd231349b6ada5a153f7f3cdb081cc3c4bb15bfc1df3da62f0c4a2cf14e33f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime.meta": {
+      "measuredSha256": "121579eb40719e1cb2049f43eb03d70002c99d5708fc9bc9172ea3b6497a0769",
+      "publicSha256": "121579eb40719e1cb2049f43eb03d70002c99d5708fc9bc9172ea3b6497a0769",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkArtifacts.cs": {
+      "measuredSha256": "b70ba902b7cdbf67e4f578ffaa2dcff1a19c436f9f5dd1540d1d3facf4031401",
+      "publicSha256": "b70ba902b7cdbf67e4f578ffaa2dcff1a19c436f9f5dd1540d1d3facf4031401",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkArtifacts.cs.meta": {
+      "measuredSha256": "6f9ec0d703adf5996a0a842021b4b01fe05723db115f5c954913811504ce7e17",
+      "publicSha256": "6f9ec0d703adf5996a0a842021b4b01fe05723db115f5c954913811504ce7e17",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkCases.cs": {
+      "measuredSha256": "3aed99a8ada913fa4bf89dd0797e02cc7df6b17eab527404a09639cf643a507c",
+      "publicSha256": "3aed99a8ada913fa4bf89dd0797e02cc7df6b17eab527404a09639cf643a507c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkCases.cs.meta": {
+      "measuredSha256": "2c2a4aaedf482e62fdb19dce56c97bc491b1c27d8fb0861c8b10adedeb6f78be",
+      "publicSha256": "2c2a4aaedf482e62fdb19dce56c97bc491b1c27d8fb0861c8b10adedeb6f78be",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkCommandLine.cs": {
+      "measuredSha256": "32311c7e7220afadc3fbefc56964ac9577ded209d272681ebcb244afd5038431",
+      "publicSha256": "32311c7e7220afadc3fbefc56964ac9577ded209d272681ebcb244afd5038431",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkCommandLine.cs.meta": {
+      "measuredSha256": "f7967c8b91d11c42f0fa7ff413845f3967fb1a6f2dbb6f3e11cea597301a0b7e",
+      "publicSha256": "f7967c8b91d11c42f0fa7ff413845f3967fb1a6f2dbb6f3e11cea597301a0b7e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkFaultInjection.cs": {
+      "measuredSha256": "0604313a52f0e9ec9efb0480d5fee66e80314bfe5337e719964738f9a835ede2",
+      "publicSha256": "0604313a52f0e9ec9efb0480d5fee66e80314bfe5337e719964738f9a835ede2",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkFaultInjection.cs.meta": {
+      "measuredSha256": "c1d2f3ad22c9407775ffaad86583efa695e0a30d3d9df34c846cbe2aadfbe15a",
+      "publicSha256": "c1d2f3ad22c9407775ffaad86583efa695e0a30d3d9df34c846cbe2aadfbe15a",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkMeasurement.cs": {
+      "measuredSha256": "5b960d8df5f23b64e13887826d232078981669a6c2d74d4743cda43c3e477a4f",
+      "publicSha256": "5b960d8df5f23b64e13887826d232078981669a6c2d74d4743cda43c3e477a4f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkMeasurement.cs.meta": {
+      "measuredSha256": "de67206e9b2a99cb034d0ea2fc90d277bcc18433d5a7145ec9553196d5b56e87",
+      "publicSha256": "de67206e9b2a99cb034d0ea2fc90d277bcc18433d5a7145ec9553196d5b56e87",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkRunContracts.cs": {
+      "measuredSha256": "b5a893bfe8c875e514529f3ccff52776da70f1301e8772c948b2906cd6eb3192",
+      "publicSha256": "a7879b8a261eb15bd5027a5bc37b75e91a3165318feefc85b684e909214f28b6",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkRunContracts.cs.meta": {
+      "measuredSha256": "25ac1fe655259391d57eac3c9e82ad42e8aeacfd7ad0666bc0c63b2a2d27c5f7",
+      "publicSha256": "25ac1fe655259391d57eac3c9e82ad42e8aeacfd7ad0666bc0c63b2a2d27c5f7",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkRunner.cs": {
+      "measuredSha256": "98e751ec1db3f4b4fe99fd99be7e100f62fb4b155ae94be725a4a2b7cd0f7538",
+      "publicSha256": "98e751ec1db3f4b4fe99fd99be7e100f62fb4b155ae94be725a4a2b7cd0f7538",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkRunner.cs.meta": {
+      "measuredSha256": "3d24613c4d50040d56f9d956ccf90a1f654149a5c33c2732a47f23d8c1ca967a",
+      "publicSha256": "3d24613c4d50040d56f9d956ccf90a1f654149a5c33c2732a47f23d8c1ca967a",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkRunnerHost.cs": {
+      "measuredSha256": "999db992fe3ce4e070a06e3ac948c756f7e6e6196a15d296c99c68ea0d890b3b",
+      "publicSha256": "999db992fe3ce4e070a06e3ac948c756f7e6e6196a15d296c99c68ea0d890b3b",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkRunnerHost.cs.meta": {
+      "measuredSha256": "b988abd205325a096bf1579ad405fdb5a422689d05d62b259f262ea56b7177f0",
+      "publicSha256": "b988abd205325a096bf1579ad405fdb5a422689d05d62b259f262ea56b7177f0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkSmokeSceneContract.cs": {
+      "measuredSha256": "51bd8a45bfca26b51eadf9b29d6616f7ecf528229919ae0ee958ae2ef737b313",
+      "publicSha256": "51bd8a45bfca26b51eadf9b29d6616f7ecf528229919ae0ee958ae2ef737b313",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/BenchmarkSmokeSceneContract.cs.meta": {
+      "measuredSha256": "bff60e83dc9337918dd4f066debe211bd39852c1da1cd4af1df7574fed4f9b8f",
+      "publicSha256": "bff60e83dc9337918dd4f066debe211bd39852c1da1cd4af1df7574fed4f9b8f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/XUILab.Benchmarking.Runtime.asmdef": {
+      "measuredSha256": "afc60dbb232a7d774b5578a23a925c3164d61699cf80b88b4da6a84d05ca23a0",
+      "publicSha256": "afc60dbb232a7d774b5578a23a925c3164d61699cf80b88b4da6a84d05ca23a0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Runtime/XUILab.Benchmarking.Runtime.asmdef.meta": {
+      "measuredSha256": "2d74604a9d83736360eb7b80a98bc41e9ab372aa523fb5830472df032294f2db",
+      "publicSha256": "2d74604a9d83736360eb7b80a98bc41e9ab372aa523fb5830472df032294f2db",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests.meta": {
+      "measuredSha256": "1597bf83508895bee8655d19f8cb5085b23ee0c4d24936068a217d7c71d54c2e",
+      "publicSha256": "1597bf83508895bee8655d19f8cb5085b23ee0c4d24936068a217d7c71d54c2e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode.meta": {
+      "measuredSha256": "e19568c3630275a18682bca20d4000f54b7edc09fdc75d2f0e529cf6c3123ef3",
+      "publicSha256": "e19568c3630275a18682bca20d4000f54b7edc09fdc75d2f0e529cf6c3123ef3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/BenchmarkAssemblyBoundaryTests.cs": {
+      "measuredSha256": "92b5e05b25d00efeff76fa09f9e363e6991e9a33628eff9a5f140d758a9659ca",
+      "publicSha256": "92b5e05b25d00efeff76fa09f9e363e6991e9a33628eff9a5f140d758a9659ca",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/BenchmarkAssemblyBoundaryTests.cs.meta": {
+      "measuredSha256": "57562a1461305bc1603c12dcafed4219236babac62d2a07e5db0c465c66bcd4c",
+      "publicSha256": "57562a1461305bc1603c12dcafed4219236babac62d2a07e5db0c465c66bcd4c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/BenchmarkRunnerTests.cs": {
+      "measuredSha256": "8468b9312fd1ff2665a10590e1f2b3e4ff877d4361373fa7db6fdb73b40ecf81",
+      "publicSha256": "8468b9312fd1ff2665a10590e1f2b3e4ff877d4361373fa7db6fdb73b40ecf81",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/BenchmarkRunnerTests.cs.meta": {
+      "measuredSha256": "7c3f865ad8f498063dde53ae67ee61881397dfac8072991d01e5c50f0a529820",
+      "publicSha256": "7c3f865ad8f498063dde53ae67ee61881397dfac8072991d01e5c50f0a529820",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/BenchmarkStatisticsAndArtifactsTests.cs": {
+      "measuredSha256": "e9d1dbd6070ee0ca3e767ec02c1482e49b12c519cb50a2f226cb1719bc6db065",
+      "publicSha256": "e9d1dbd6070ee0ca3e767ec02c1482e49b12c519cb50a2f226cb1719bc6db065",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/BenchmarkStatisticsAndArtifactsTests.cs.meta": {
+      "measuredSha256": "6df5491d7ee627efc5b364444bc6e7adecbfe042bf95d1daead845ad75525044",
+      "publicSha256": "6df5491d7ee627efc5b364444bc6e7adecbfe042bf95d1daead845ad75525044",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/XUILab.Benchmarking.Tests.EditMode.asmdef": {
+      "measuredSha256": "b0237fd7151ca22c6fd817111c414f510e067121b12f88ba30b63e76009683c7",
+      "publicSha256": "b0237fd7151ca22c6fd817111c414f510e067121b12f88ba30b63e76009683c7",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/EditMode/XUILab.Benchmarking.Tests.EditMode.asmdef.meta": {
+      "measuredSha256": "d3f108c7d80b5d2c8e5dd182d00cb7f68d4120afa1fc91f4c20b809d873155eb",
+      "publicSha256": "d3f108c7d80b5d2c8e5dd182d00cb7f68d4120afa1fc91f4c20b809d873155eb",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/PlayMode.meta": {
+      "measuredSha256": "8954ca86ad818373d4ee03a5ad49a8058f2a429f4383ddee895e9379a0e7487e",
+      "publicSha256": "8954ca86ad818373d4ee03a5ad49a8058f2a429f4383ddee895e9379a0e7487e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/PlayMode/BenchmarkSmokeSceneTests.cs": {
+      "measuredSha256": "dd90a86b4bd80e2d59baa7708db8dc9c9913211d985e2093af5eff86b7214dc3",
+      "publicSha256": "dd90a86b4bd80e2d59baa7708db8dc9c9913211d985e2093af5eff86b7214dc3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/PlayMode/BenchmarkSmokeSceneTests.cs.meta": {
+      "measuredSha256": "92404bbc0da434bd063a4256b5a96370b2c9f1eb3f8232a1fd44bd67a8f06ef3",
+      "publicSha256": "92404bbc0da434bd063a4256b5a96370b2c9f1eb3f8232a1fd44bd67a8f06ef3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/PlayMode/XUILab.Benchmarking.Tests.PlayMode.asmdef": {
+      "measuredSha256": "2577a4911de4d35605fd835b4e053d2b363898d1af6dab8e4bcf4ea4171c445c",
+      "publicSha256": "2577a4911de4d35605fd835b4e053d2b363898d1af6dab8e4bcf4ea4171c445c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Benchmarking/Tests/PlayMode/XUILab.Benchmarking.Tests.PlayMode.asmdef.meta": {
+      "measuredSha256": "bf87665b565b500be55f5f84c14aac99b492f207dafc2e9b1b572b3f899c7146",
+      "publicSha256": "bf87665b565b500be55f5f84c14aac99b492f207dafc2e9b1b572b3f899c7146",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab.meta": {
+      "measuredSha256": "5e79f164d66a0f24a93a79670a714db69f3efd2a1b49fab78d30df25b8888fc0",
+      "publicSha256": "5e79f164d66a0f24a93a79670a714db69f3efd2a1b49fab78d30df25b8888fc0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration.meta": {
+      "measuredSha256": "8750204e79f71e68275ec3f1abecb3e0f40fc0f4f6ad14e368160b2ed73ee523",
+      "publicSha256": "8750204e79f71e68275ec3f1abecb3e0f40fc0f4f6ad14e368160b2ed73ee523",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientBenchmarkBootstrap.cs": {
+      "measuredSha256": "c11054dd83c25527228a4bdf8b9eeb6d4bcc9beed4e61b5cec7acd16e4dc5afb",
+      "publicSha256": "9b2172e6a73cfacfe215e34c9b8b15195acf7f801fc8fcf47fe2652998a27599",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientBenchmarkBootstrap.cs.meta": {
+      "measuredSha256": "9c0413f8fa71384be75cabe8574e965726405b6c3d211860a38d941608171409",
+      "publicSha256": "9c0413f8fa71384be75cabe8574e965726405b6c3d211860a38d941608171409",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientBenchmarkCase.cs": {
+      "measuredSha256": "e0e16a17b7f77ee76e209127725e84ebfdc44145a9b707bd471d581f4e96f93c",
+      "publicSha256": "697571f60731dd43ec089d795c8b8e9118098a08f0081d03d70428dc08e3f905",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientBenchmarkCase.cs.meta": {
+      "measuredSha256": "5078c4f7a020fb61cbc6d3067702c5e050bac21f5d089e51211c9df2758af950",
+      "publicSha256": "5078c4f7a020fb61cbc6d3067702c5e050bac21f5d089e51211c9df2758af950",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientBenchmarkWriter.cs": {
+      "measuredSha256": "c1268510819217c8b44374eba85e7bf2cd480267873da1beee30f2e04724182f",
+      "publicSha256": "37d1f3b3b734461b719efb082e4557b548ea4ecf6ba986d14af64df15d984fd4",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientBenchmarkWriter.cs.meta": {
+      "measuredSha256": "a42ed5c23955378a16fbf43ea06b2678bdedef518dd3b907d7041211802a9b50",
+      "publicSha256": "a42ed5c23955378a16fbf43ea06b2678bdedef518dd3b907d7041211802a9b50",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientPlayerBinding.cs": {
+      "measuredSha256": "29e6209ac1902d186aeb74fb09d2894a252877d501f16ceb4e4593c214ec6fcf",
+      "publicSha256": "d7ece2b46410266dad0a602c63e1391c5ee6c465c908d61813f27ada8aba4af9",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientPlayerBinding.cs.meta": {
+      "measuredSha256": "3f2ba5428477f8c4c04a6d072e15438d4e108328d5eabf65a6c56525881ecd0a",
+      "publicSha256": "3f2ba5428477f8c4c04a6d072e15438d4e108328d5eabf65a6c56525881ecd0a",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientQualityEvidence.cs": {
+      "measuredSha256": "bce1b65dbb78faec41877ceb1eeb61af5bae426846acbdaf39fccaa3ef24f836",
+      "publicSha256": "30a9795b22e7ce26decf1d06484836246eceec137ef73240a2f0853b6fa9316b",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/GradientQualityEvidence.cs.meta": {
+      "measuredSha256": "fb5474ca67d0a5b82706db87bcea4286028e0f22acffead77bc302099567b6d0",
+      "publicSha256": "fb5474ca67d0a5b82706db87bcea4286028e0f22acffead77bc302099567b6d0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/XUILab.GradientLab.Benchmarking.asmdef": {
+      "measuredSha256": "0d5b784e70e68fff128e39cf7808e839e98399ef08ed414ee7e715a7c646e15e",
+      "publicSha256": "0d5b784e70e68fff128e39cf7808e839e98399ef08ed414ee7e715a7c646e15e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/BenchmarkIntegration/XUILab.GradientLab.Benchmarking.asmdef.meta": {
+      "measuredSha256": "fdf548707a645f70de1285802b3dc1c261e05cec8f406201c9494aab42bed099",
+      "publicSha256": "fdf548707a645f70de1285802b3dc1c261e05cec8f406201c9494aab42bed099",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Diagnostics.meta": {
+      "measuredSha256": "40e69faafad6725827e5b098a7abe254d4fa8c347c40a63ced8b7b490ebd10e9",
+      "publicSha256": "40e69faafad6725827e5b098a7abe254d4fa8c347c40a63ced8b7b490ebd10e9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Diagnostics/GradientChannelGraphic.cs": {
+      "measuredSha256": "b25fd33b2e652eefe389757c680848069b8e41fc456f4695f5c319064cffe407",
+      "publicSha256": "5301699737144128f8fac9476a38c6559005ddd626d3672003b8d12c5ad6db2c",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Diagnostics/GradientChannelGraphic.cs.meta": {
+      "measuredSha256": "5b121e81a15cbf283357febb8e578b09511a999eea25dd055079d0e530611fe0",
+      "publicSha256": "5b121e81a15cbf283357febb8e578b09511a999eea25dd055079d0e530611fe0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Diagnostics/XUILab.GradientLab.Diagnostics.asmdef": {
+      "measuredSha256": "b3c5cfa71c5b2cd59af17c7f53beca845ef67f6a76cbe912956f327bf3cc5ba1",
+      "publicSha256": "b3c5cfa71c5b2cd59af17c7f53beca845ef67f6a76cbe912956f327bf3cc5ba1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Diagnostics/XUILab.GradientLab.Diagnostics.asmdef.meta": {
+      "measuredSha256": "152a577903f86d10c233ea6f053d88ad4de5fe4352d29f03a207807048992f89",
+      "publicSha256": "152a577903f86d10c233ea6f053d88ad4de5fe4352d29f03a207807048992f89",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Editor.meta": {
+      "measuredSha256": "502205f7e34b1320d074f4dd48535e89169bc7b8688a18d7c2326fa24e52d9df",
+      "publicSha256": "502205f7e34b1320d074f4dd48535e89169bc7b8688a18d7c2326fa24e52d9df",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Editor/GradientLabSceneBuilder.cs": {
+      "measuredSha256": "37c738629fedaa2855e526d05fc9b00fc0767ccd75eebff259a006127d78edd2",
+      "publicSha256": "1f53725dde157d9eb317ae9feeaa8f192f1bee5ffd06efb647b45838874fd305",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Editor/GradientLabSceneBuilder.cs.meta": {
+      "measuredSha256": "d01e1eb53e701d20991df72f244f9d09155d4bc5a2ed2c0157eb57dc7257cfaa",
+      "publicSha256": "d01e1eb53e701d20991df72f244f9d09155d4bc5a2ed2c0157eb57dc7257cfaa",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Editor/XUILab.GradientLab.Editor.asmdef": {
+      "measuredSha256": "5fff2247892f17dfc8547aaac000b51f335f0cf74588781b7e1f18950607eef1",
+      "publicSha256": "5fff2247892f17dfc8547aaac000b51f335f0cf74588781b7e1f18950607eef1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Editor/XUILab.GradientLab.Editor.asmdef.meta": {
+      "measuredSha256": "a07427f91b0e52b3f6b64b7a128d7f5dd8d772d2af8a1ab6eddf56c35d0a5a92",
+      "publicSha256": "a07427f91b0e52b3f6b64b7a128d7f5dd8d772d2af8a1ab6eddf56c35d0a5a92",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation.meta": {
+      "measuredSha256": "ecc4821ab302bfd12a05c48c39e7f0722d03948b7e5954d0a4fb7116b0f0865f",
+      "publicSha256": "ecc4821ab302bfd12a05c48c39e7f0722d03948b7e5954d0a4fb7116b0f0865f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation/GradientLabDemo.cs": {
+      "measuredSha256": "01d92e8a34121de9b70db6c10b72950e3e29e351b35ecdb07c97d380e7b9c4ea",
+      "publicSha256": "ec8c01db9492b9a2f14e01b3f0ee5b57d67e4ca70ed819a83ac9fa5a897b7d1e",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation/GradientLabDemo.cs.meta": {
+      "measuredSha256": "41f675a1a4f8acc9f21fcd777744789b0dcf6572e41056cc882e45149bbe9168",
+      "publicSha256": "41f675a1a4f8acc9f21fcd777744789b0dcf6572e41056cc882e45149bbe9168",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation/GradientLabFactory.cs": {
+      "measuredSha256": "a4200945b90333ad5d94610cd2e02277e0cf869f4021eda61160435beab62d28",
+      "publicSha256": "83cec0f2f9c9806555fc2a9afa4e07a4100056c17e0b680e6fcf117a8909a594",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation/GradientLabFactory.cs.meta": {
+      "measuredSha256": "d843b071d7b84b10818d9778f6f5cabff7c67fcd0e3d3f4c5286b200e38a9b5a",
+      "publicSha256": "d843b071d7b84b10818d9778f6f5cabff7c67fcd0e3d3f4c5286b200e38a9b5a",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation/XUILab.GradientLab.Presentation.asmdef": {
+      "measuredSha256": "617254e4704b6fccafa72d6e5a1aad667ec15fced138f10decd15ee433e11f01",
+      "publicSha256": "617254e4704b6fccafa72d6e5a1aad667ec15fced138f10decd15ee433e11f01",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Presentation/XUILab.GradientLab.Presentation.asmdef.meta": {
+      "measuredSha256": "711beeb91f7e4e2bcce81ce36f9eb04a68bf64dfd40ebb05148bdfc4ebc7cb71",
+      "publicSha256": "711beeb91f7e4e2bcce81ce36f9eb04a68bf64dfd40ebb05148bdfc4ebc7cb71",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Resources.meta": {
+      "measuredSha256": "1862c6322541328d85f6c3cc8f11bdf28b00d08290b377a0bc819b77df83f402",
+      "publicSha256": "1862c6322541328d85f6c3cc8f11bdf28b00d08290b377a0bc819b77df83f402",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Resources/GradientDiagnostic.shader": {
+      "measuredSha256": "fe49f85fe6511df341e63bf9b560de8f1ad2329b32563959a534f7e2e4b1e646",
+      "publicSha256": "eb459cf72491d71f80725b948622f5729025e51337567844cda8954fbf7a7e6e",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Resources/GradientDiagnostic.shader.meta": {
+      "measuredSha256": "7739baefd4e599de6dfe76223da9cf0ca88bb308e3fd8acf5a55ed2dff50e6c1",
+      "publicSha256": "7739baefd4e599de6dfe76223da9cf0ca88bb308e3fd8acf5a55ed2dff50e6c1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime.meta": {
+      "measuredSha256": "a68a88226db942b6a381a5e6b013de23268fc1d0ee1bb2b448bb3b867142a9e8",
+      "publicSha256": "a68a88226db942b6a381a5e6b013de23268fc1d0ee1bb2b448bb3b867142a9e8",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientEffect.cs": {
+      "measuredSha256": "a5399336cadef37a02358482a533432f05c9023852681120c01814447225bfed",
+      "publicSha256": "c43dd407ae23deccb528ddc59a27ac8b85a78dbd454acc5f92046114a3c398fa",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientEffect.cs.meta": {
+      "measuredSha256": "5e693bec455ab781a719617beb3743b42a27bcec12606e4f454a4951d99d32e4",
+      "publicSha256": "5e693bec455ab781a719617beb3743b42a27bcec12606e4f454a4951d99d32e4",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientFunction.cs": {
+      "measuredSha256": "f04bb30b75bc27db718a3eb11975dcf7300786377900353b5d84e722057263e1",
+      "publicSha256": "1759ab50acf5a5b64bad196f958f8edb43cd4c8e2b6b79c348b4632d584e6a37",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientFunction.cs.meta": {
+      "measuredSha256": "4a973e7300c79920749efea1b33e1cd8363c3c22eae8ff8ab1a7122d7aec8e86",
+      "publicSha256": "4a973e7300c79920749efea1b33e1cd8363c3c22eae8ff8ab1a7122d7aec8e86",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientSegmentSelector.cs": {
+      "measuredSha256": "0d16648d09ad2bd4f845fb0c15d9a2fcebb319c7009709c4480675bd2d514e42",
+      "publicSha256": "d7d1636eb868981a7fb06a338f5ab471e9cea6d57d64968614286bd6859c080b",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientSegmentSelector.cs.meta": {
+      "measuredSha256": "558328e7d9238ba0afbf271c2132e9a0bc43dd943370ba82d96da9276040fac4",
+      "publicSha256": "558328e7d9238ba0afbf271c2132e9a0bc43dd943370ba82d96da9276040fac4",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientTransitionController.cs": {
+      "measuredSha256": "da6bca61c2fde63b271d8790a66208732c27bc5b5fa81a3633a1b724ee03633d",
+      "publicSha256": "da6bca61c2fde63b271d8790a66208732c27bc5b5fa81a3633a1b724ee03633d",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/GradientTransitionController.cs.meta": {
+      "measuredSha256": "ba104f9bb49180595ea54be9ce3b526366a9ca843c514d869258fd435d9a981d",
+      "publicSha256": "ba104f9bb49180595ea54be9ce3b526366a9ca843c514d869258fd435d9a981d",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/XUILab.GradientLab.Runtime.asmdef": {
+      "measuredSha256": "674d8570396839fb4f6e61a36687bb882bbea2a6a89f42758cf7c5eb9763ee3d",
+      "publicSha256": "f3de0abdcdb9d1adab789d57a3f9b6690d494df267f8fba13413575671b313ef",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Runtime/XUILab.GradientLab.Runtime.asmdef.meta": {
+      "measuredSha256": "ecc368d06e1b98b5eed15de12dd0f94e61cb0b1b702ef9d7b248785babe976a5",
+      "publicSha256": "ecc368d06e1b98b5eed15de12dd0f94e61cb0b1b702ef9d7b248785babe976a5",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests.meta": {
+      "measuredSha256": "0389711a5cd319060b875ea1a3d3c20d79647d27bb9ec5cb2c4813c7682d854a",
+      "publicSha256": "0389711a5cd319060b875ea1a3d3c20d79647d27bb9ec5cb2c4813c7682d854a",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Benchmarking.meta": {
+      "measuredSha256": "7083b15374220dd07d7a1c817174cce082c4f245d9b8ef92181c69eeb825bc47",
+      "publicSha256": "7083b15374220dd07d7a1c817174cce082c4f245d9b8ef92181c69eeb825bc47",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Benchmarking/GradientBenchmarkTests.cs": {
+      "measuredSha256": "481de885f8b3c0aa38eaca5f20de9e866c31f2271e246cab1c3c4a23680b8bc5",
+      "publicSha256": "d30ed8499861a38aad9da9fba9361bc54dd1013746ff34f584b378d38da894e4",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Benchmarking/GradientBenchmarkTests.cs.meta": {
+      "measuredSha256": "01ff965a28f7092e433939cf3969986d8a7326a81a6f6db7481f6fd70d56aa33",
+      "publicSha256": "01ff965a28f7092e433939cf3969986d8a7326a81a6f6db7481f6fd70d56aa33",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Benchmarking/XUILab.GradientLab.Tests.Benchmarking.asmdef": {
+      "measuredSha256": "31a14f6faf8a3eef627b51a811ac4c726f2d77063c3b6a327475e75681fe9837",
+      "publicSha256": "31a14f6faf8a3eef627b51a811ac4c726f2d77063c3b6a327475e75681fe9837",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Benchmarking/XUILab.GradientLab.Tests.Benchmarking.asmdef.meta": {
+      "measuredSha256": "1ec721db71cd8f9dcaf28b965aa391f7411a12c7bc6bb8149c30704600fe2769",
+      "publicSha256": "1ec721db71cd8f9dcaf28b965aa391f7411a12c7bc6bb8149c30704600fe2769",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode.meta": {
+      "measuredSha256": "1053f119024b0a1e6764967b5cdff9f7d58af8fc8aba382c99550558e79e6925",
+      "publicSha256": "1053f119024b0a1e6764967b5cdff9f7d58af8fc8aba382c99550558e79e6925",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientAdaptiveTests.cs": {
+      "measuredSha256": "94b7064e52a10a65d0420126c723bba39b240f07411a94f49496e0977ce6ca6e",
+      "publicSha256": "e829cd9ffafd2fa07453f3ec6d5a0c28dfff4adf71550bc7c265edc8ffd0b812",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientAdaptiveTests.cs.meta": {
+      "measuredSha256": "82aa32006656e7259a4b2dbeb727d524f4c32b80f2315a4e0755ae17a7fe7027",
+      "publicSha256": "82aa32006656e7259a4b2dbeb727d524f4c32b80f2315a4e0755ae17a7fe7027",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientMeshTests.cs": {
+      "measuredSha256": "e8165652d8d7820994ca43e6f2a793978a2cb9b773dd9f7fa511507dec079509",
+      "publicSha256": "e8165652d8d7820994ca43e6f2a793978a2cb9b773dd9f7fa511507dec079509",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode/GradientMeshTests.cs.meta": {
+      "measuredSha256": "f228ece6a252d2159f3b3dc388ed54da150018d689afadebfdc459b24de59fa8",
+      "publicSha256": "f228ece6a252d2159f3b3dc388ed54da150018d689afadebfdc459b24de59fa8",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode/XUILab.GradientLab.Tests.EditMode.asmdef": {
+      "measuredSha256": "e9d18301687caaffbacc90bd05c2f3770dda013589a2c7b638cd8042ca17384d",
+      "publicSha256": "b85b0c9e741f305a312059e76e131f5d6bb040eb1a1d320206832a318c9e1611",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/EditMode/XUILab.GradientLab.Tests.EditMode.asmdef.meta": {
+      "measuredSha256": "fe2400a36071a32d8c2a5c2b928c115196cf200cf6c616f6cd2b07caff8e8dc3",
+      "publicSha256": "fe2400a36071a32d8c2a5c2b928c115196cf200cf6c616f6cd2b07caff8e8dc3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/PlayMode.meta": {
+      "measuredSha256": "3cdb5bdd437c54c188f2ab173a8ab8705eedb7d907b69e9ce5f58f5b91a636d2",
+      "publicSha256": "3cdb5bdd437c54c188f2ab173a8ab8705eedb7d907b69e9ce5f58f5b91a636d2",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/PlayMode/GradientLifecycleTests.cs": {
+      "measuredSha256": "d5e44f0c99c6495669a7e521009fa82a834afcfa71ec4af78ac165065f431227",
+      "publicSha256": "fb5cb6eb6d2af71bef99cfd25905f8b525f059184cd033da5fb8e1e6bf511a4a",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/PlayMode/GradientLifecycleTests.cs.meta": {
+      "measuredSha256": "e96d55d2a37f736fb85a356385eb77bb1c91ff7e0122be8a091ed81cf56dfb18",
+      "publicSha256": "e96d55d2a37f736fb85a356385eb77bb1c91ff7e0122be8a091ed81cf56dfb18",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/PlayMode/XUILab.GradientLab.Tests.PlayMode.asmdef": {
+      "measuredSha256": "74fbf995fd67822eff7e89d495f32ee7f4fda602bc06f4742ff9b8e95ef4846c",
+      "publicSha256": "7a0ae60f57b27e0bebfeaeaa189ae491351f0f62712c12431fafe3fc66cfacfc",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/PlayMode/XUILab.GradientLab.Tests.PlayMode.asmdef.meta": {
+      "measuredSha256": "68cafbac473a988f57f0ea05242bd93beba92a2f3cf080cfed1dc59bb723f64a",
+      "publicSha256": "68cafbac473a988f57f0ea05242bd93beba92a2f3cf080cfed1dc59bb723f64a",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Quality.meta": {
+      "measuredSha256": "82614ce38f60c9e84ccaeb8cfc17c028ea1273e787d52ae50b0cf611b8874262",
+      "publicSha256": "82614ce38f60c9e84ccaeb8cfc17c028ea1273e787d52ae50b0cf611b8874262",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Quality/GradientQualityTests.cs": {
+      "measuredSha256": "967050e21f18707c5b871809e9e10ab4c7441abc8e57ea00c721396828cc9fdc",
+      "publicSha256": "badf539ff887cd07bd8718fbf6c877eb92ba9e189a10a1e839f1a6c1e3c1b77f",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Quality/GradientQualityTests.cs.meta": {
+      "measuredSha256": "86c85ad4de6d151342ac3d685a9ba1a2f450faed085656fc49e203b45e0928c1",
+      "publicSha256": "86c85ad4de6d151342ac3d685a9ba1a2f450faed085656fc49e203b45e0928c1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Quality/XUILab.GradientLab.Tests.Quality.asmdef": {
+      "measuredSha256": "abef4ff3ca604485e4021762e6e1582178bf8b8fddecc99455442cef394b5bbb",
+      "publicSha256": "abef4ff3ca604485e4021762e6e1582178bf8b8fddecc99455442cef394b5bbb",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/GradientLab/Tests/Quality/XUILab.GradientLab.Tests.Quality.asmdef.meta": {
+      "measuredSha256": "e0654a49910aa52af442625d8305c3dc75a8679cb1871546d7d87dfed853efa1",
+      "publicSha256": "e0654a49910aa52af442625d8305c3dc75a8679cb1871546d7d87dfed853efa1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab.meta": {
+      "measuredSha256": "28aefb752e9161422fa7bb2a8adc33e48470f77c44cb3e3567c8c9006aa4f51d",
+      "publicSha256": "28aefb752e9161422fa7bb2a8adc33e48470f77c44cb3e3567c8c9006aa4f51d",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration.meta": {
+      "measuredSha256": "079d637e9864fe195d8b209fb9080b6b4cd2de7862c0c86f83dd8ce100ad45a4",
+      "publicSha256": "079d637e9864fe195d8b209fb9080b6b4cd2de7862c0c86f83dd8ce100ad45a4",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListBenchmarkBootstrap.cs": {
+      "measuredSha256": "70274c73abcbd46183f0c91cc3c5b002bce8feb801a98a1f27ed4d49d754fc9d",
+      "publicSha256": "3aff148ef977e24af691cee9da0947fb4e52144c1cf9d888a5a45dacd6861fc6",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListBenchmarkBootstrap.cs.meta": {
+      "measuredSha256": "6f33a5721b025f1536d57a88d703e5eb34afa6421ee0e63f6c7fc6c91099f5bb",
+      "publicSha256": "6f33a5721b025f1536d57a88d703e5eb34afa6421ee0e63f6c7fc6c91099f5bb",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListBenchmarkCase.cs": {
+      "measuredSha256": "c0fdf330eacb13c2885d3850538e6aa6a5f64fdadf89145967434c6ae321a455",
+      "publicSha256": "c0fdf330eacb13c2885d3850538e6aa6a5f64fdadf89145967434c6ae321a455",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListBenchmarkCase.cs.meta": {
+      "measuredSha256": "70f812e37221947198f7a3dcfd5287084fa1bb1270b0cbda77726ac258551495",
+      "publicSha256": "70f812e37221947198f7a3dcfd5287084fa1bb1270b0cbda77726ac258551495",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListBenchmarkWriter.cs": {
+      "measuredSha256": "0d02fdd25f5e8ea72f7cb327237f6b27f7e7e8d765298f1c84e63e329a16da82",
+      "publicSha256": "0d02fdd25f5e8ea72f7cb327237f6b27f7e7e8d765298f1c84e63e329a16da82",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListBenchmarkWriter.cs.meta": {
+      "measuredSha256": "4be665828ea7c6c688ce1f44dec082a605be17577ef77da73d088d96a2c347d9",
+      "publicSha256": "4be665828ea7c6c688ce1f44dec082a605be17577ef77da73d088d96a2c347d9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListRefreshBenchmarkCase.cs": {
+      "measuredSha256": "9daa5544992bec80530863c5055400c5ed277f7805a6f205764d54f166441d7a",
+      "publicSha256": "affb154656198d160b36c123c41ce70db5ccd363f566dddb8bbe0764f99647d7",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListRefreshBenchmarkCase.cs.meta": {
+      "measuredSha256": "c6c872e40a16bab8052c26d317a7066eae863bce05f0640a6735627b3104dd22",
+      "publicSha256": "c6c872e40a16bab8052c26d317a7066eae863bce05f0640a6735627b3104dd22",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListRefreshBenchmarkWriter.cs": {
+      "measuredSha256": "4b72f7ecd3c736958982f0ae9c16e95c969a8375055040ef20b4ca552b8c5b22",
+      "publicSha256": "dfdf39f91828d2d2682b98344b48c0ed5060639c5f7d3364660a1218b8ea274b",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/ListRefreshBenchmarkWriter.cs.meta": {
+      "measuredSha256": "4b299f7cb86c7a3d6b19bde87e206d5dbc2393a559b0baafca43c09968ea8062",
+      "publicSha256": "4b299f7cb86c7a3d6b19bde87e206d5dbc2393a559b0baafca43c09968ea8062",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/RefreshPlayerBinding.cs": {
+      "measuredSha256": "03a81df54a45a7d6be207cbb71a02ffef4f404fa4322bb1ca0c3dd727e8c0876",
+      "publicSha256": "79950902b4ebcb69cea60c7ce3b6e1d38556dd933673dea14702d34cf62d8405",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/RefreshPlayerBinding.cs.meta": {
+      "measuredSha256": "42b643099ce1693aec179fc04086e2205148d4d9b0eca5da60bf0f9b81c10fbd",
+      "publicSha256": "42b643099ce1693aec179fc04086e2205148d4d9b0eca5da60bf0f9b81c10fbd",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/XUILab.ListLab.Benchmarking.asmdef": {
+      "measuredSha256": "d066c80c411886f00acc2b2e7b5f7df645f6c6c27ae9017c3ff93ee06d07a1d9",
+      "publicSha256": "99adb49fa7c0934f90643fa67bb1054a88bfdda7a80619074079ba71e4ff75b5",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/BenchmarkIntegration/XUILab.ListLab.Benchmarking.asmdef.meta": {
+      "measuredSha256": "10a9f5e1a2e9c976739899fdf2b4cc441eca2b5ede96ec8e6698fe80fe78509f",
+      "publicSha256": "10a9f5e1a2e9c976739899fdf2b4cc441eca2b5ede96ec8e6698fe80fe78509f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor.meta": {
+      "measuredSha256": "5a50fcf44f0e84936171df014f924acfe682c191096e8229c37499d415c98820",
+      "publicSha256": "5a50fcf44f0e84936171df014f924acfe682c191096e8229c37499d415c98820",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor/ListLabBuild.cs": {
+      "measuredSha256": "4d6039ca90f05c784cbf3702447820bc6c23b3b81a4fbcae51d0816802f5040f",
+      "publicSha256": "4d6039ca90f05c784cbf3702447820bc6c23b3b81a4fbcae51d0816802f5040f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor/ListLabBuild.cs.meta": {
+      "measuredSha256": "ee896c5a4677d6015e7273828826a08c67bc98d61dfa5869105ea2f8646c8f82",
+      "publicSha256": "ee896c5a4677d6015e7273828826a08c67bc98d61dfa5869105ea2f8646c8f82",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor/ListLabSceneBuilder.cs": {
+      "measuredSha256": "4adc5ffdacef699378cbf34962453dbc5369d5f9d5c37b84758c8dace4b69124",
+      "publicSha256": "4adc5ffdacef699378cbf34962453dbc5369d5f9d5c37b84758c8dace4b69124",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor/ListLabSceneBuilder.cs.meta": {
+      "measuredSha256": "582a6d74df39ffdacaf03fbf8a014e632e3486dfea794e6dccf169d86cf474be",
+      "publicSha256": "582a6d74df39ffdacaf03fbf8a014e632e3486dfea794e6dccf169d86cf474be",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor/XUILab.ListLab.Editor.asmdef": {
+      "measuredSha256": "6c3e0986f5436ebfb0ea177d380aab056f4b792b27f058e39f9badee4a4ce910",
+      "publicSha256": "6c3e0986f5436ebfb0ea177d380aab056f4b792b27f058e39f9badee4a4ce910",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Editor/XUILab.ListLab.Editor.asmdef.meta": {
+      "measuredSha256": "0acc3ee280d5f233eb668f5088ecbac80ca4b93b6f44acda24cf88c12b176fc1",
+      "publicSha256": "0acc3ee280d5f233eb668f5088ecbac80ca4b93b6f44acda24cf88c12b176fc1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Media.meta": {
+      "measuredSha256": "4f0eb12aed6e88305176e155514965e639fa9fe15fa57d4d69a8109f6b041108",
+      "publicSha256": "4f0eb12aed6e88305176e155514965e639fa9fe15fa57d4d69a8109f6b041108",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Media/ListMediaCapture.cs": {
+      "measuredSha256": "4681e0b0157dfc9f48c5f598677ea0b51f7197af9488afa2f4fe58ec54659020",
+      "publicSha256": "4681e0b0157dfc9f48c5f598677ea0b51f7197af9488afa2f4fe58ec54659020",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Media/ListMediaCapture.cs.meta": {
+      "measuredSha256": "47053dbb1fcf9757f25fe58488fdd30adaf65f0ab81f74f6298fd47d565f50aa",
+      "publicSha256": "47053dbb1fcf9757f25fe58488fdd30adaf65f0ab81f74f6298fd47d565f50aa",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Media/XUILab.ListLab.Media.asmdef": {
+      "measuredSha256": "2d6fa954bd42b4a3b3aa711a02c7bd5495ef64f1ff00e6c487bdb73398deb508",
+      "publicSha256": "2d6fa954bd42b4a3b3aa711a02c7bd5495ef64f1ff00e6c487bdb73398deb508",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Media/XUILab.ListLab.Media.asmdef.meta": {
+      "measuredSha256": "b1bf19455bfaf719e89285dbcc92f8da91008604a4a0c3f77be066470e2f0afd",
+      "publicSha256": "b1bf19455bfaf719e89285dbcc92f8da91008604a4a0c3f77be066470e2f0afd",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Presentation.meta": {
+      "measuredSha256": "42af19d772fe411303722392fdddcd50f5161bf1a8c7e837a0ee6aa98fb8a206",
+      "publicSha256": "42af19d772fe411303722392fdddcd50f5161bf1a8c7e837a0ee6aa98fb8a206",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Presentation/ListLabDemo.cs": {
+      "measuredSha256": "3ef829654314744e66b5d5bebfe6752cdcf0d0c34f335e49d219084f8b80f308",
+      "publicSha256": "3ef829654314744e66b5d5bebfe6752cdcf0d0c34f335e49d219084f8b80f308",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Presentation/ListLabDemo.cs.meta": {
+      "measuredSha256": "4acdd9fe7fa13d74b4b56897328a62657851aa582c9d138a336e0b5bb597d60e",
+      "publicSha256": "4acdd9fe7fa13d74b4b56897328a62657851aa582c9d138a336e0b5bb597d60e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Presentation/XUILab.ListLab.Presentation.asmdef": {
+      "measuredSha256": "7428116e4142a4ebfb3a8292d5655a8445f7e843c6f0986562632531de399529",
+      "publicSha256": "7428116e4142a4ebfb3a8292d5655a8445f7e843c6f0986562632531de399529",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Presentation/XUILab.ListLab.Presentation.asmdef.meta": {
+      "measuredSha256": "86bb981e3f22b5d928791691ac81f9a512ec522a36cc7c96d147d33a79ffb109",
+      "publicSha256": "86bb981e3f22b5d928791691ac81f9a512ec522a36cc7c96d147d33a79ffb109",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime.meta": {
+      "measuredSha256": "023ccde416e6be73a97837f6878bb8d5b09e6063441e4c478e267dda8ec35be6",
+      "publicSha256": "023ccde416e6be73a97837f6878bb8d5b09e6063441e4c478e267dda8ec35be6",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/FixedRowLayout.cs": {
+      "measuredSha256": "8edca8cef403822e49a4f2ef1d87bd77421bb453deb91a5b9a18f28826386145",
+      "publicSha256": "8edca8cef403822e49a4f2ef1d87bd77421bb453deb91a5b9a18f28826386145",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/FixedRowLayout.cs.meta": {
+      "measuredSha256": "718f2fee301a3e487eeb3bab96c89009ce0c582d1239cbe18e201b25918e9144",
+      "publicSha256": "718f2fee301a3e487eeb3bab96c89009ce0c582d1239cbe18e201b25918e9144",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListCell.cs": {
+      "measuredSha256": "6a9ddb4186f27de521a9799b5e9c3a6b139b0b22fd82913068859c4857eecaf7",
+      "publicSha256": "6a9ddb4186f27de521a9799b5e9c3a6b139b0b22fd82913068859c4857eecaf7",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListCell.cs.meta": {
+      "measuredSha256": "8e04cd48153fcd8211824a88d069e4b2522a9d4bead4e4f125be8c031426b82d",
+      "publicSha256": "8e04cd48153fcd8211824a88d069e4b2522a9d4bead4e4f125be8c031426b82d",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListCellActivity.cs": {
+      "measuredSha256": "837d0938115b9a0db632ba5d30bfd38e05677d5296401699902f1c16af654694",
+      "publicSha256": "837d0938115b9a0db632ba5d30bfd38e05677d5296401699902f1c16af654694",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListCellActivity.cs.meta": {
+      "measuredSha256": "6d9de4763bd97ea89e46568fdcfddfb6ad3974c38e9bff4bcee5ae9baa6f9997",
+      "publicSha256": "6d9de4763bd97ea89e46568fdcfddfb6ad3974c38e9bff4bcee5ae9baa6f9997",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListCellPool.cs": {
+      "measuredSha256": "499e423a1ecc2bf3fc0ab7d1cdd55c7d64d88289b4e81ffa92a691b83ca9677a",
+      "publicSha256": "4a5d3ceb6cf1306f7b9f09735751c931c2e974094d4b29f80bf83c36a6bc8e67",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListCellPool.cs.meta": {
+      "measuredSha256": "82c49d5f1734c953202536406acc1d6378122ccef6fc4c516461cd635bfeff00",
+      "publicSha256": "82c49d5f1734c953202536406acc1d6378122ccef6fc4c516461cd635bfeff00",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListItem.cs": {
+      "measuredSha256": "3cd0074a3ec2c5b133bdac7fd89dd4ef8efd36d67e22ea6134d7dced3bf21981",
+      "publicSha256": "3cd0074a3ec2c5b133bdac7fd89dd4ef8efd36d67e22ea6134d7dced3bf21981",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListItem.cs.meta": {
+      "measuredSha256": "6903cd530c1463a2998d90e2df2288006d0f7b0fbd383b25c09abe218c867e12",
+      "publicSha256": "6903cd530c1463a2998d90e2df2288006d0f7b0fbd383b25c09abe218c867e12",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListLabFactory.cs": {
+      "measuredSha256": "e90538cb58ca9ec620fb10b026274a7e33b49bdf268249a0ce2805fef914dae3",
+      "publicSha256": "e90538cb58ca9ec620fb10b026274a7e33b49bdf268249a0ce2805fef914dae3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListLabFactory.cs.meta": {
+      "measuredSha256": "464f5b633eacd94b7f951eb0b73d60889a9b04003cb3c2a4153d9542cbe7f225",
+      "publicSha256": "464f5b633eacd94b7f951eb0b73d60889a9b04003cb3c2a4153d9542cbe7f225",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListView.cs": {
+      "measuredSha256": "828e62d212a4809213b1a0281c005cd757f0b16b61f47f0c0eabc2ffff11f179",
+      "publicSha256": "3968e4669f4703a1a223fdab905006e8653d3354d8d1a989088c20b10bd9c004",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/ListView.cs.meta": {
+      "measuredSha256": "bc99aca4dc9ccfbc3957b026d3f5b8d7caada3589ca0a43926035dd5ce93aa80",
+      "publicSha256": "bc99aca4dc9ccfbc3957b026d3f5b8d7caada3589ca0a43926035dd5ce93aa80",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/XUILab.ListLab.Runtime.asmdef": {
+      "measuredSha256": "54fa2992e592c41bc9373f8452068c3848d57465378d9b4b32009847a26bfc78",
+      "publicSha256": "54fa2992e592c41bc9373f8452068c3848d57465378d9b4b32009847a26bfc78",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Runtime/XUILab.ListLab.Runtime.asmdef.meta": {
+      "measuredSha256": "e277fc152de8136e71beb08b820eb6b58a6795480de168e4d8835da8835ac31c",
+      "publicSha256": "e277fc152de8136e71beb08b820eb6b58a6795480de168e4d8835da8835ac31c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests.meta": {
+      "measuredSha256": "3892d517b9f2726ad24de5995fb43c45cf9f46e230435180b0037d0248a798a9",
+      "publicSha256": "3892d517b9f2726ad24de5995fb43c45cf9f46e230435180b0037d0248a798a9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking.meta": {
+      "measuredSha256": "ae3c45e17e4eae9c2fa351bacbc2759ad769fbb28166ff68112e424ee896b893",
+      "publicSha256": "ae3c45e17e4eae9c2fa351bacbc2759ad769fbb28166ff68112e424ee896b893",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking/ListBenchmarkTests.cs": {
+      "measuredSha256": "840092eb4462f8ec45aee4ce84e3e52f79b14eca8c6b78fb2dff119725198706",
+      "publicSha256": "840092eb4462f8ec45aee4ce84e3e52f79b14eca8c6b78fb2dff119725198706",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking/ListBenchmarkTests.cs.meta": {
+      "measuredSha256": "ab730e99e645c9f4a1d2241429da2ec4a0895fe8a1de0e3085086d8aa8a6d514",
+      "publicSha256": "ab730e99e645c9f4a1d2241429da2ec4a0895fe8a1de0e3085086d8aa8a6d514",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking/ListRefreshBenchmarkTests.cs": {
+      "measuredSha256": "cfaca5a4a6d8be9f551da839fb3a2164c8af37895503bba33d60bf3d404f4970",
+      "publicSha256": "bc7581205eed45576c82615663221a68b3aa0a14469841a03f76b9fd21d89dab",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking/ListRefreshBenchmarkTests.cs.meta": {
+      "measuredSha256": "e11dcadf14509d1cc9e4236ae2f601457c3c3d5030d846f5889d1ac737ee12c9",
+      "publicSha256": "e11dcadf14509d1cc9e4236ae2f601457c3c3d5030d846f5889d1ac737ee12c9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking/XUILab.ListLab.Benchmarking.Tests.asmdef": {
+      "measuredSha256": "b50aaf6512c79d60e422e4ea7e5d64635e5cbe6c890347185c4b5065bf70160f",
+      "publicSha256": "b50aaf6512c79d60e422e4ea7e5d64635e5cbe6c890347185c4b5065bf70160f",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Benchmarking/XUILab.ListLab.Benchmarking.Tests.asmdef.meta": {
+      "measuredSha256": "241f347c282474d144293d8952d91ed6d6efee5d6e5989b1a2981957ecf32df5",
+      "publicSha256": "241f347c282474d144293d8952d91ed6d6efee5d6e5989b1a2981957ecf32df5",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/EditMode.meta": {
+      "measuredSha256": "b60a2693fcb8aabd68bc7a7ac10008433bf7ad47b34689a942e4117be40b4ba1",
+      "publicSha256": "b60a2693fcb8aabd68bc7a7ac10008433bf7ad47b34689a942e4117be40b4ba1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/EditMode/ListPoolTests.cs": {
+      "measuredSha256": "6cf4adf7a0fda79654260c86185391c8917659004b50c2c64c39d0a67cf9bb87",
+      "publicSha256": "6cf4adf7a0fda79654260c86185391c8917659004b50c2c64c39d0a67cf9bb87",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/EditMode/ListPoolTests.cs.meta": {
+      "measuredSha256": "c8663cc1ce617ad062d5d880a4b50b5c663dc1150a100a30e400dcdc56a42d00",
+      "publicSha256": "c8663cc1ce617ad062d5d880a4b50b5c663dc1150a100a30e400dcdc56a42d00",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/EditMode/XUILab.ListLab.Tests.EditMode.asmdef": {
+      "measuredSha256": "d3c348dad73eb5bcc833cc8561d33ad790feb5c5c3d8db8b7293d025fb8164b3",
+      "publicSha256": "d3c348dad73eb5bcc833cc8561d33ad790feb5c5c3d8db8b7293d025fb8164b3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/EditMode/XUILab.ListLab.Tests.EditMode.asmdef.meta": {
+      "measuredSha256": "9677a2c0974d88f3708f563685eada92f34d1a4878eff0d11d2774e2e437b2d0",
+      "publicSha256": "9677a2c0974d88f3708f563685eada92f34d1a4878eff0d11d2774e2e437b2d0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Editor.meta": {
+      "measuredSha256": "3735f32255846ff7b14e7181c2d734b9393b331a34979c7b7c98341261be59df",
+      "publicSha256": "3735f32255846ff7b14e7181c2d734b9393b331a34979c7b7c98341261be59df",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Editor/ListSceneBuilderTests.cs": {
+      "measuredSha256": "10e3d592d7851b215628375d7f0dd4864958c060744504f246cd29a471991af8",
+      "publicSha256": "10e3d592d7851b215628375d7f0dd4864958c060744504f246cd29a471991af8",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Editor/ListSceneBuilderTests.cs.meta": {
+      "measuredSha256": "7b025a9b3dee6b246fb6cf05f55c9652a1bc506bd4d07248da3e563269b1e325",
+      "publicSha256": "7b025a9b3dee6b246fb6cf05f55c9652a1bc506bd4d07248da3e563269b1e325",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Editor/XUILab.ListLab.Editor.Tests.asmdef": {
+      "measuredSha256": "1160fda5f18903bd6be70291192b439084e7b621658ff778b49d5be015327df0",
+      "publicSha256": "1160fda5f18903bd6be70291192b439084e7b621658ff778b49d5be015327df0",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Editor/XUILab.ListLab.Editor.Tests.asmdef.meta": {
+      "measuredSha256": "a11d488892b1df0f9cd2fe279806d6343e52367ac520b9d754511307d6621f07",
+      "publicSha256": "a11d488892b1df0f9cd2fe279806d6343e52367ac520b9d754511307d6621f07",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode.meta": {
+      "measuredSha256": "70e526085a335efaae628bea07b6b7229933130b8719030d206b169364ddd1a1",
+      "publicSha256": "70e526085a335efaae628bea07b6b7229933130b8719030d206b169364ddd1a1",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/ListViewTests.cs": {
+      "measuredSha256": "8b2f85987bccd0a04144c83d7e7d8aed435fd2da8ee9fa6caeaec67970f61f77",
+      "publicSha256": "8b2f85987bccd0a04144c83d7e7d8aed435fd2da8ee9fa6caeaec67970f61f77",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/ListViewTests.cs.meta": {
+      "measuredSha256": "9b2482346780c060e470549175127c7e292a1e0e8932366e955386be92183f62",
+      "publicSha256": "9b2482346780c060e470549175127c7e292a1e0e8932366e955386be92183f62",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshMeshProbe.cs": {
+      "measuredSha256": "71123d5c745607b829bd3477073e08dedf2e98af133aae1a3bb3fa4f20ecb9a6",
+      "publicSha256": "d4706d0b29a64ce2330cf1f903ec035d09406b8c71adac041bcc5d5628d5a3bc",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshMeshProbe.cs.meta": {
+      "measuredSha256": "22858f2dadf212b2580bfce131c0191ea141553ce29ac8fe7f0ee0649e19084b",
+      "publicSha256": "22858f2dadf212b2580bfce131c0191ea141553ce29ac8fe7f0ee0649e19084b",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshTraceTests.cs": {
+      "measuredSha256": "93eca68de6a9a9a521f8121377eb8d86faa03b8615eb0ba4685deb48c1b39d62",
+      "publicSha256": "54cf38aaae925cb8f976b7f87bcb03b85db8ff74975cbc40f7d2d934a4749be6",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshTraceTests.cs.meta": {
+      "measuredSha256": "43d3fb524e25b56cf5bd2a845a66ddf7ee389d7e635df9eb6420cc824f65c2cb",
+      "publicSha256": "43d3fb524e25b56cf5bd2a845a66ddf7ee389d7e635df9eb6420cc824f65c2cb",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshUpdateTests.cs": {
+      "measuredSha256": "10e2f783fa9e9f671a0292c7115b8e5510c299cab82af77a2966349484a7df43",
+      "publicSha256": "ad0f15ccee7c4adbcce459ba58a3f7afc4c809fca02a3afd24f0dd719fa16857",
+      "transformation": "git-line-ending-normalization-only"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshUpdateTests.cs.meta": {
+      "measuredSha256": "088653725ebf865a4ba7e23c8d48d6e90c131ca2a72773cc1ff5a47139a4e315",
+      "publicSha256": "088653725ebf865a4ba7e23c8d48d6e90c131ca2a72773cc1ff5a47139a4e315",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/XUILab.ListLab.Tests.PlayMode.asmdef": {
+      "measuredSha256": "377853ba720a9697ca0ba2c5a6bfe9529c695c01a367a66c8730c21b68831ce9",
+      "publicSha256": "377853ba720a9697ca0ba2c5a6bfe9529c695c01a367a66c8730c21b68831ce9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/PlayMode/XUILab.ListLab.Tests.PlayMode.asmdef.meta": {
+      "measuredSha256": "3254ee29f033034c9900f3a7cb5e50f2b7071f94af78240a93cba76b28ebf446",
+      "publicSha256": "3254ee29f033034c9900f3a7cb5e50f2b7071f94af78240a93cba76b28ebf446",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Presentation.meta": {
+      "measuredSha256": "fb6562ccfbed1047330dbcf78efaeb2fb6c6afbe1ecbbc0a30c63870fe8d4eba",
+      "publicSha256": "fb6562ccfbed1047330dbcf78efaeb2fb6c6afbe1ecbbc0a30c63870fe8d4eba",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Presentation/ListDemoTests.cs": {
+      "measuredSha256": "7f46f4b8f605faece98ffda1d10ebed5a062328471c422d1176c233c44e91931",
+      "publicSha256": "7f46f4b8f605faece98ffda1d10ebed5a062328471c422d1176c233c44e91931",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Presentation/ListDemoTests.cs.meta": {
+      "measuredSha256": "928e0d4ec2a6412b3631841d968e2555ee3aa5d7de307cf6fcb4c9b8a8ebb1be",
+      "publicSha256": "928e0d4ec2a6412b3631841d968e2555ee3aa5d7de307cf6fcb4c9b8a8ebb1be",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Presentation/XUILab.ListLab.Presentation.Tests.asmdef": {
+      "measuredSha256": "5b492a93262ac6a6afd3acd43d95cf7b73017af6ca457176b71947522bedabf4",
+      "publicSha256": "5b492a93262ac6a6afd3acd43d95cf7b73017af6ca457176b71947522bedabf4",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/ListLab/Tests/Presentation/XUILab.ListLab.Presentation.Tests.asmdef.meta": {
+      "measuredSha256": "86ef1b2dbc3c6a02bb09f96ab7e696b072ed82f47a67246498c4c70323d006e9",
+      "publicSha256": "86ef1b2dbc3c6a02bb09f96ab7e696b072ed82f47a67246498c4c70323d006e9",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes.meta": {
+      "measuredSha256": "2af7d53e0509c80f554e5705c3022c659568534701f258fff898e71b3126674d",
+      "publicSha256": "2af7d53e0509c80f554e5705c3022c659568534701f258fff898e71b3126674d",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes/BenchmarkSmoke.unity": {
+      "measuredSha256": "d1b30c55b93fc5954a6d5be89413111420bb01f0b50f417e38951d9026dc5e81",
+      "publicSha256": "d1b30c55b93fc5954a6d5be89413111420bb01f0b50f417e38951d9026dc5e81",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes/BenchmarkSmoke.unity.meta": {
+      "measuredSha256": "9573416b208ad55932fb1cc260b34290134dd30b1f171e8f17bdde235ea9325e",
+      "publicSha256": "9573416b208ad55932fb1cc260b34290134dd30b1f171e8f17bdde235ea9325e",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes/GradientLab.unity": {
+      "measuredSha256": "edaca6f4ca19b801aea7b6258e91f41424eb0731cfdf90bb936aeac9d5cc1f51",
+      "publicSha256": "edaca6f4ca19b801aea7b6258e91f41424eb0731cfdf90bb936aeac9d5cc1f51",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes/GradientLab.unity.meta": {
+      "measuredSha256": "55b13cbc4ac633634b6678cd2435187c35478e186c8db3140f9b714fa9851f1b",
+      "publicSha256": "55b13cbc4ac633634b6678cd2435187c35478e186c8db3140f9b714fa9851f1b",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes/ListLab.unity": {
+      "measuredSha256": "5d1b81a33242caea8e1e996ef2fe393275ad6cfc0fa8ad7cd384ec6e57e529da",
+      "publicSha256": "5d1b81a33242caea8e1e996ef2fe393275ad6cfc0fa8ad7cd384ec6e57e529da",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Scenes/ListLab.unity.meta": {
+      "measuredSha256": "a65f5245523b1ceb744b09500152e8d805bdcc6f430cce3b0045c4df4b38bbd3",
+      "publicSha256": "a65f5245523b1ceb744b09500152e8d805bdcc6f430cce3b0045c4df4b38bbd3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase.meta": {
+      "measuredSha256": "a41ebf50a8450a826d3c39b01b2d07a64b2089175c68d287d2545a64e45c6736",
+      "publicSha256": "a41ebf50a8450a826d3c39b01b2d07a64b2089175c68d287d2545a64e45c6736",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Media.meta": {
+      "measuredSha256": "ad11c0e7846bba1b0d9edab84e0f3e62bf6b33b5687e64fc935f77d6fbfd5701",
+      "publicSha256": "ad11c0e7846bba1b0d9edab84e0f3e62bf6b33b5687e64fc935f77d6fbfd5701",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Media/ShowcaseCapture.cs": {
+      "measuredSha256": "10dcf759b391d29f2c6a9629b8bd8f838a7e92e044e0c0f6822313fe1dcd46a5",
+      "publicSha256": "10dcf759b391d29f2c6a9629b8bd8f838a7e92e044e0c0f6822313fe1dcd46a5",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Media/ShowcaseCapture.cs.meta": {
+      "measuredSha256": "1506326072f6438f7835ae5fcd83f67c8bccfe4af58d791ca135bf88e34a6ae6",
+      "publicSha256": "1506326072f6438f7835ae5fcd83f67c8bccfe4af58d791ca135bf88e34a6ae6",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Media/XUILab.Showcase.Media.asmdef": {
+      "measuredSha256": "90ab4c34ccb4423154b29223240096a97400967ba89e877fc9d717d9a99f5558",
+      "publicSha256": "90ab4c34ccb4423154b29223240096a97400967ba89e877fc9d717d9a99f5558",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Media/XUILab.Showcase.Media.asmdef.meta": {
+      "measuredSha256": "b9d58d750980f54449e6fa3a24a638bd71460fed909802a52f1e6359b81d8880",
+      "publicSha256": "b9d58d750980f54449e6fa3a24a638bd71460fed909802a52f1e6359b81d8880",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Runtime.meta": {
+      "measuredSha256": "c815e4fc6c8f85dd1d29107e961738e44ad838e8ac95401f154e19908865a6ad",
+      "publicSha256": "c815e4fc6c8f85dd1d29107e961738e44ad838e8ac95401f154e19908865a6ad",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Runtime/ShowcaseNavigation.cs": {
+      "measuredSha256": "7761e64dbefb5924a518efc2e5bff10ec666a3ee11ff4632372c0674d6bd4808",
+      "publicSha256": "7761e64dbefb5924a518efc2e5bff10ec666a3ee11ff4632372c0674d6bd4808",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Runtime/ShowcaseNavigation.cs.meta": {
+      "measuredSha256": "3111c183eed4cd02a85ff0a18ec6ddc8ba8e98256fe8fddaea64148c482636f3",
+      "publicSha256": "3111c183eed4cd02a85ff0a18ec6ddc8ba8e98256fe8fddaea64148c482636f3",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Runtime/XUILab.Showcase.Runtime.asmdef": {
+      "measuredSha256": "e5f57dfa7c7bd828a3796201a302244840ed5139272372fab716c83dbf2850dc",
+      "publicSha256": "e5f57dfa7c7bd828a3796201a302244840ed5139272372fab716c83dbf2850dc",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Runtime/XUILab.Showcase.Runtime.asmdef.meta": {
+      "measuredSha256": "9fc870f3ddf1acaab6148d4d7b99e7ebde2f2c667f028353e4fad9aa08b44a8b",
+      "publicSha256": "9fc870f3ddf1acaab6148d4d7b99e7ebde2f2c667f028353e4fad9aa08b44a8b",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Tests.meta": {
+      "measuredSha256": "1d430e289ac36beb3bf2ce9224551cd744a17aaa836f44a954d3f18faa963472",
+      "publicSha256": "1d430e289ac36beb3bf2ce9224551cd744a17aaa836f44a954d3f18faa963472",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Tests/PlayMode.meta": {
+      "measuredSha256": "e0504a6e7566ed5397476fe51050f12644772a5007262521f7fc1f2c5c348739",
+      "publicSha256": "e0504a6e7566ed5397476fe51050f12644772a5007262521f7fc1f2c5c348739",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Tests/PlayMode/ShowcaseTests.cs": {
+      "measuredSha256": "dc017c72874b205d03bfce79a81d9d8ed01633a89054d0c3b0b45ef415866d40",
+      "publicSha256": "dc017c72874b205d03bfce79a81d9d8ed01633a89054d0c3b0b45ef415866d40",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Tests/PlayMode/ShowcaseTests.cs.meta": {
+      "measuredSha256": "6d91900d31888fa6cacc0454d01cf03f068d8bc6769f58f0747b0049bde9389c",
+      "publicSha256": "6d91900d31888fa6cacc0454d01cf03f068d8bc6769f58f0747b0049bde9389c",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Tests/PlayMode/XUILab.Showcase.Tests.PlayMode.asmdef": {
+      "measuredSha256": "b8dfa5c97d34d2c0c256414f996b9171c827e3408fbff51e3c3ed24120cdfad7",
+      "publicSha256": "b8dfa5c97d34d2c0c256414f996b9171c827e3408fbff51e3c3ed24120cdfad7",
+      "transformation": "none"
+    },
+    "XUILab/Assets/XUILab/Showcase/Tests/PlayMode/XUILab.Showcase.Tests.PlayMode.asmdef.meta": {
+      "measuredSha256": "cc069efa2366a25b4631ff98ee2eaadbc74479adafb78a594c5d20ec3f86881e",
+      "publicSha256": "cc069efa2366a25b4631ff98ee2eaadbc74479adafb78a594c5d20ec3f86881e",
+      "transformation": "none"
+    },
+    "XUILab/Packages/manifest.json": {
+      "measuredSha256": "658d1955cff630573409c9e8d8bee341251f09962dce53acbaf8cc1877fcbbac",
+      "publicSha256": "658d1955cff630573409c9e8d8bee341251f09962dce53acbaf8cc1877fcbbac",
+      "transformation": "none"
+    },
+    "XUILab/Packages/packages-lock.json": {
+      "measuredSha256": "5827e8b18df2b9af2199ed36f493d36bbdb2bf0f27e1bb1d0f9b4eb303bcfe0b",
+      "publicSha256": "5827e8b18df2b9af2199ed36f493d36bbdb2bf0f27e1bb1d0f9b4eb303bcfe0b",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/AudioManager.asset": {
+      "measuredSha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+      "publicSha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/BurstAotSettings_StandaloneWindows.json": {
+      "measuredSha256": "b1172456683422bbd9a2e712d961e49b943b4c8e5aa22ab7b0e59180bbe9829c",
+      "publicSha256": "b1172456683422bbd9a2e712d961e49b943b4c8e5aa22ab7b0e59180bbe9829c",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/ClusterInputManager.asset": {
+      "measuredSha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+      "publicSha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/CommonBurstAotSettings.json": {
+      "measuredSha256": "daa868ab0ca828b0f90bea58a6258e3d32aa637fa9baa5fcad12701bc9c4e333",
+      "publicSha256": "daa868ab0ca828b0f90bea58a6258e3d32aa637fa9baa5fcad12701bc9c4e333",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/DynamicsManager.asset": {
+      "measuredSha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78",
+      "publicSha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/EditorBuildSettings.asset": {
+      "measuredSha256": "e1597d6e329ddb8365385a213f7b1508c3d0fdff34e68f4220063abeb6b938fe",
+      "publicSha256": "e1597d6e329ddb8365385a213f7b1508c3d0fdff34e68f4220063abeb6b938fe",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/EditorSettings.asset": {
+      "measuredSha256": "901bf7853e3e65491b8292b0f1e03737e25f578c9dd95e4a8ff6655c19a2d3f4",
+      "publicSha256": "901bf7853e3e65491b8292b0f1e03737e25f578c9dd95e4a8ff6655c19a2d3f4",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/GraphicsSettings.asset": {
+      "measuredSha256": "8a16c389ea5918a432aa1ab553520c770c01ed9b3b3939435342c2efbb54ed91",
+      "publicSha256": "8a16c389ea5918a432aa1ab553520c770c01ed9b3b3939435342c2efbb54ed91",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/InputManager.asset": {
+      "measuredSha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+      "publicSha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/MemorySettings.asset": {
+      "measuredSha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+      "publicSha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/NavMeshAreas.asset": {
+      "measuredSha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+      "publicSha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/PackageManagerSettings.asset": {
+      "measuredSha256": "cc166ab2ce7ac8cfe3d5fb99622d60b4fba8db5e23bf18193217abcb52126f5e",
+      "publicSha256": "cc166ab2ce7ac8cfe3d5fb99622d60b4fba8db5e23bf18193217abcb52126f5e",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/Packages/com.unity.probuilder/Settings.json": {
+      "measuredSha256": "bfc31833e8505755f58ff90d614d3992e44b2c78e11d88086b7189b71fb5a533",
+      "publicSha256": "bfc31833e8505755f58ff90d614d3992e44b2c78e11d88086b7189b71fb5a533",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/Physics2DSettings.asset": {
+      "measuredSha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+      "publicSha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/PresetManager.asset": {
+      "measuredSha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+      "publicSha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/ProjectSettings.asset": {
+      "measuredSha256": "b930376e8e9b3814720d7bbc8e1be9af72d46d0e994e1fbd8b29aa36a85d0984",
+      "publicSha256": "b930376e8e9b3814720d7bbc8e1be9af72d46d0e994e1fbd8b29aa36a85d0984",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/ProjectVersion.txt": {
+      "measuredSha256": "9139bc4c6342cf148b1763350a0bde58f7e8fac0adf39af6d6abb7099794cc59",
+      "publicSha256": "9139bc4c6342cf148b1763350a0bde58f7e8fac0adf39af6d6abb7099794cc59",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/QualitySettings.asset": {
+      "measuredSha256": "0772c5fc9aea0f7f549f3c462dc07ea7c03568fdc0837b9f4e470601e12b85c1",
+      "publicSha256": "0772c5fc9aea0f7f549f3c462dc07ea7c03568fdc0837b9f4e470601e12b85c1",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/SceneTemplateSettings.json": {
+      "measuredSha256": "d983786fb35276642847feb98f87259be23343f2c3eccc001baa1b787f944615",
+      "publicSha256": "d983786fb35276642847feb98f87259be23343f2c3eccc001baa1b787f944615",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/ShaderGraphSettings.asset": {
+      "measuredSha256": "91b34076dbdb68e7ef980d06b89a53ee5e2afb72d3b60f5bd4041e6206395ed4",
+      "publicSha256": "91b34076dbdb68e7ef980d06b89a53ee5e2afb72d3b60f5bd4041e6206395ed4",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/TagManager.asset": {
+      "measuredSha256": "8e18b1c820e9c09e16bbd1f1b7842e9fb3b0158a0921b0964e0b8fa12c6e2c01",
+      "publicSha256": "8e18b1c820e9c09e16bbd1f1b7842e9fb3b0158a0921b0964e0b8fa12c6e2c01",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/TimeManager.asset": {
+      "measuredSha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+      "publicSha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/URPProjectSettings.asset": {
+      "measuredSha256": "3e9d9f824875297ef6b9315fa7a3ac7ec1b047042395404a23c368fc971a8f3e",
+      "publicSha256": "3e9d9f824875297ef6b9315fa7a3ac7ec1b047042395404a23c368fc971a8f3e",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/UnityConnectSettings.asset": {
+      "measuredSha256": "5feac68815ff879749d786a89717ca029a75b87a0dce1b51bfa7ca166b4d9c77",
+      "publicSha256": "5feac68815ff879749d786a89717ca029a75b87a0dce1b51bfa7ca166b4d9c77",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/VFXManager.asset": {
+      "measuredSha256": "6e00bb8678c70372b82f03ec9102e1375e967ba72d03d3cb497d5960ad8b9c57",
+      "publicSha256": "6e00bb8678c70372b82f03ec9102e1375e967ba72d03d3cb497d5960ad8b9c57",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/VersionControlSettings.asset": {
+      "measuredSha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+      "publicSha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+      "transformation": "none"
+    },
+    "XUILab/ProjectSettings/XRSettings.asset": {
+      "measuredSha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+      "publicSha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+      "transformation": "none"
+    }
+  },
+  "note": "Current Unity inputs match historical manifest byte-for-byte. Publishing tools and docs are separate changes.",
+  "originalSourceRevision": "b0176724d58c7cda86b472340845d239714888d0",
+  "filteredMeasuredRevision": "9510967a6f7f50a374661231c20be721a4da55c4",
+  "scope": "295 Unity Git blobs identical to original commit; 263 measured files exact and 32 newline-only; not all 391 inputs; no new Unity run"
+}

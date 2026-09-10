@@ -61,11 +61,11 @@ leased、active、visible、Created、UniqueTotal不能混用。leased是借用�
 
 ## 4. 先解释旧观测，再读新实现
 
-[历史基线报告](../Experiments/LIST_REFRESH_BASELINE.md)观察旧M1 Runtime。诊断通过反射直接替换私有items，再调用原RefreshItem；这是刻意取证，不是当前公开API的正确用法。旧字节在[冻结ListView.cs](../../Artifacts/baselines/list-refresh-trace-r1/XUILab/Assets/XUILab/ListLab/Runtime/ListView.cs)，不能把当前方法名倒套成旧源码结构。
+[历史基线报告](../Experiments/LIST_REFRESH_BASELINE.md)观察旧M1 Runtime。诊断通过反射直接替换私有items，再调用原RefreshItem；这是刻意取证，不是当前公开API的正确用法。旧字节在[冻结ListView.cs（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)，不能把当前方法名倒套成旧源码结构。
 
 旧行为是扫描当前cells，对可见行全部重新绑定。普通/虚拟扫描1000/13项，最终都是9次Bind。目标可见时目标只占其中1次；目标离屏时目标Bind为0，但窗口仍做9次Bind。
 
-[trace.json](../../Artifacts/list-refresh-trace-r1/trace.json)中name=middle、backend=normal记录target=14、targetBinds=1、totalBinds=9、scannedCells=1000。虚拟对应scannedCells=13。计数的采样和聚合见[RefreshTraceTests.cs](../../XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshTraceTests.cs)及[Profiler篇的逐字段示例](PROFILER_GUIDE.md)。这个旧诊断有冻结前提，不应对当前源码直接重跑并覆盖旧输出。
+[trace.json（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)中name=middle、backend=normal记录target=14、targetBinds=1、totalBinds=9、scannedCells=1000。虚拟对应scannedCells=13。计数的采样和聚合见[RefreshTraceTests.cs](../../XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshTraceTests.cs)及[Profiler篇的逐字段示例](PROFILER_GUIDE.md)。这个旧诊断有冻结前提，不应对当前源码直接重跑并覆盖旧输出。
 
 旧反射场景还暴露了离屏保留Cell的旧文字问题：内部数据改了，retained Cell未必重新绑定；虚拟列表很远的目标后来重新租借时则可获得新数据。新公开API必须让入屏后的画面正确，不能用“不更新文字”换取低计数。
 
@@ -134,7 +134,7 @@ Bind失败时RefreshIndexCore清除坏映射、保留pending、尝试归还租�
 
 ## 9. 阅读真实Player实验
 
-[列表结果报告](../Experiments/LIST_REFRESH_RESULTS.md)包含110个有效矩阵运行和4个pilot。每轮300帧预热、1800帧测量、每组五个独立进程，主矩阵不限帧，另有60FPS组。[协议](../Experiments/LIST_REFRESH_PROTOCOL-r1.md)与[完整计划](../../Artifacts/list-refresh-player-r4/matrix-r4.json)定义动作和判据。
+[列表结果报告](../Experiments/LIST_REFRESH_RESULTS.md)包含110个有效矩阵运行和4个pilot。每轮300帧预热、1800帧测量、每组五个独立进程，主矩阵不限帧，另有60FPS组。[协议](../Experiments/LIST_REFRESH_PROTOCOL-r1.md)与[完整计划（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)定义动作和判据。
 
 以下是五轮p95中位数，单位ms，变化为Target相对Window：
 
@@ -169,8 +169,8 @@ p99帮助解释慢端，但没有替换预先冻结的p95主判据。60FPS组约
 | 4 | [ListView](../../XUILab/Assets/XUILab/ListLab/Runtime/ListView.cs) | UpdateItem、UpdateItems、Publish、RefreshWindowCore、RefreshIndexCore |
 | 5 | 同一ListView文件 | FlushPendingVisible、Reconcile、BeginMutation、EndMutation |
 | 6 | [RefreshUpdateTests](../../XUILab/Assets/XUILab/ListLab/Tests/PlayMode/RefreshUpdateTests.cs) | 本文列出的正常/离屏/异常测试 |
-| 7 | [历史诊断报告](../Experiments/LIST_REFRESH_BASELINE.md)与[原始trace](../../Artifacts/list-refresh-trace-r1/trace.json) | middle/normal、targetBinds/totalBinds/scannedCells |
-| 8 | [Player报告](../Experiments/LIST_REFRESH_RESULTS.md)与[比较表](../../Artifacts/list-refresh-player-r4/report-r2/comparison-table.json) | group、windowMedianP95、targetMedianP95、result |
+| 7 | [历史诊断报告](../Experiments/LIST_REFRESH_BASELINE.md)与[原始trace（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) | middle/normal、targetBinds/totalBinds/scannedCells |
+| 8 | [Player报告](../Experiments/LIST_REFRESH_RESULTS.md)与[比较表（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md) | group、windowMedianP95、targetMedianP95、result |
 | 9 | [Profiler篇](PROFILER_GUIDE.md) | 从事件计数继续取证，而非直接认定瓶颈 |
 
 当前默认仍是VisibleWindow；TargetOnly显式选择，综合理由见[默认策略决定](../Experiments/M3_OPTIMIZATION_DECISIONS.md)。维护pending、异常和生命周期有工程代价，不因一个最佳场景就自动全面替换默认。

@@ -160,7 +160,7 @@ A fresh environment must also provide NumPy, Pillow, packaging, python-dateutil 
 
 进入M3前使用freeze_baseline.py将原272项输入和Gradient证据冻结到新的Artifacts/baselines目录；该入口只适用于明确的M2 r5集合，不是任意候选打包器。它先执行当前source/build/gate检查，拒绝已有输出、活动Player锁和reparse，原始文件按字节复制后复核。
 
-搬迁后使用归档自身的historical_verify.py，Python -B，输出在归档外新文件；先从可信交接核对baseline-manifest.json SHA。它验证原始绝对路径与记录中的repoRoot，使用归档的相对文件重新算raw质量/网格/帧时与跨轮统计，不访问原机器绝对路径、不改写journal、不重派Player，也不把partial改成全通过。详见[M2保全记录](../PM/Tasks/M2-04/BASELINE_PRESERVATION-r3.md)。
+搬迁后使用归档自身的historical_verify.py，Python -B，输出在归档外新文件；先从可信交接核对baseline-manifest.json SHA。它验证原始绝对路径与记录中的repoRoot，使用归档的相对文件重新算raw质量/网格/帧时与跨轮统计，不访问原机器绝对路径、不改写journal、不重派Player，也不把partial改成全通过。详见[M2保全记录（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。
 
     python -B <archive>/Tools/GradientLab/historical_verify.py --archive <archive> --manifest-sha256 <trusted-manifest-sha256> --output <new-path-outside-archive.json>
 

@@ -83,6 +83,13 @@ class PMContractTests(unittest.TestCase):
         after = {p.relative_to(self.root): p.read_bytes() for p in self.root.rglob("*") if p.is_file()}
         self.assertEqual(before, after)
 
+    def test_first_running_task_has_no_finished_predecessor(self):
+        self.replace(self.task, "state: done", "state: running")
+        self.write("Docs/PM/PROJECT_STATUS.md", "- current_task: [First](Tasks/INFRA-001/TASK_STATUS.md)\n- latest_task: none\n- unity_owner: none\n- unity_task: none\n")
+        self.assertEqual([], check(self.root).errors)
+        self.replace(self.task, "state: running", "state: done")
+        self.rejected("before any terminal tasks exist")
+
     def test_r0_can_link_inline_self_check(self):
         self.replace(self.task.with_name("TASK_BRIEF.md"), "risk: R1", "risk: R0")
         self.replace(self.task, "[Evidence](EVIDENCE.md)", "[Self check](TASK_STATUS.md#交接)")

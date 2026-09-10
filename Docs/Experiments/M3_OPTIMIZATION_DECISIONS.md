@@ -26,7 +26,7 @@
 
 ## 代表回归与历史边界
 
-新候选runtime-defaults-r1的EditMode34/34、现行PlayMode23/23，来自本轮新job；详见[M3-05验证](../PM/Tasks/M3-05/VERIFICATION-r1.md)。首次PlayMode全程序集因M3-L1旧诊断前提不成立而失败，已保留[恢复记录](../PM/Tasks/M3-05/RECOVERY-r1.md)，未修改历史诊断或降低Runtime校验。所有当前探索报告仍绑定各自dirty源码/构建身份，不升级为M4干净基准。
+新候选runtime-defaults-r1的EditMode34/34、现行PlayMode23/23，来自本轮新job；详见[M3-05验证（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。首次PlayMode全程序集因M3-L1旧诊断前提不成立而失败，已保留[恢复记录（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)，未修改历史诊断或降低Runtime校验。所有当前探索报告仍绑定各自dirty源码/构建身份，不升级为M4干净基准。
 
 ## 两主题学习复盘
 

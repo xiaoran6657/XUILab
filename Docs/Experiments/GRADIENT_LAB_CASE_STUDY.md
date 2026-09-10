@@ -18,13 +18,13 @@
 
 ## 第二组演示草稿
 
-[20秒视频](../../Artifacts/gradient-media-r1/gradient-demo-r1.mp4)为Editor单独诊断采集，1920×1080、300帧、15fps编码；实际墙钟录制可慢于20秒，不是实时性能证明。大图Horizontal、fixed32、bias .05→.95→.05，Start=(.04,.75,.95,1)、End=(.95,.15,.4,.6)，范围比正式动态矩阵的.25–.75更宽，专门显示极端边界。网格包含两方向和.05/.5/.95，RectMask2D有12生成行并滚动offset0→440→0；Simple使用fixed32，Sliced/Tiled/Filled为3项VertexFallback。
+[20秒视频（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)为Editor单独诊断采集，1920×1080、300帧、15fps编码；实际墙钟录制可慢于20秒，不是实时性能证明。大图Horizontal、fixed32、bias .05→.95→.05，Start=(.04,.75,.95,1)、End=(.95,.15,.4,.6)，范围比正式动态矩阵的.25–.75更宽，专门显示极端边界。网格包含两方向和.05/.5/.95，RectMask2D有12生成行并滚动offset0→440→0；Simple使用fixed32，Sliced/Tiled/Filled为3项VertexFallback。
 
-性能关联plan为`gradient-matrix-r5`，代表run为`gradient-matrix-r5-gradient-grid-100-all-horizontal-25-r5`；演示布局与分辨率不同，不能将其画面诊断数字归入该run。参数逐帧记录、恢复、Console和完整解码结果见[媒体身份](../../Artifacts/gradient-media-r1/capture.json)、[验证](../../Artifacts/gradient-media-r1/media-validation.json)、[哈希](../../Artifacts/gradient-media-r1/ARTIFACTS.sha256)。无全黑帧，278个独特PNG，往返端点/颜色量化允许重复画面。
+性能关联plan为`gradient-matrix-r5`，代表run为`gradient-matrix-r5-gradient-grid-100-all-horizontal-25-r5`；演示布局与分辨率不同，不能将其画面诊断数字归入该run。参数逐帧记录、恢复、Console和完整解码结果见[媒体身份（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)、[验证（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)、[哈希（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)。无全黑帧，278个独特PNG，往返端点/颜色量化允许重复画面。
 
-![起始bias .05及顶部裁剪](../../Artifacts/gradient-media-r1/frame-0000.png)
+![起始bias .05及顶部裁剪（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
-![终点bias .95及底部裁剪](../../Artifacts/gradient-media-r1/frame-0149.png)
+![终点bias .95及底部裁剪（历史记录未公开）](../Showcase/HISTORICAL_RECORDS.md)
 
 ## 可复述的学习闭环
 

@@ -6,10 +6,10 @@
 
 | 主题 | 运行数 | 计划与门禁 | 原始运行根 | 构建清单 |
 | --- | ---: | --- | --- | --- |
-| List | 50 | [`list-matrix-plan-r1.json`](../../Artifacts/m4-final-validation/list-matrix-plan-r1.json) / [`list-preflight-r1.json`](../../Artifacts/m4-final-validation/list-preflight-r1.json) | [`m4-list-accepted-r1`](../../Artifacts/m4-list-accepted-r1/) | [`m4-list-build-manifest-r1.json`](../../Artifacts/m4-list-build-manifest-r1.json) |
-| Gradient | 80 | [`gradient-matrix-plan-r2.json`](../../Artifacts/m4-final-validation/gradient-matrix-plan-r2.json) / [`gradient-preflight-r1.json`](../../Artifacts/m4-final-validation/gradient-preflight-r1.json) | [`m4-gradient-runs-r2`](../../Artifacts/m4-gradient-runs-r2/) | [`m4-gradient-build-manifest-r2.json`](../../Artifacts/m4-gradient-build-manifest-r2.json) |
+| List | 50 | [`list-matrix-plan-r1.json`（历史记录未公开）](HISTORICAL_RECORDS.md) / [`list-preflight-r1.json`（历史记录未公开）](HISTORICAL_RECORDS.md) | [`m4-list-accepted-r1`（历史记录未公开）](HISTORICAL_RECORDS.md) | [`m4-list-build-manifest-r1.json`（历史记录未公开）](HISTORICAL_RECORDS.md) |
+| Gradient | 80 | [`gradient-matrix-plan-r2.json`（历史记录未公开）](HISTORICAL_RECORDS.md) / [`gradient-preflight-r1.json`（历史记录未公开）](HISTORICAL_RECORDS.md) | [`m4-gradient-runs-r2`（历史记录未公开）](HISTORICAL_RECORDS.md) | [`m4-gradient-build-manifest-r2.json`（历史记录未公开）](HISTORICAL_RECORDS.md) |
 
-列表的 50 次接受根是原始 14 次和恢复 36 次经哈希绑定后的字节副本；原始 timeout 仍在 [`m4-list-runs-r1`](../../Artifacts/m4-list-runs-r1/)。渐变错误入口的三文件失败记录仍在 [`m4-gradient-runs-r1`](../../Artifacts/m4-gradient-runs-r1/)。它们是审计材料，不应复制成成功运行或混入统计。
+列表的 50 次接受根是原始 14 次和恢复 36 次经哈希绑定后的字节副本；原始 timeout 仍在 [`m4-list-runs-r1`（历史记录未公开）](HISTORICAL_RECORDS.md)。渐变错误入口的三文件失败记录仍在 [`m4-gradient-runs-r1`（历史记录未公开）](HISTORICAL_RECORDS.md)。它们是审计材料，不应复制成成功运行或混入统计。
 
 ## 离线验收已有 130 次运行
 
@@ -110,10 +110,10 @@ python -B Tools/GradientLab/adaptive_plan.py `
 
 当前图表和媒体脚本是已经审阅过的入口，但没有提供输出路径参数；输入根目录和输出根目录都写在脚本常量中：
 
-- [`generate_graphics_r2.py`](../../Artifacts/m4-final-validation/generate_graphics_r2.py) 读取冻结的 List/Gradient 报告和三张 Release smoke PNG，然后写入 `Artifacts/m4-final-media/graphics-r2`；它以 `exist_ok=False` 创建输出目录。该 Python 图形脚本需要 Matplotlib。
-- [`render_graphics_r3.cjs`](../../Artifacts/m4-final-validation/render_graphics_r3.cjs) 读取 `graphics-r2/*.svg` 并写入 `graphics-r2/rendered-r1`；如果整个输出根目录已经存在，它会直接抛错。该 Node 脚本需要 Sharp。
-- [`encode_media_r1.py`](../../Artifacts/m4-final-validation/encode_media_r1.py) 读取现有的三个 `*-video-r1` 帧目录并写入 `videos-r1`；FFmpeg 使用 `-n`，因此不会替换已有 MP4。这是已有 PNG 帧时的纯媒体复现；[`capture_release.py`](../../Artifacts/m4-final-validation/capture_release.py) 是单独的 Player 捕获入口。
-- [`media_contact_r1.cjs`](../../Artifacts/m4-final-validation/media_contact_r1.cjs) 读取视频帧目录，并在 `videos-r1` 下写入 contact sheet；重复执行时使用新的 base/output 根目录。
+- [`generate_graphics_r2.py`（历史记录未公开）](HISTORICAL_RECORDS.md) 读取冻结的 List/Gradient 报告和三张 Release smoke PNG，然后写入 `Artifacts/m4-final-media/graphics-r2`；它以 `exist_ok=False` 创建输出目录。该 Python 图形脚本需要 Matplotlib。
+- [`render_graphics_r3.cjs`（历史记录未公开）](HISTORICAL_RECORDS.md) 读取 `graphics-r2/*.svg` 并写入 `graphics-r2/rendered-r1`；如果整个输出根目录已经存在，它会直接抛错。该 Node 脚本需要 Sharp。
+- [`encode_media_r1.py`（历史记录未公开）](HISTORICAL_RECORDS.md) 读取现有的三个 `*-video-r1` 帧目录并写入 `videos-r1`；FFmpeg 使用 `-n`，因此不会替换已有 MP4。这是已有 PNG 帧时的纯媒体复现；[`capture_release.py`（历史记录未公开）](HISTORICAL_RECORDS.md) 是单独的 Player 捕获入口。
+- [`media_contact_r1.cjs`（历史记录未公开）](HISTORICAL_RECORDS.md) 读取视频帧目录，并在 `videos-r1` 下写入 contact sheet；重复执行时使用新的 base/output 根目录。
 
 这些脚本当前使用机器本地的依赖路径。把脚本移到另一台机器或另一个仓库位置时，必须相应调整这些路径；Python 图形脚本需要可用的 Matplotlib，Node 脚本需要可用的 Sharp。
 

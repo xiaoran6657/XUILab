@@ -6,7 +6,7 @@
 
 ![List封面](Media/ListLab/cover.png)
 
-[45秒视频](../../Artifacts/m4-final-media/videos-r1/list.mp4)。0–15秒Normal从首到尾；15–30秒Virtual重复滚动；30秒后TargetOnly更新，36秒保存/回顶，38秒恢复，41秒重新打开。展示分辨率下visible=8与正式采样fixture的9行不同，不能混用计数。
+[45秒视频](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/list.mp4)。0–15秒Normal从首到尾；15–30秒Virtual重复滚动；30秒后TargetOnly更新，36秒保存/回顶，38秒恢复，41秒重新打开。展示分辨率下visible=8与正式采样fixture的9行不同，不能混用计数。
 
 | 说明图 | 解释 |
 | --- | --- |
@@ -18,7 +18,7 @@
 
 ![Gradient封面](Media/GradientLab/cover.png)
 
-[45秒视频](../../Artifacts/m4-final-media/videos-r1/gradient.mp4)。0–15秒Fixed32改变bias；15秒切Adaptive；30秒改变方向，曲线继续变化。底部诊断数字可能在切换首帧晚一帧更新，不作为正式数据。
+[45秒视频](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/gradient.mp4)。0–15秒Fixed32改变bias；15秒切Adaptive；30秒改变方向，曲线继续变化。底部诊断数字可能在切换首帧晚一帧更新，不作为正式数据。
 
 | 说明图 | 解释 |
 | --- | --- |
@@ -30,7 +30,7 @@
 
 ![Runner封面](Media/AgentBenchmark/cover.png)
 
-[45秒视频](../../Artifacts/m4-final-media/videos-r1/agent.mp4)。0秒启动normal，16秒启动配置fail，18秒启动pause invalid，34秒后保留invalid终态。Failed和Invalid清楚显示process success=False。
+[45秒视频](https://github.com/xiaoran6657/XUILab/releases/download/v0.1.0-preview.1/agent.mp4)。0秒启动normal，16秒启动配置fail，18秒启动pause invalid，34秒后保留invalid终态。Failed和Invalid清楚显示process success=False。
 
 | 说明图 | 解释 |
 | --- | --- |
@@ -40,6 +40,6 @@
 
 ## 时间与可复现性
 
-每段视频均为675张原始PNG，以15 fps编码成45秒H.264/yuv420p，无音轨、切镜、拼接、后期标注或合成帧。动作由帧驱动，抓图的真实耗时可能长于播放时长；因此是技术演示，不是实时性能录像。转码后逐帧解码675帧均成功，见[视频清单](../../Artifacts/m4-final-media/videos-r1/manifest.json)。原始帧保留在[list](../../Artifacts/m4-final-media/list-video-r1/)、[gradient](../../Artifacts/m4-final-media/gradient-video-r1/)、[agent](../../Artifacts/m4-final-media/agent-video-r1/)。
+每段视频均为675张原始PNG，以15 fps编码成45秒H.264/yuv420p，无音轨、切镜、拼接、后期标注或合成帧。动作由帧驱动，抓图的真实耗时可能长于播放时长；因此是技术演示，不是实时性能录像。转码后逐帧解码675帧均成功，见[视频清单（历史记录未公开）](HISTORICAL_RECORDS.md)。原始帧保留在[list（历史记录未公开）](HISTORICAL_RECORDS.md)、[gradient（历史记录未公开）](HISTORICAL_RECORDS.md)、[agent（历史记录未公开）](HISTORICAL_RECORDS.md)。
 
-[图形manifest](../../Artifacts/m4-final-media/graphics-r2/manifest.json)记录脚本SHA、输入报告SHA、run-id；[渲染manifest](../../Artifacts/m4-final-media/graphics-r2/rendered-r1/manifest.json)绑定SVG与1600×900 PNG。三主题各1封面+3说明图；原图、旧版和失败渲染保留，不把旧版当最终版本。[图形生成脚本](../../Artifacts/m4-final-validation/generate_graphics_r2.py)、[渲染脚本](../../Artifacts/m4-final-validation/render_graphics_r3.cjs)、[捕获](../../Artifacts/m4-final-validation/capture_release.py)、[编码](../../Artifacts/m4-final-validation/encode_media_r1.py)可审查。
+[图形manifest（历史记录未公开）](HISTORICAL_RECORDS.md)记录脚本SHA、输入报告SHA、run-id；[渲染manifest（历史记录未公开）](HISTORICAL_RECORDS.md)绑定SVG与1600×900 PNG。三主题各1封面+3说明图；原图、旧版和失败渲染保留，不把旧版当最终版本。[图形生成脚本（历史记录未公开）](HISTORICAL_RECORDS.md)、[渲染脚本（历史记录未公开）](HISTORICAL_RECORDS.md)、[捕获（历史记录未公开）](HISTORICAL_RECORDS.md)、[编码（历史记录未公开）](HISTORICAL_RECORDS.md)可审查。

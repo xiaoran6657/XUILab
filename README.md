@@ -18,7 +18,7 @@ XUILab 是一个基于 Unity UGUI 的性能实验与技术案例项目。项目�
 
 List Lab：[Player实验报告](Docs/Experiments/LIST_BENCHMARK_RESULTS.md) · [实现与学习案例](Docs/Experiments/LIST_LAB_CASE_STUDY.md) · [最终演示资料](Docs/Showcase/MEDIA.md)。展示场景为 `XUILab/Assets/XUILab/Scenes/ListLab.unity`；Editor最近观测时间及状态见[交接记录](Docs/PM/PROJECT_STATUS.md)，操作前重新查询。
 
-## 计划交付
+## 三个实验主题
 
 | 主题 | 目标成果 |
 | --- | --- |
@@ -48,7 +48,7 @@ XUILab/
 │  ├─ Agents/            # Agent 工作流、Unity MCP 与验证模板
 │  ├─ MVP/               # 版本目标、路线图和阶段验收
 │  ├─ PM/                # 动态项目状态、任务合同和交接
-│  ├─ References/        # 简历、历史材料、参考源码与外部工作流
+│  ├─ References/        # 未公开研究输入的边界说明
 │  └─ PROJECT_ANALYSIS.md
 └─ XUILab/               # Unity 工程根
    ├─ Assets/
@@ -63,7 +63,7 @@ XUILab/
 - 正确性、测量有效性和性能差异分别判断；Editor 截图或一次 FPS 不能代替目标 Player 的正式测量。
 - 每项公开结论需要关联代码或构建身份、环境、配置、原始数据和统计方法。
 - “实习记录”“个人复现”“后续改进”分别说明，不把新项目数据描述为原实习项目的历史实测。
-- `Docs/References/` 可能包含仅供研究的材料。公开仓库或个人主页前，必须检查来源、许可、隐私和公司相关信息。
+- 私人研究输入和旧PM过程记录已从公开历史省略；见[历史边界](Docs/Showcase/HISTORICAL_RECORDS.md)与[源码对应](Docs/Showcase/PUBLIC_SOURCE.md)。
 
 性能实验和 Agent 验证规则见 [Agent 工作流入口](Docs/Agents/README.md)与[性能证据规范](Docs/Agents/PERFORMANCE_EVIDENCE.md)。
 
